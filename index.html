@@ -5,9 +5,26 @@
 	</head>
 	<!-- BODY -->
 	<body>
-		<div
-		
-		
+		<!-- Navigation Bar-->
+		<div id="mydiv">
+		<p style="font-size:20px;font-family:arial;text-align:center">Ho Chi Low (Tony)</p>
+		<p style="text-align:center;">
+			<img src="personalPhoto.jpg" alt="My Photo" style="max-width:150px;max-height:150px;float:center;">
+		</p>
+		<p style="text-align:center;fontsize:15px;font-family:courier;">
+			Live in Pittsburgh<br>
+			Tel: 412-608-7196
+		</p>
+		<div style="visibility:hidden">
+			<iframe src="silence.mp3" allow="autoplay" id="audioSilence" style="display:none"></iframe>
+			<audio id="rainbow"> <!--<audio id="rainbow" autoplay loop>-->
+				<source src="RainbowMPT.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		<hr>
+			<p style="text-align:center;"> <button id="rainbowColor" onclick="rainbowPause()">RAINBOW</button> </p>
+		<hr>
 		<ul>
 			<li><a href="https://lowhochi.github.io/index.html">Home</a></li>
 			<li><a href="https://lowhochi.github.io/personalInfo.html">Personal Info</a></li>
@@ -15,7 +32,11 @@
 			<li><a href="">Teaching</a></li>
 			<li><a href="">Programming</a></li>
 		</ul>	
-		<div style="margin-left:10%;padding:1px 16px;height:1000px;">
+
+
+		</div>
+		<!-- Homepage -->
+		<div style="margin-left:15%;padding:1px 16px;height:1000px;">
 		<h1 style="text-align:center"> TONY LOW </h1>
 		<p style="text-align:center"> 
 			<img src="homepagePicture.jpg" alt = "My Photo" style="max-width:500px;max-height:500px;float:center;border:1px dotted Orange"> 
@@ -24,5 +45,20 @@
 			Whatever You Do, Do It All For the Glory of God - Corinthians 10:31 
 		</p>
 		</div>
+	<!-- Script in body -->
+	<script>
+		var rainbow = document.getElementById("rainbow");
+		rainbow.volume = 0.1;
+		isPlaying = false;
+		function rainbowPause(){
+			if (isPlaying==true) {
+				isPlaying = false; 
+				rainbow.pause();
+			}else{ 
+				isPlaying = true;
+				rainbow.play();
+			}
+		}
+	</script>	
 	</body>	
 </html>
