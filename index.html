@@ -12,14 +12,6 @@
 			<li><a href="">Teaching</a></li>
 			<li><a href="">Programming</a></li>
 		</ul>	
-		<!-- Autoplay audio: RainbowMPT.mp3 -->
-		<div style="visibility:hidden">
-			<iframe src="https://lowhochi.github.io/silence.mp3" allow="autoplay" id="audioSilence" style="display:none"></iframe>
-			<audio id="aqua" autoplay loop>
-				<source src="https://lowhochi.github.io/RainbowMPT.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
-		</div>		
 		
 		<div style="margin-left:10%;padding:1px 16px;height:1000px;">
 		<h1 style="text-align:center"> TONY LOW </h1>
@@ -27,15 +19,5 @@
 			<img src="homepagePicture.jpg" alt = "My Photo" style="max-width:500px;max-height:500px;float:center;border:1px dotted Orange"> 
 		</p>	
 		</div>
-		
-		<script>
-			var aqua = document.getElementById("aqua");
-			aqua.volume = 0.5;
-			function volumeSize() {
-			var myVolume =  document.getElementById("volumeAqua").value;
-			var v1 = Math.min(myVolume, 0.7)
-			aqua.volume = v1;
-		}
-		</script>
 	</body>	
 </html>
