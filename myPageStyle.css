@@ -31,15 +31,8 @@ li a:hover {
 	background-color: red;
 	color: white;
 }
-/*#rainbowColor{
-	background-image: linear-gradient(to right, red, yellow, green, blue, violet); 
-	background-color: Blue;
-	text-align: center;
-	color: White;
-	font-size: 25px;
-	font-family: Comic Sans MS;
-}*/
-#rainbowButton{
+
+#rainbowButton {
 	padding: 0;
 	border: none;
 	background: none;
