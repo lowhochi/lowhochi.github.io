@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Tony Low - homepage</titile>
 		<link rel="stylesheet" type="text/css" href="https://lowhochi.github.io/myPageStyle.css">
 	</head>
 	<!-- BODY -->
@@ -11,20 +12,15 @@
 		<p style="text-align:center;">
 			<img src="https://lowhochi.github.io/personalPhoto.jpg" alt="My Photo" style="max-width:150px;max-height:150px;float:center;">
 		</p>
-		<p style="text-align:center;fontsize:15px;font-family:courier;">
+		<p style="text-align:center;fontsize:1px;font-family:courier;">
 			Live in Pittsburgh<br>
-			Tel: 412-608-7196
+			Tel: 412-608-7196<br>
+			hol31@pitt.edu
+			<small>lowhochi2012@gmail.com</small>
 		</p>
-		<div style="visibility:hidden">
-			<iframe src="https://lowhochi.github.io/silence.mp3" allow="autoplay" id="audioSilence" style="display:none"></iframe>
-			<audio id="rainbow"> <!--<audio id="rainbow" autoplay loop>-->
-				<source src="https://lowhochi.github.io/RainbowMPT.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
-		</div>
-		<hr>
+		<!-- <hr>
 			<p style="text-align:center;"> <button id="rainbowColor" onclick="rainbowPause()">RAINBOW</button> </p>
-		<hr>
+		<hr> -->
 		<ul>
 			<li><a href="https://lowhochi.github.io/index.html">Home</a></li>
 			<li><a href="https://lowhochi.github.io/personalInfo.html">Personal Info</a></li>
@@ -32,15 +28,25 @@
 			<li><a href="">Teaching</a></li>
 			<li><a href="">Programming</a></li>
 		</ul>	
-
-
 		</div>
+		
 		<!-- Homepage -->
 		<div style="margin-left:15%;padding:1px 16px;height:1000px;">
 		<h1 style="text-align:center"> TONY LOW </h1>
+		<!-- Button to play/pause music over the image: homepagePicture.jpg-->
+		<div style="visibility:hidden">
+			<iframe src="https://lowhochi.github.io/silence.mp3" allow="autoplay" id="audioSilence" style="display:none"></iframe>
+			<audio id="rainbow" loop> <!--<audio id="rainbow" autoplay loop>-->
+				<source src="https://lowhochi.github.io/RainbowMPT.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+				</audio>
+		</div>				
 		<p style="text-align:center"> 
+		<button id="rainbowButton" onclick="rainbowPause()">
 			<img src="https://lowhochi.github.io/homepagePicture.jpg" alt = "My Photo" style="max-width:500px;max-height:500px;float:center;border:1px dotted Orange"> 
-		</p>	
+		</button> 
+		</p>
+		
 		<p style="font-size:20px;font-family:courier;text-align:center"> 
 			Whatever You Do, Do It All For the Glory of God - Corinthians 10:31 
 		</p>
