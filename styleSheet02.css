@@ -15,6 +15,12 @@ h1{
 	text-family:Times New Roman;
 }
 
+h2{
+	text-align: center;
+	font-size: 25px;
+	text-family:Times New Roman;
+}
+
 #openGallery{
 	font-size:25px;
 	font-family:Times New Roman;
