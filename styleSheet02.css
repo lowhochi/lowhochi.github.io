@@ -16,14 +16,37 @@ h1{
 }
 
 a.myPage{
-	font-size: 25px;
+	font-size: 20px;
 	text-family:Times New Roman;
 }
 
-#openGallery{
-	font-size:25px;
+p.download{
+	font-size:22px;
 	font-family:Times New Roman;
 }
+
+button.download{
+	border: 1px dotted orange;
+	background-color: yellow;
+	color: blue;
+	text-align: center;
+	font-size: 20px;
+	margin: 1px 2px 1 px 2px;
+	border-radius: 4px;
+	cursor: pointer;	
+}
+
+button.collapse{
+	border: 1px dotted orange;
+	background-color: yellow;
+	color: green;
+	text-align: center;
+	font-size: 20px;
+	margin: 1px 2px 1 px 2px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
 
 figure.salesPic{
 	height: 20%;
