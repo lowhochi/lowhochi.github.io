@@ -94,12 +94,12 @@ def img03():
     fig = plt.figure()
     ax = plt.gca()
     #img = plt.imread('microwave_oven.png')
-    img = plt.imread("NIV_bible_mini.png")
+    img = plt.imread("General_Relativity_Astrophysics_and_Cosmology_mini.png")
     img01 = np.zeros(shape=(img.shape[0], img.shape[1]))
     img01[:][:] = img[:, :, 0]
     ax.imshow(img01, cmap=plt.cm.gray) #in grayscale
     ax.axis('off')
-    fig.savefig("NIV_bible_sold.png", \
+    fig.savefig("General_Relativity_Astrophysics_and_Cosmology_sold.png", \
                 transparent=True, facecolor='none', format="png")
     plt.show()
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -125,7 +125,7 @@ def img04(name):
 # # # # # # # # # # # # # # # # # # # # MAIN # # # # # # # # # # # # # # # # # # # #
 # usMap = img01()
 # img02()
-img04("book10")
+img03()
 
 
 
