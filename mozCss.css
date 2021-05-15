@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+}
+
+#navbar {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: lightblue;
+	position: absolute;
+	height: 522%;
+	width: 15%;
+	font-size: 2vw;
+}
+
+#navbar:hover{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: lightblue;
+	position: absolute;
+	height: 522%;
+	width: 30%;
+	font-size: 2vw;
+}
+
+button.list{
+	width: 100%;
+	font-size: 2vw;
+	background: orange;
+	color: white;
+	border: none;
+	padding: 0;
+	margin:0px;
+	text-decoration: none;
+	text-align: center;
+}
+
+button.list:hover{
+	width: 100%;
+	font-size: 4vw;
+	background: orange;
+	color: white;
+	border: none;
+	padding: 0;
+	margin:0px;
+	text-decoration: none;
+	text-align: center;
+}
+
+a.list{
+	text-align: center;
+	font-size: 2.5vw;
+}
+
+a.list:hover{
+	background: lightblue;
+	color: red;
+	font-size: 4vw;
+	text-align: center;
+}
+
+td.cardList {
+	width:10%;
+}
+td.empty {
+	width:3%;
+}
+
+table.cardList {
+	font-size: 2vw;
+	padding: 15px;
+	text-align: center;
+}
