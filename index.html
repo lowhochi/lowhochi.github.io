@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MOZ SALES</title>
+		<link rel="stylesheet" type="text/css" href="mozCss.css">
+	</head>
+	<!------------------------------------------------------------>
+	<body>
+		<!-- navigation bar-->
+		<div id="navbar">
+			<button class="list" onclick="display01()">格里夫グリフ</button>
+			<div id="number01" style="display:none">
+				<a class="list" href="mozG01.html">No 1 - 40</a><br><br>
+				<a class="list" href="mozG02.html">No 41 - 80</a><br><br>
+				<a class="list" href="mozG03.html">No 81 - 120</a><br><br>
+				<a class="list" href="mozG04.html">No 121 - 160</a><br><br>
+				<a class="list" href="mozG05.html">No 161 - 200</a><br><br>
+				<a class="list" href="mozG06.html">No 201 - 240</a><br>
+			</div>
+			<br><br>
+			
+			<button class="list" onclick="display02()">莫哥拿モゴラ</button>
+			<div id="number02" style="display:none">
+				<a class="list" href="mozM01.html">No 1 - 40</a><br><br>
+				<a class="list" href="mozM02.html">No 41 - 80</a><br><br>
+				<a class="list" href="mozM03.html">No 81 - 120</a><br><br>
+				<a class="list" href="mozM04.html">No 121 - 160</a><br><br>
+				<a class="list" href="">No 161 - 200</a><br>
+			</div>
+			<br><br>
+			
+			<button class="list" onclick="display03()">稀有卡<br>レアカ一ド</button>
+			<div id="number03" style="display:none">
+				<a class="list" href="">No 1 - 40</a><br><br>
+				<a class="list" href="">No 41 - 40</a><br>
+			</div>	
+		</div>
+		
+	<!------------------------------------------------------------>   
+		<div style="margin-left:15%;padding:1px 16px;height:100%;">		
+		<h1 style="text-align:center;font-size:20px">
+		MOZ召喚王遊戲卡<br><br>
+		The Miracle of the Zone<br>
+		ザミラクオブザゾ一ン<br><br>
+		Daikaijuu Monogatari<br>
+		大貝獣物語
+		</h1>
+	
+		</div>
+	
+	</body>
+	<!------------------------------------------------------------>
+	<script>
+	var show01 = false;
+	var show02 = false;
+	var show03 = false;
+	
+	function display01(){
+		if (show01==false) {
+			document.getElementById("number01").style.display = "block";
+			show01 = true;
+		}else{
+			document.getElementById("number01").style.display = "none";
+			show01 = false;
+		}
+	}	
+	
+	function display02(){
+		if (show02==false) {
+			document.getElementById("number02").style.display = "block";
+			show02 = true;
+		}else{
+			document.getElementById("number02").style.display = "none";
+			show02 = false;
+		}
+	}
+	
+	function display03(){
+		if (show03==false) {
+			document.getElementById("number03").style.display = "block";
+			show03 = true;
+		}else{
+			document.getElementById("number03").style.display = "none";
+			show03 = false;
+		}
+	}
+	
+	</script>
+	
+</html>
