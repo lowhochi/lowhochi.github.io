@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MOZ SALES</title>
+		<link rel="stylesheet" type="text/css" href="mozCss.css">
+	</head>
+	<!------------------------------------------------------------>
+	<body>
+		<!-- navigation bar-->
+		<div id="navbar">
+		</div>
+	<!------------------------------------------------------------>   
+		<div style="margin-left:15%; padding:1px 16px; height:100%;">	
+		<a style="float:left; font-size:2vw;" href="">上頁</a> 
+		<a style="float:right; font-size:2vw;" href="">下頁</a> 	
+		<br>
+		<table class="cardList">
+		<tr>
+			<td class="cardList"><img id="blank1" alt = "" style="width:100%;"><br>日1張</td>
+			<td class="empty"><span style="visibility:collapse">sss</span></td>
+			<td class="cardList"><img id="blank2" alt = "" style="width:100%;"><br>日1張</td>
+			<td class="empty"><span style="visibility:collapse">sss</span></td>
+			<td class="cardList"><img id="blank3" alt = "" style="width:100%;"><br>日1張</td>
+			<td class="empty"><span style="visibility:collapse">sss</span></td>
+			<td class="cardList"><img id="blank4" alt = "" style="width:100%;"><br>日2張</td>
+		</tr>
+		
+		<tr>
+			<td class="cardList"><img id="blank5" style="width:100%;"><br><div id="pg5"></div></td>
+			<td class="empty"><span style="visibility:collapse">sss</span></td>
+			<td class="cardList"><img id="blank6" style="width:100%;"><br><div id="pg6"></div></td>
+			<td class="empty"><span style="visibility:collapse">sss</span></td>
+			<td class="cardList"><img id="blank7" style="width:100%;"><br><div id="pg7"></div></td>
+			<td class="empty"><span style="visibility:collapse">sss</span></td>
+			<td class="cardList"><img id="blank8" style="width:100%;"><br><div id="pg8"></div></td>
+		</tr>
+		</table>
+		<br>
+		
+		<h1>Display the list of my cards</h1>
+		<div id="showlist" style="font-size:20px;"></div>
+		
+		<script type="text/javascript" src="testlist.js"></script>
+		<script>
+			var len = mylist.length;
+			var number = Math.floor(len/4);
+			var totalStr = "";
+			var nameStr = [];
+			nameStr.length = number;
+			
+			for (var i=0; i<number; i++){
+				var tempStr =  mylist.substr(4*i, 4);
+				<!--totalStr = totalStr + tempStr + "\n;-->
+				totalStr = totalStr + tempStr + "<br>";
+				nameStr[i] = tempStr;
+			}
+
+			document.getElementById("showlist").innerHTML = totalStr;
+			
+			for (var i=0; i<number; i++){
+				document.getElementById("blank"+String(i+1)).src = "g"+nameStr[i]+".jpg";
+				document.getElementById("blank"+String(i+1)).alt = nameStr[i];
+			}
+			
+			<!--document.getElementById("blank1").src = nameStr[0];-->
+			<!--document.getElementById("blank2").src = nameStr[1];-->
+			<!--document.getElementById("blank3").src = nameStr[2];-->
+			<!--document.getElementById("blank4").src = nameStr[3];-->
+			
+			for (var i=0; i<number; i++){
+				document.getElementById("blank"+(i+5)).src =  "g"+mylistTwo[i][0]+".jpg";
+				document.getElementById("pg"+(i+5)).innerHTML = "日"
+					+mylistTwo[i][1]+"張/中"+mylistTwo[i][2]+"張/$"+mylistTwo[i][3];
+			}
+
+			<!-- document.getElementById("blank5").src = "g"+mylistTwo[0][0]+".jpg"; -->
+			<!-- document.getElementById("pg5").innerHTML = "日"+mylistTwo[0][1]+"張/中" -->
+			<!--	+mylistTwo[0][2]+"張/$"+mylistTwo[0][3]; -->
+			
+		</script>
+	</body>
+	<!------------------------------------------------------------>
+	
+</html>
