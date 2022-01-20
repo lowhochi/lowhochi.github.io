@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MOZ SALES</title>
+		<link rel="stylesheet" type="text/css" href="mozCss.css">
+	</head>
+	<!------------------------------------------------------------>
+	<body>
+		<!-- navigation bar-->
+		<div id="navbar">
+			<button class="list" onclick="display00()">ホ一ムペ一ジ</button>
+			<br><br>
+		
+			<button class="list" onclick="display01()">格里夫グリフ</button>
+			<div id="number01" style="display:none">
+				<a class="list" href="mozG01.html">PAGE 01</a><br><br>
+				<a class="list" href="mozG02.html">PAGE 02</a><br><br>
+				<a class="list" href="mozG03.html">PAGE 03</a><br><br>
+				<a class="list" href="mozG04.html">PAGE 04</a><br><br>
+				<a class="list" href="mozG05.html">PAGE 05</a><br><br>
+				<a class="list" href="mozG06.html">PAGE 06</a><br><br>
+				<a class="list" href="mozG07.html">PAGE 07</a><br><br>
+				<a class="list" href="mozG08.html">PAGE 08</a><br><br>
+				<a class="list" href="mozG09.html">PAGE 09</a><br>
+			</div>
+			<br><br>
+			
+			<button class="list" onclick="display02()">莫哥拿モゴラ</button>
+			<div id="number02" style="display:none">
+				<a class="list" href="mozM01.html">PAGE 01</a><br><br>
+				<a class="list" href="mozM02.html">PAGE 02</a><br><br>
+				<a class="list" href="mozM03.html">PAGE 03</a><br><br>
+				<a class="list" href="mozM04.html">PAGE 04</a><br><br>
+				<a class="list" href="mozM05.html">PAGE 05</a><br><br>
+				<a class="list" href="mozM06.html">PAGE 06</a><br><br>
+				<a class="list" href="mozM07.html">PAGE 07</a><br><br>
+				<a class="list" href="mozM08.html">PAGE 08</a><br>
+			</div>
+			<br><br>
+			<!-- 
+			<button class="list" onclick="display03()">稀有卡<br>レアカ一ド</button>
+			<div id="number03" style="display:none">
+				<a class="list" href="">No 1 - 40</a><br><br>
+				<a class="list" href="">No 41 - 40</a><br>
+			</div>
+			-->
+		</div>
+		
+	<!------------------------------------------------------------>   
+		<div style="margin-left:15%;padding:1px 16px;height:100%;">		
+		<h1 style="text-align:center;font-size:2vw;">
+		MOZ召喚王遊戲卡<br><br>
+		The Miracle of the Zone<br>
+		ザミラクオブザゾ一ン<br><br>
+		Daikaijuu Monogatari<br>
+		大貝獣物語
+		</h1>
+		<br><br>
+		<h1 style="text-align:center;font-size:2vw;font-family:arial;">
+		Updated on 20 Jan 2022
+		</h1>
+		<br><hr><br>
+		<div style="text-align:center;font-size:2vw;font-family:arial;">
+			Input Card Number : <input type="text" id="cardNumber" value="S004">
+			<button id="search" onclick="startSearch()">SEARCH</button>
+			<p id="showSearch" style="color:blue;"></p>
+		</div>
+	</body>
+	<!------------------------------------------------------------>
+	<script type="text/javascript" src="myCardList.js"></script>
+	<script>
+	var show01 = false;
+	var show02 = false;
+	var show03 = false;
+	
+	function display00(){
+		window.location.replace("index.html");
+	}
+	
+	function display01(){
+		if (show01==false) {
+			document.getElementById("number01").style.display = "block";
+			show01 = true;
+		}else{
+			document.getElementById("number01").style.display = "none";
+			show01 = false;
+		}
+	}	
+	
+	function display02(){
+		if (show02==false) {
+			document.getElementById("number02").style.display = "block";
+			show02 = true;
+		}else{
+			document.getElementById("number02").style.display = "none";
+			show02 = false;
+		}
+	}
+	
+	function display03(){
+		if (show03==false) {
+			document.getElementById("number03").style.display = "block";
+			show03 = true;
+		}else{
+			document.getElementById("number03").style.display = "none";
+			show03 = false;
+		}
+	}
+	
+	function startSearch(){
+		var myInput = document.getElementById("cardNumber").value;
+		var isFound = false;
+		var isFoundTwo = false;
+		var myString = "";
+		var linkString = "";
+		var n = glist.length;
+		var m = mlist.length;
+		var pos = 0;
+		
+		for (var i=0; i<n; i++){
+			var temp = glist[i][0];
+			if (temp==myInput){
+				isFound = true;
+				pos = Math.floor(i/40)+1;
+				if (pos<10){
+					linkString = "mozG0" + pos + ".html";
+				}else{
+					linkString = "mozG" + pos + ".html";
+				}
+				window.location.replace(linkString);
+				break;
+			}
+		}
+		
+	
+		for (var j=0; j<m; j++){
+			var tempTwo = mlist[j][0];
+			if (tempTwo==myInput){
+				isFoundTwo = true;
+				pos = Math.floor(j/40)+1;
+				if (pos<10){
+					linkString = "mozM0" + pos + ".html";
+				}else{
+					linkString = "mozM" + pos + ".html";
+				}
+				window.location.replace(linkString);
+				break;
+			}
+		}
+		
+		if ((isFound==false)&&(isFoundTwo==false)) {
+			myString = myString+" is not found on the card list.";
+			document.getElementById("showSearch").innerHTML = myInput + " " + myString + " "+ n + " "+ m;
+		}
+	}
+	
+	</script>
+
+</html>

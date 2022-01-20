@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+}
+
+#navbar {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: lightblue;
+	position: absolute;
+	min-height: 100vh;
+	width: 15%;
+	font-size: 2vw;
+	z-index: 2;
+}
+
+#navbar:hover{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: lightblue;
+	position: absolute;
+	min-height: 100vh;
+	width: 30%;
+	font-size: 2vw;
+	z-index: 2;
+}
+
+#backbar {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: lightblue;
+	position: fixed;
+	height: 100vh;
+	width: 15%;
+	z-index: 1;
+}
+
+#navbar:hover + #backbar{
+	width: 30%;
+}
+
+button.list{
+	width: 100%;
+	font-size: 2vw;
+	background: orange;
+	color: white;
+	border: none;
+	padding: 0;
+	margin:0px;
+	text-decoration: none;
+	text-align: center;
+}
+
+button.list:hover{
+	width: 100%;
+	font-size: 4vw;
+	background: orange;
+	color: white;
+	border: none;
+	padding: 0;
+	margin:0px;
+	text-decoration: none;
+	text-align: center;
+}
+
+a.list{
+	text-align: center;
+	font-size: 2.5vw;
+}
+
+a.list:hover{
+	background: lightblue;
+	color: red;
+	font-size: 4vw;
+	text-align: center;
+}
+
+td.cardList {
+	width:10%;
+}
+td.empty {
+	width:3%;
+}
+
+table.cardList {
+	font-size: 1.5vw;
+	padding: 15px;
+	text-align: center;
+}
+
+#search {
+	width: 10vw;
+	font-size: 2vw;
+	font-family: arial;
+	background: blue;
+	color: violet;
+	border: 0.1vw solid pink;
+	padding: 0.2vw 0 0.2vw 0;
+	margin: 0 0 0 0;
+	text-decoration: none;
+	text-align: center;
+}
+
+#cardNumber {
+	width: 10vw;
+	height: 2vw;
+	font-size: 2vw;
+}
+
