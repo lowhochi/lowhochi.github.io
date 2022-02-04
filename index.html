@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MOZ SALES</title>
+		<link rel="stylesheet" type="text/css" href="mozCss.css">
+	</head>
+	<!------------------------------------------------------------>
+	<body>
+		<!-- navigation bar-->
+		<div id="navbar">
+			<button class="list" onclick="display00()">ホ一ムペ一ジ</button>
+			<br><br>
+		
+			<button class="list" onclick="display01()">格里夫グリフ</button>
+			<div id="number01" style="display:none">
+				<a class="list" href="mozG01.html">PAGE 01</a><br><br>
+				<a class="list" href="mozG02.html">PAGE 02</a><br><br>
+				<a class="list" href="mozG03.html">PAGE 03</a><br><br>
+				<a class="list" href="mozG04.html">PAGE 04</a><br><br>
+				<a class="list" href="mozG05.html">PAGE 05</a><br><br>
+				<a class="list" href="mozG06.html">PAGE 06</a><br><br>
+				<a class="list" href="mozG07.html">PAGE 07</a><br><br>
+				<a class="list" href="mozG08.html">PAGE 08</a><br><br>
+				<a class="list" href="mozG09.html">PAGE 09</a><br>
+			</div>
+			<br><br>
+			
+			<button class="list" onclick="display02()">莫哥拿モゴラ</button>
+			<div id="number02" style="display:none">
+				<a class="list" href="mozM01.html">PAGE 01</a><br><br>
+				<a class="list" href="mozM02.html">PAGE 02</a><br><br>
+				<a class="list" href="mozM03.html">PAGE 03</a><br><br>
+				<a class="list" href="mozM04.html">PAGE 04</a><br><br>
+				<a class="list" href="mozM05.html">PAGE 05</a><br><br>
+				<a class="list" href="mozM06.html">PAGE 06</a><br><br>
+				<a class="list" href="mozM07.html">PAGE 07</a><br><br>
+				<a class="list" href="mozM08.html">PAGE 08</a><br>
+			</div>
+			<br><br>
+			
+			<button class="list" onclick="display03()">宇宙篇コスモ</button>
+			<div id="number03" style="display:none">
+				<a class="list" href="mozC01.html">PAGE 01</a><br><br>
+				<a class="list" href="mozC02.html">PAGE 02</a><br><br>
+				<a class="list" href="mozC03.html">PAGE 03</a><br><br>
+				<a class="list" href="mozC04.html">PAGE 04</a><br><br>
+				<a class="list" href="mozC05.html">PAGE 05</a><br><br>
+				<a class="list" href="mozC06.html">PAGE 06</a><br><br>
+				<a class="list" href="mozC07.html">PAGE 07</a><br><br>
+				<a class="list" href="mozC08.html">PAGE 08</a><br><br>
+				<a class="list" href="mozC09.html">PAGE 09</a><br>
+			</div>
+			<br><br>
+		</div>
+		
+	<!------------------------------------------------------------>   
+		<div style="margin-left:15%;padding:1px 16px;height:100%;">		
+		<h1 style="text-align:center;font-size:2vw;">
+		MOZ召喚王遊戲卡<br><br>
+		The Miracle of the Zone<br>
+		ザミラクオブザゾ一ン<br><br>
+		Daikaijuu Monogatari<br>
+		大貝獣物語
+		</h1>
+		<br><br>
+		<h1 style="text-align:center;font-size:2vw;font-family:arial;">
+		Updated on 04 Feb 2022
+		</h1>
+		<br><hr><br>
+		<div style="text-align:center;font-size:2vw;font-family:arial;">
+			<select id="pack" style="width:10vw;height:2.5vw;font-size:2vw;">
+				<option value="0">格里夫</option>
+				<option value="1">莫哥拿</option>
+				<option value="2">宇宙篇</option>
+			</select>
+			<button id="searchPack" onclick="choosePack()">SELECT</button>
+			<br><br>
+			<!--<p id="showPack" style="color:blue;"></p>-->
+			
+			Input Card Number : <input type="text" id="cardNumber" value="S004">
+			<button id="search" onclick="startSearch()">SEARCH</button>
+			<p id="showSearch" style="color:blue;"></p>
+			<p id="showSearchTwo" style="color:blue;"></p>
+			<p id="showSearchThree" style="color:blue;"></p>
+		</div>
+	</body>
+	<!------------------------------------------------------------>
+	<script type="text/javascript" src="myCardList.js"></script>
+	<script>
+	var show01 = false;
+	var show02 = false;
+	var show03 = false;
+	var packArray = ["g", "m", "c"];
+	var packName = ["格里夫", "莫哥拿", "宇宙篇"];
+	var packSelected = 0;
+	
+	function display00(){
+		window.location.replace("index.html");
+	}
+	
+	function display01(){
+		if (show01==false) {
+			document.getElementById("number01").style.display = "block";
+			show01 = true;
+		}else{
+			document.getElementById("number01").style.display = "none";
+			show01 = false;
+		}
+	}	
+	
+	function display02(){
+		if (show02==false) {
+			document.getElementById("number02").style.display = "block";
+			show02 = true;
+		}else{
+			document.getElementById("number02").style.display = "none";
+			show02 = false;
+		}
+	}
+	
+	function display03(){
+		if (show03==false) {
+			document.getElementById("number03").style.display = "block";
+			show03 = true;
+		}else{
+			document.getElementById("number03").style.display = "none";
+			show03 = false;
+		}
+	}
+	
+	function choosePack(){
+		const packInput = document.getElementById("pack");
+		packSelected = packInput.value;
+		<!--document.getElementById("showPack").innerHTML = packArray[packInput.value];>
+	}
+	
+	function startSearch(){
+		var myInput = document.getElementById("cardNumber").value;
+		var isFound = false;
+		var isFoundTwo = false;
+		var isFoundThree = false;
+		var myString = "";
+		var myStringTwo = "";
+		var linkString = "";
+		var G = glist.length;
+		var M = mlist.length;
+		var C = clist.length;
+		var pos = 0;
+		
+		if (packSelected==0){
+			for (var i=0; i<G; i++){
+				var temp = glist[i][0];
+				if (temp==myInput){
+					isFound = true;
+					pos = Math.floor(i/40)+1;
+					if (pos<10){
+						linkString = "mozG0" + pos + ".html";
+					}else{
+						linkString = "mozG" + pos + ".html";
+					}
+					window.location.replace(linkString);
+					break;
+				}
+			}
+		}
+		
+		if (packSelected==1){
+			for (var j=0; j<M; j++){
+				var tempTwo = mlist[j][0];
+				if (tempTwo==myInput){
+					isFoundTwo = true;
+					pos = Math.floor(j/40)+1;
+					if (pos<10){
+						linkString = "mozM0" + pos + ".html";
+					}else{
+						linkString = "mozM" + pos + ".html";
+					}
+					window.location.replace(linkString);
+					break;
+				}
+			}
+		}
+		
+		if (packSelected==2){
+			for (var k=0; k<C; k++){
+				var tempThree = clist[k][0];
+				if (tempThree==myInput){
+					isFoundThree = true;
+					pos = Math.floor(k/40)+1;
+					if (pos<10){
+						linkString = "mozC0" + pos + ".html";
+					}else{
+						linkString = "mozC" + pos + ".html";
+					}
+					window.location.replace(linkString);
+					break;
+				}
+			}
+		}
+		
+		if ((isFound==false)&&(isFoundTwo==false)&&(isFoundThree==false)) {
+			myString = "You are looking at " + packName[packSelected] + ".";
+			myStringTwo = myInput + " is not found on this card list.";
+			document.getElementById("showSearch").innerHTML = myString;
+			document.getElementById("showSearchTwo").innerHTML = myStringTwo;
+			document.getElementById("showSearchThree").innerHTML = 
+				"[G, M, C] = [" + G + ", " + M + ", " + C + "]";
+		}
+	}
+	
+	</script>
+
+</html>
