@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<style>
+	p { font-family: courier; font-size:20px; }
+	h1 { font-family: courier; font-size:30px; text-align:center; }
+	table { font-family: courier; font-size:20px; }
+	td { padding: 5px 20px 5px 20px; text-align:center; }
+	p.eqn { text-align:center; }
+	span.invs{ visibility:hidden; }
+	p.endline { text-align:center; font-style:italic; }
+	
+</style>
+</head>
+<body>
+		<h1>Programming on Poker: "Class poker"</h1>
+
+	<p>A standard poker deck consists of 52 cards in total. These 52 cards belong to
+	four different suits evenly, which are clubs<span>&#9827;</span>, diamonds<span>&#9830;</span>, 
+	hearts<span>&#9829;</span> and spades<span>&#9824;</span>. In every suit, there are 13 cards 
+	marked uniquely by there ranks, ranging from A, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, J, Q to K.
+	In this order, we assign a prime number to every card as follows: 
+	</p>
+
+	<table>
+	<tr><td>2: A&clubs;</td><td>3: A&diams;</td>
+		<td>5: A&hearts;</td><td>7: A&spades;</td></tr>
+	<tr><td>11: 2&clubs;</td><td>13: 2&diams;</td>
+		<td>17: 2&hearts;</td><td>19: 2&spades;</td></tr>
+	<tr><td>23: 3&clubs;</td><td>29: 3&diams;</td>
+		<td>31: 3&hearts;</td><td>37: 3&spades;</td></tr>
+	<tr><td>41: 4&clubs;</td><td>43: 4&diams;</td>
+		<td>47: 4&hearts;</td><td>53: 4&spades;</td></tr>
+	<tr><td>59: 5&clubs;</td><td>61: 5&diams;</td>
+		<td>67: 5&hearts;</td><td>71: 5&spades;</td></tr>
+	<tr><td>73: 6&clubs;</td><td>79: 6&diams;</td>
+		<td>83: 6&hearts;</td><td>89: 6&spades;</td></tr>
+	<tr><td>97: 7&clubs;</td><td>101: 7&diams;</td>
+		<td>103: 7&hearts;</td><td>107: 7&spades;</td></tr>
+	<tr><td>109: 8&clubs;</td><td>113: 8&diams;</td>
+		<td>127: 8&hearts;</td><td>131: 8&spades;</td></tr>
+	<tr><td>137: 9&clubs;</td><td>139: 9&diams;</td>
+		<td>149: 9&hearts;</td><td>151: 9&spades;</td></tr>
+	<tr><td>157: 10&clubs;</td><td>163: 10&diams;</td>
+		<td>167: 10&hearts;</td><td>173: 10&spades;</td></tr>	
+	<tr><td>179: J&clubs;</td><td>181: J&diams;</td>
+		<td>191: J&hearts;</td><td>193: J&spades;</td></tr>	
+	<tr><td>197: Q&clubs;</td><td>199: Q&diams;</td>
+		<td>211: Q&hearts;</td><td>223: Q&spades;</td></tr>	
+	<tr><td>227: K&clubs;</td><td>229: K&diams;</td>
+		<td>233: K&hearts;</td><td>239: K&spades;</td></tr>
+	</table>
+
+	<p>In a poker game, we very often draw 5 cards randomly from the deck.
+	Our hand can then be uniquely described by the product of five primes. 
+	For example, A&clubs; 2&diams; 3&hearts; 4&spades; 5&diams; is represented by:
+	</p>
+	<p class='eqn'>2 * 13 * 31 * 53 * 61 = 2605798</p>	<p>
+	Reversely, given that a large number $N$ represents a hand of five cards,
+	we can always factorize $N$ by $$ N = p_0\, p_1\, p_2\, p_3\, p_4\,.$$
+	Every $p_i$ refers to a distinct prime number in the above list.
+	A hand of poker contains a certain card if and only if its representative $N$ is
+	divisble by the prime number $p$ corresponding to that card. With regard to this idea, 
+	we are going to define variables and methods in Python.
+	</p>
+	
+	<p>deckList = numpy.array([2, 3, 5, 7, 11, 13, ...(skip)... , 239])</p>
+	<p>deck = decklist.reshape(13, 4)</p>
+	<p>rankList = ["A", "2", "3", "4", "5", "6", "7", 
+		"8", "9", "10", "J", "Q", "K"]</p>
+	<p>suitList = ["Clubs", "Diamonds", "Hearts", "Spades"]</p>
+
+	<p>Omitting trivial details (which can be found in pokerClass.py), 
+	we establish the following methods. 
+	</p>
+	
+	<p>def isPrime(a): ... #return True if a is a prime number, False if a is not. </p>
+	<p>def getRank(a): ... #return the rank of the card represented by an appropriate prime a.</p>
+	<p>def getSuit(a): ... #return the suit(int) of the card represented by an appropriate prime a.</p>
+	
+	<p>Here the rank of an Ace is 1, the rank of a 2 is 2 and so on. On the other hand, 
+	getSuit returns 1 for a clubs, 2 for a diamonds, 3 for a hearts and 4 for a spades. 
+	For example, $a$ = 167 represents 10&hearts;, so getRank(167) = 10 and getSuit(167) = 3.
+	The acutal rank and suit of $a$ (10 and &hearts;) can be retrieved by 
+	rankList[10-1] and suitList[3-1].
+	</p>
+	
+	<p>Given any large integer $N$, we need a way to see (1)if $N$ is a product of five primes in concern,
+	and (2)how to factorize $N$ to five correct primes. In the later case, we establish an instance method:
+	(self = class instance, self.hand = $N$)
+	</p>
+	
+	<p>def hand2primes(self):<br>
+	<span class='invs'>aaaa</span>tempHand = self.hand<br>
+	<span class='invs'>aaaa</span>move = False<br>
+    <span class='invs'>aaaa</span>start = 2<br>
+    <span class='invs'>aaaa</span>for j in range(5):<br>
+    <span class='invs'>aaaaaaaa</span>move = False<br>
+    <span class='invs'>aaaaaaaa</span>while ((move==False)and(start<=tempHand)):<br>
+    <span class='invs'>aaaaaaaaaaaa</span>if (tempHand%start==0):<br>
+    <span class='invs'>aaaaaaaaaaaaaaaa</span>self.primes[j] = start<br>
+    <span class='invs'>aaaaaaaaaaaaaaaa</span>tempHand = tempHand//start<br>
+    <span class='invs'>aaaaaaaaaaaaaaaa</span>move = True<br>
+    <span class='invs'>aaaaaaaaaaaa</span>start += 1
+	</p>
+	
+	<p>Let self.primes[i] = $p_i$. In this approach, $N = p_0\, p_1\, p_2\, p_3\, p_4$ with 
+		$p_0 \lt p_1 \lt p_2 \lt p_3 \lt p_4$, so we have ordered the poker cards ($p_i$'s)
+		ascendingly with respect to their ranks. For the problem (1) we concern above, 
+		we set up a method to justify that $N$ should be an appropriate input. 
+		In some cases like Texas Poker, we are drawing 2 cards instead of 5 from the deck. 
+		So we reserve an argument <i>size</i> to describle how many cards are in the hand represented by $N$. 
+		Moreover, we are not always drawing cards from the complete deck, so it is necessary 
+		to set up another argument <i>hands</i> to describe which cards are no longer available
+		in the deck. <i>hands</i> is a list of large numbers (just like $N$) which represent 
+		hands of cards that are no longer in the deck. For example <i>hands[0]</i> 
+		may mean your opponent's hand.
+	</p>
+	
+	<p>def validInput(a, size, hands=[]):<br>
+    <span class='invs'>aaaa</span>valid = True<br>
+    <span class='invs'>aaaa</span>factors = []<br>
+    <span class='invs'>aaaa</span>temp = int(a)<br>
+    <span class='invs'>aaaa</span>start = 2<br>
+    <span class='invs'>aaaa</span>while ((temp!=1)and(valid)):<br>
+    <span class='invs'>aaaaaaaa</span>if (isPrime(start)and(temp%start==0)):<br>
+    <span class='invs'>aaaaaaaaaaaa</span>factors.append(start)<br>
+    <span class='invs'>aaaaaaaaaaaa</span>temp = temp//start<br>
+    <span class='invs'>aaaaaaaaaaaa</span>if (temp%start==0):<br>
+    <span class='invs'>aaaaaaaaaaaaaaaa</span>valid = False<br>
+    <span class='invs'>aaaaaaaa</span>start += 1<br>
+    <span class='invs'>aaaa</span>isFound = 0<br>
+    <span class='invs'>aaaa</span>if ((valid)and(len(factors)!=size)):<br>
+    <span class='invs'>aaaaaaaa</span>valid = False<br>
+    <span class='invs'>aaaa</span>if ((valid)and(len(factors)==size)):<br>
+    <span class='invs'>aaaaaaaa</span>for j in range(size):<br>
+    <span class='invs'>aaaaaaaaaaaa</span>if factors[j] in deckList:<br>
+    <span class='invs'>aaaaaaaaaaaaaaaa</span>isFound += 1<br>
+    <span class='invs'>aaaaaaaa</span>if (isFound!=size):<br>
+    <span class='invs'>aaaaaaaaaaaa</span>valid = False<br>
+    <span class='invs'>aaaa</span>if ((valid)and(len(hands)!=0)):<br>
+	<span class='invs'>aaaaaaaa</span>for j in range(len(hands)):<br>
+    <span class='invs'>aaaaaaaaaaaa</span>for num in factors:<br>
+    <span class='invs'>aaaaaaaaaaaaaaaa</span>if (int(hands[j])%num==0):<br>
+    <span class='invs'>aaaaaaaaaaaaaaaaaaaa</span>valid = False<br>
+    <span class='invs'>aaaaaaaaaaaaaaaaaaaa</span>break<br>
+    <span class='invs'>aaaaaaaaaaaa</span>if not valid:<br>
+    <span class='invs'>aaaaaaaaaaaaaaaa</span>break<br>
+    <span class='invs'>aaaa</span>return valid
+	</p>
+	
+	<p>If we are drawing cards randomly from the deck, then we need to set up a class method 
+	to carry out this process. For simplicity, numpy.random (<i>numpy = np</i>) will be used to generate random 
+	integers. The following method <i>getHand()</i> will serve as our way to draw cards in the program, 
+	and the argument <i>hands</i> again represents unavailable cards in the deck.
+	Note that every time we get an undesired prime number, we just ignore what happened and keep on 
+	getting random integers until five distinct and appropriate prime numbers are drawn from <i>deckList</i>.
+	</p>
+
+	<p>def getHand(self, hands):<br>
+	<span class='invs'>aaaa</span>count = 0<br>
+	<span class='invs'>aaaa</span>temp = 0<br>
+	<span class='invs'>aaaa</span>if len(hands)==0:<br>
+	<span class='invs'>aaaaaaaa</span>while (count<5):<br>
+	<span class='invs'>aaaaaaaaaaaa</span>np.random.seed(None)<br>
+	<span class='invs'>aaaaaaaaaaaa</span>temp = deckList[np.random.randint(0, 52, 1)[0]]<br>
+	<span class='invs'>aaaaaaaaaaaa</span>temp = int(temp)<br>
+	<span class='invs'>aaaaaaaaaaaa</span>if (self.hand%temp!=0):<br>
+	<span class='invs'>aaaaaaaaaaaaaaaa</span>self.hand *= temp<br>
+	<span class='invs'>aaaaaaaaaaaaaaaa</span>count += 1<br>
+	<span class='invs'>aaaa</span>else:<br>
+	<span class='invs'>aaaaaaaa</span>while (count<5):<br>
+	<span class='invs'>aaaaaaaaaaaa</span>redraw = False<br>
+	<span class='invs'>aaaaaaaaaaaa</span>np.random.seed(None)<br>
+	<span class='invs'>aaaaaaaaaaaa</span>temp = deckList[np.random.randint(0, 52, 1)[0]]<br>
+	<span class='invs'>aaaaaaaaaaaa</span>temp = int(temp)<br>
+	<span class='invs'>aaaaaaaaaaaa</span>for number in hands:<br>
+	<span class='invs'>aaaaaaaaaaaaaaaa</span>if (number%temp==0):<br>
+	<span class='invs'>aaaaaaaaaaaaaaaaaaaa</span>redraw = True<br>
+	<span class='invs'>aaaaaaaaaaaaaaaaaaaa</span>break<br>
+	<span class='invs'>aaaaaaaaaaaa</span>if (redraw):<br>
+	<span class='invs'>aaaaaaaaaaaaaaaa</span>continue<br>
+	<span class='invs'>aaaaaaaaaaaa</span>if (self.hand%temp!=0):<br>
+	<span class='invs'>aaaaaaaaaaaaaaaa</span>self.hand *= temp<br>
+	<span class='invs'>aaaaaaaaaaaaaaaa</span>count += 1
+	</p>
+	
+	<p> The foundation of <b>Class poker</b> will rest on everything we have talked about. 
+	During initialization, we first draw five cards from the deck and so obtain a large integer.
+	Then, we would measure the strength of our hand inside the constructor. In particular, 
+	<b>Class poker</b> will contain these instance variables:</p>
+	
+	<p>self.hand : a product of five primes representing a poker hand</p>
+	<p>self.ranks : a list of 5 integers which contain ranks ($1 \leq rank \leq 13$) of the cards</p>
+	<p>self.suits : a list of 5 integers which contain suits ($suit\,=\,1,\,2,\,3,\,4$) of the cards</p>
+	<p>self.cards : a list of 5 strings to describe which cards are in the hand.</p>
+	
+	<p>The initialization of <b>Class poker</b> starts off with</p>
+	<p>def __init__(self, hands=[], handInput=None):<br>
+	<span class='invs'>aaaa</span>self.hand = 1<br>
+	<span class='invs'>aaaa</span>self.primes = [0, 0, 0, 0, 0]<br>
+	<span class='invs'>aaaa</span>self.ranks = [0, 0, 0, 0, 0]<br>
+	<span class='invs'>aaaa</span>self.suits = [0, 0, 0, 0, 0]<br>
+	<span class='invs'>aaaa</span>self.cards = ["", "", "", "", ""]<br>
+	</p>
+	<p>In the arguments, <i>hands</i> is a list of integers which represent undesired cards.
+	<i>handInput</i> is the larger integer we want to input when a poker hand is prescribed.
+	For example, 2&diams; 2&spades; 10&hearts; J&diams; J&spades; is represented by the number 
+	1440951317, so we may create a class instance by</p>
+	
+	<p> me = poker(hands=[], handInput=1440951317)</p>
+	
+	<p>Detecting if a large number is input or not, the constructor __init__() runs the code</p>
+	
+	<p>
+	<span class='invs'>aaaa</span>if (handInput!=None):<br>
+    <span class='invs'>aaaaaaaa</span>if not validInput(handInput, size=5, hands=hands):<br>
+	<span class='invs'>aaaaaaaaaaaa</span>print("invalid input")<br>
+    <span class='invs'>aaaaaaaaaaaa</span>return<br>
+    <span class='invs'>aaaaaaaa</span>self.hand = handInput<br>
+    <span class='invs'>aaaa</span>else:<br>
+    <span class='invs'>aaaaaaaa</span>self.getHand(hands)<br>
+	</p>
+	
+	<p>The large number <i>handInput</i>, or what we got by numpy.random,
+	will then be converted to primes and cards stored as instance variables. 
+	We are going to use hand2primes() and the method primes2cards(), which
+	fill up self.ranks, self.suits and self.cards. The constructor is continued by</p>
+	
+	<p> 
+	<span class='invs'>aaaa</span>self.hand2primes()<br>
+	<span class='invs'>aaaa</span>self.primes2cards()
+	</p>
+
+	<p>Under the above example of 2&diams; 2&spades; 10&hearts; J&diams; J&spades;,
+	the instance variables now become: </p>
+	<p>me.hand : 1440951317<br>
+	me.primes : [13, 19, 167, 181, 193]<br>
+	me.ranks : [2, 2, 10, 11, 11<br>
+	me.suits : [2, 4, 3, 2, 4]<br>
+	me.cards : ['2 of Diamonds', '2 of Spades', '10 of Hearts', 'J of Diamonds', 'J of Spades']</p>
+	
+	<p>We have demonstrated how <b>Class poker</b> interpretes a poker hand of five cards through 
+	primes, ranks, suits and cards. Yet, the construct is not done until we measure the strength of 
+	any poker hand in concern. In the next chapter, we will set up instance methods 
+	to calculate te strength and store our results in respective variables.</p>
+	
+	
+	<br><p class="endline">*** CHAPTER ONE ENDS ***</p>
+</body>
+</html>
