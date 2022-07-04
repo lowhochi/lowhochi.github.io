@@ -1,0 +1,158 @@
+body{ 
+	margin: 0;
+}
+
+div.mainPage { 
+	margin-left:15%; 
+	height:95vh; 
+}
+
+/*--------------------Navigation-------------------- */
+div.navigation { 
+	height:100vh; 
+	width:15%; 
+	display:inline; 
+	float:left; 
+	border-style:solid; 
+	border-width: 0 0.2vh 0 0;
+	border-color:blue; 
+	position:fixed;
+}
+	
+#myDiv { 
+	height:90vh; 
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+	
+p.navigation { 
+	font-family:courier;
+	text-align:center;
+	font-size:2vw;
+	margin:0;
+	padding:0;
+}
+
+ul.navigation { 
+	list-style-type:none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow:auto; 
+}
+
+li.navigation { 
+	text-align:center; 
+	font-size:2vw; 
+	font-family:courier;
+	margin: 2vh 0;
+}
+	
+a:active { 
+	color: blue;
+}
+
+a:visited {
+	color:
+	blue;
+}
+
+/*--------------------Main Page-------------------- */
+a.previous { 
+	font-size:1.5vw; 
+	font-family:courier;
+	font-style:italic; 
+	color:blue;
+	margin-left:1%;
+}
+
+a.next { 
+	font-size:1.5vw; 
+	font-family:courier; 
+	font-style:italic;
+	color:blue; 
+	float:right;
+	margin-right:1%;
+}
+
+h1 { 
+	font-family:arial;
+	font-size:2vw;
+	text-align:center;
+}
+	
+h2 {
+	font-family:arial;
+	font-size:2vw;
+	text-align:center;
+}	
+	
+p.general {
+	font-family:arial;
+	font-size:2vw;
+	margin:0 0 0 5%;
+}
+	
+p.meaning { 
+	font-family:arial; 
+	font-size:2vw; 
+	margin:0 0 0 5%; 
+	color:blue;
+	font-style:italic; 
+}
+
+p.example { 
+	font-family:Comic Sans MS;
+	font-size:2vw; 
+	margin:0 0 0 5%;
+}
+ 
+span.ipa{
+	font-family:arial;
+	font-size:2vw;
+}
+
+span.remark{
+	font-family:arial;
+	font-size:2vw;
+	font-style:italic;
+	color:blue;
+}
+	
+xmp {
+	font-family:arial;
+	font-size:2vw;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+table { 
+	font-family:arial; 
+	font-size:2vw; 
+	/*align:center;*/
+	padding:0 0 0 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+tr { 
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+} 
+
+td { 
+	padding: 1vh 0.2vw 1vh 0.2vw;
+	margin: 0 0 0 0;
+	text-align:center;
+}
+	
+hr { 
+	display:block; 
+	height:0;
+	width:85%;
+}
+
+span.invs{
+	visibility:hidden;
+}
+
+/*--------------------End-------------------- */

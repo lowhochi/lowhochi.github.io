@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>myVocab01</title>
+	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
+	<!--
+	<style>
+	div.mainPage { margin-left:15%; height:95vh; }
+	div.navigation { height:100vh; width:15%; display:inline; float:left; 
+					border-style:solid; border-width: 0 0.2vh 0 0; border-color:blue; 
+					position:fixed; }
+	#myDiv { height:90vh; overflow-y:auto; overflow-x:hidden;}
+	p.navigation { font-family:courier; text-align:center; font-size:2vw; margin: 0; padding: 0;}
+	ul.navigation { list-style-type:none; margin: 0px 0px 0px 0px;
+					padding: 0px 0px 0px 0px; overflow:auto; }
+	li.navigation { text-align:center; font-size:2vw; font-family:courier; margin: 2vh 0;}
+	
+	
+	a:active { color: blue; }
+	a:visited { color: blue; }
+	a.previous { font-size:1.5vw; font-family:courier; font-style:italic; 
+				 color:blue; margin-left:1%; }
+	a.next { font-size:1.5vw; font-family:courier; font-style:italic;
+			 color:blue; float:right; margin-right:1%; }
+	h1 { font-family:arial; font-size:2vw; text-align:center; }
+	p.general { font-family:arial; font-size:2vw; margin:0 0 0 5%; }
+	
+	p.meaning { font-family:arial; font-size:2vw; margin:0 0 0 5%; 
+				color:blue; font-style:italic; }
+	p.example { font-family:Comic Sans MS; font-size:2vw; margin:0 0 0 5%;}
+	span.ipa{ font-family:arial; font-size:2vw; }
+	span.remark{ font-family:arial; font-size:2vw; font-style:italic; color:blue; }
+	
+	xmp { font-family:arial; font-size:2vw; padding: 0 0 0 0; margin: 0 0 0 0; }
+	table { font-family:arial; font-size:2vw; 
+			align:center; padding:0 0 0 0;
+			margin-left:auto; margin-right:auto; }
+	tr { padding: 0 0 0 0; margin: 0 0 0 0; } 
+	td { padding: 1vh 0.2vw 1vh 0.2vw; margin: 0 0 0 0; text-align:center; }
+	
+	
+	hr { display:block; height:0; width:85%;  }
+	span.invs{ visibility:hidden; }
+	</style>
+	-->
+</head>
+<body>
+	<!--------------------Navigation Bar-------------------->
+	<div class="navigation">
+	<p class="navigation">Word Search</p>
+		<div id="myDiv"></div>
+	</div>
+	
+	<!--------------------Main Page-------------------->
+	<div class="mainPage"> 
+	
+	<a class="previous" href="">Previous</a>
+	<a class="next" href="myVocab02.html">Next</a>
+	<h1>My Vocabulary Page</h1>
+	<h2 id="wordCount"></h2>
+	
+	<table>
+	<tr>
+	<td>&#230;</td> <td>:</td> <td><xmp>&#230;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&aelig;</td> <td>:</td> <td><xmp>&aelig;</xmp></td>
+	<td><span class="invs">##</td>
+	<td>&#240;</td> <td>:</td> <td><xmp>&#240;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&eth;</td> <td>:</td> <td><xmp>&eth;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#594;</td> <td>:</td> <td><xmp>&#594;</xmp></td> 
+	</tr>
+	
+	<tr>
+	<td>&#601;</td> <td>:</td> <td><xmp>&#601;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#602;</td> <td>:</td> <td><xmp>&#602;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#604;</td> <td>:</td> <td><xmp>&#604;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#618;</td> <td>:</td> <td><xmp>&#618;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#331;</td> <td>:</td> <td><xmp>&#331;</xmp></td> 
+	<td><span class="invs">##</td>
+	</tr>
+	
+	<tr>
+	<td>&#596;</td> <td>:</td> <td><xmp>&#596;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#643;</td> <td>:</td> <td><xmp>&#643;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&theta;</td> <td>:</td> <td><xmp>&theta;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#650;</td> <td>:</td> <td><xmp>&#650;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#652;</td> <td>:</td> <td><xmp>&#652;</xmp></td> 
+	<td><span class="invs">##</td>
+	</tr>
+	
+	<tr>
+	<td>&#658;</td> <td>:</td> <td><xmp>&#658;</xmp></td> 
+	<td><span class="invs">##</td>
+	<td>&#593;</td> <td>:</td> <td><xmp>&#593;</xmp></td> 
+	<td><span class="invs">##</td>
+	
+	</tr>
+	</table>
+	
+	<br><hr><br>
+	
+	<!--------------------Vocabulary-------------------->
+	<input id="ramble" type="hidden" value="_r/aemb@l"></input>
+	<p class="general"><b>ramble</b> &nbsp; v(i)+prep &nbsp;
+	/<span class="ipa" id="show_ramble"></span>/</p>
+	<p class="meaning">to walk for pleasure, esp. in the countryside</p>
+	<p class="example">1/ I love to ramble through the fields and lanes 
+		in this part of the country.</p>
+	<p class="example">2/ Let's go rambling tomorrow.</p>
+	
+	<br><hr><br>
+	
+	<input id="wander" type="hidden" value="_w/6nd@r"></input>
+	<p class="general"><b>wander</b> &nbsp; v(i,t) &nbsp;
+	/<span class="ipa" id="show_wander"></span>/</p>
+	<p class="example">1/ We spent the morning wandering around
+		the old part of the city. </p>
+	<p class="example">2/ She was found several hours later,
+		wandering the street, lost. </p>
+	
+	<br><hr><br>
+	
+	<input id="pander" type="hidden" value="_p/aend@r"></input>
+	<p class="general"><b>pander to someone/something</b> &nbsp;
+	/<span class="ipa" id="show_pander"></span>/</p>
+	<p class="meaning">to please other people by doing or saying something<br>
+		what you think they want to do or say</p>
+	<p class="example">1/ It's not good the way she panders to
+		his every whim /w&#618;m/.</p>
+	<p class="example">2/ She accused the other candidate of pandering
+		to radical environmental groups.</p>
+	
+	<br><hr><br>
+	
+	<input id="flatter" type="hidden" value="_fl/aet@r"></input>
+	<p class="general"><b>flatter</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_flatter"></span>/</p>
+	<p class="meaning">to praise someone in order to make them feel attractive or important,<br>
+	&nbsp; &nbsp; sometimes in a way that is not sincere</p>
+	<p class="example">1/ I knew he was only flattering me 
+		because he wanted to borrow some money.</p>
+	<br>
+	<p class="meaning">flatter yourself: to believe something good about yourself 
+		although it might not be true</p>
+	<p class="example">2/ Steve flatters himself that he is an excellent speaker.</p>
+	<br>
+	<p class="meaning">be/feel flattered: to feel very pleased and proud because someone has said<br>
+		&nbsp; &nbsp; good things about you or has made you feel important</p>
+	<p class="example">3/ They were flattered to be invited to dinner by the mayor /mer/.</p>
+	<p class="example">4/ She was flattered by his attention.</p>
+	<br>
+	<p class="meaning">to make someone look more attractive than usual</p>
+	<p class="example">5/ Short skirts don't flatter me at all.</p>
+		
+	<br><hr><br> 
+	
+	<input id="dwell" type="hidden" value="dwel"></input>
+	<p class="general"><b>dwell on something</b> &nbsp; v(i) &nbsp;
+	/<span class="ipa" id="show_dwell"></span>/</p>
+	<p class="meaning">to keep thinking or talking about something,<br>
+		esp something bad or unpleasant</p>
+	<p class="example">1/ In his speech, he dwelt on the plight of the sick
+		and the hungry.</p>
+	
+	<br><hr><br>
+	
+	<input id="delve" type="hidden" value="delv"></input>
+	<p class="general"><b>delve into something</b> &nbsp; v(i) &nbsp;
+	/<span class="ipa" id="show_delve"></span>/</p>
+	<p class="general">synonym: &nbsp; investigate</p>
+	<p class="meaning">to examine something carefully in order to discover<br>
+		more information about someone/something</p>
+	<p class="example">1/ It's not always a good idea to delve too deeply
+		into someone's past.</p>
+		
+	<br><hr><br>
+	
+	<input id="mediocre" type="hidden" value="mi:di_@Uk/@r"></input>
+	<p class="general"><b>mediocre</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_mediocre"></span>/</p>
+	<p class="general">synonym: &nbsp; ordinary, &nbsp; average</p>
+	<p class="meaning">not very good</p>
+	<p class="example">1/ The film's plot is predictable and the acting 
+		is mediocre.</p>
+		
+	<br><hr><br>	
+	
+	<input id="sceptical" type="hidden" value="s_geptIk@l"></input>
+	<p class="general"><b>sceptical</b> &nbsp; (= skeptical) &nbsp;
+	/<span class="ipa" id="show_sceptical"></span>/</p>
+	<p class="example">1/ Many experts remain skeptical about (/of) his claims.</p>
+	
+	<br><hr><br>
+	
+	<input id="clutch" type="hidden" value="kl/2tS"></input>
+	<p class="general"><b>clutch</b> &nbsp; (group) &nbsp;
+	/<span class="ipa" id="show_clutch"></span>/</p>
+	<p class="meaning">a small group of people or things</p>
+	<p class="example">1/ a fresh clutch of students</p>
+		
+	<br><hr><br>
+	
+	<input id="attribute" type="hidden" value="@_trIbju:t"></input>
+	<p class="general"><b>attribute <u>something</u> to somebody/something</b> &nbsp;
+	/<span class="ipa" id="show_attribute"></span>/</p>
+	<p class="meaning">to say or think that <u>something</u> is the result or work<br>
+		of something or someone else</p>
+	<p class="example">1/ The doctors have attributed the cause
+		of the illness to an unknown virus.</p>
+	<p class="example">2/ Her success can be attributed to three main factors.</p>
+		
+	<br><hr><br>
+	
+	<input id="driving_force" type="hidden" value=""></input>
+	<p class="general"><b>driving force</b> &nbsp; (+ for/behind/in something)
+	<span class="ipa" id="show_driving_force"></span></p>
+	<p class="example">1/ The explosion in stock market wealth has been an important driving force<br>
+		behind consumer spending.</p>
+	<p class="example">2/ Trade is the driving force for sustained economic prosperity.</p>
+	<p class="example">3/ Women are definitely a driving force in the industry, she said. </p>
+	
+	<br><hr><br>
+	
+	<input id="chances" type="hidden" value=""></input>
+	<p class="general"><b>few chances vs little chance</b>
+	<span class="ipa" id="show_chances"></span></p>
+	<p class="meaning">little chance: the probability of something occuring is low</p>
+	<p class="meaning">few chances: the number of opportunities of doing something are rare.<br>
+		&nbsp; &nbsp; For example, if the project can only work during a solar eclipse,<br>
+		&nbsp; &nbsp; it would have few chances of success in any given year.</p>
+	<p class="example">1/ The project has little chance of success. (It will probably not work)</p>
+	<p class="example">2/ I have little chance of swimming one hundred meters in 105 seconds.</p>
+	<p class="example">3/ I have few chances to go to comedies because my wife does not like them.<br>
+		(but when the opportunity does arise, I will very likely succeed in seeing the movie)</p>
+	
+	<br><hr><br>
+	
+	<input id="not-only_but-also" type="hidden" value=""></input>
+	<p class="general"><b>not only ... but also ...</b>
+	<span class="ipa" id="show_not-only_but-also"></span></p>
+	<p class="example">1/ Not only was it raining all day at the wedding
+		but also the band was late.</p>
+	<p class="example">2/ Not only did she forget my birthday,
+		but she also didn't even apologise for forgetting it.</p>
+	<p class="example">3/ The car not only is economical but also feels good to drive.</p>
+	<p class="example">4/ The war caused not only destruction and death
+		but also generations of hatred between two communities.</p>
+	
+	<br><hr><br>
+	
+	<input id="monotonous" type="hidden" value="m@_n/6t@n@s"></input>
+	<p class="general"><b>monotonous</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_monotonous"></span>/</p>
+	<p class="meaning">not changing and therefore boring</p>
+	<p class="example">1/ a monotonous job</p>
+	<p class="example">2/ The music becomes monotonous after a while.</p>
+		
+	<br><hr><br>	
+		
+	<input id="wake-up-on_the-wrong_side-of-bed" type="hidden" value=""></input>
+	<p class="general"><b>wake up on the wrong side of bed</b>
+	<span class="ipa" id="show_wake-up-on_the-wrong_side-of-bed"></span> </p>	
+	<p class="meaning">to feel grumpy /'gr&#652;mpi/ and irritable;
+	to be easily annoyed</p>
+	<p class="example">1/ He can't stop shouting at me: he must have
+		woken up on the wrong side of bed this morning.</p>
+	
+	<br><hr><br>
+	
+	<input id="principle" type="hidden" value=""></input>
+	<p class="general"><b>in principle</b>
+	<span class="ipa" id="show_principle"></span></p>
+	<p class="example">1/ In principle I agree that mothers should spend
+		as much time as possible with their young children, but it isn't easy.</p>
+	<p class="example">2/ I agree with it in principle but I doubt if it will happen
+		in practice.</p>
+	
+	<br><hr><br>
+
+	<input id="keep_something_at-bay" type="hidden" value=""></input>
+	<p class="general"><b>keep something at bay</b>
+	<span class="ipa" id="show_keep_something_at-bay"></span></p>	
+	<p class="meaning">to control something and prevent it from causing you problems </p>
+	<p class="example">1/ She fought to keep her unhappiness at bay.</p>
+	<p class="example">2/ The doctors have been able to keep her illness 
+		at bay for several months.</p>
+	
+	<br><hr><br>
+
+	<input id="on-sale_for-sale" type="hidden" value=""></input>
+	<p class="general"><b>on sale, for sale</b>
+	<span class="ipa" id="show_on-sale_for-sale"></span></p>
+	<p class="meaning">for sale: If you're selling something, it is for sale;<br>
+		&nbsp; &nbsp; offered to be sold, made available to purchasers 
+		/'p&#604;rt&#643;&#601;s&#602;/.</p>
+	<p class="meaning">on sale: If you lower the price, it goes on sale;<br>
+		&nbsp; &nbsp; able to be bought at reduced prices.</p>
+	<p class="example">1/ Student A: "I need to buy a widget."<br>
+	Student B: "Go to Jumbo. They have them for sale."</p>
+	<p class="example">2/ Student A: "I bought my new skis /sgi:z/ for 900 Swiss Francs."</p>
+	
+	<br><hr><br>
+	
+	<input id="on-demand" type="hidden" value=""></input>
+	<p class="general"><b>on demand</b>
+	<span class="ipa" id="show_on-demand"></span></p>
+	<p class="general">synonym: &nbsp; upon request, on request</p>
+	<p class="meaning">at any time that someone wants or needs something</p>
+	<p class="example">1/ They believe that abortion should be available on demand.</p>
+	
+	<br><hr><br>
+	
+	<input id="warrant" type="hidden" value="_wO:r@nt"></input>
+	<p class="general"><b>warrant</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_warrant"></span>/</p>
+	<p class="meaning">to make a particular action necessary or correct,<br>
+		or to be a reason to do something</p>
+	<p class="example">1/ Obviously what she did was wrong, but I don't think it warranted 
+		such a severe punishment.</p>
+	<p class="meaning">to promise that something is true, or say that<br>
+		it is certain that something will happen</p>	
+	<p class="example">2/ Our products are warranted against defects /'di:fekts/
+		in materials and workmanship.</p>
+	<br>
+	<p class="general"><b>warrant</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_warrant*"></span>/</p>
+	<p class="example">1/ a search warrant</p>
+	<p class="example">2/ an arrest warrant</p>
+	
+	<br><hr><br>
+	
+	<input id="vessel" type="hidden" value="_ves@l"></input>
+	<p class="general"><b>vessel</b> &nbsp; n(c)&nbsp;
+	/<span class="ipa" id="show_vessel"></span>/</p>
+	<p class="meaning">a large boat or a ship</p>
+	<p class="example">1/ a cargo vessel</p>
+	<p class="example">2/ a freight /fre&#618;t/ vessel</p>
+	<p class="example">3/ a fishing vessel</p>
+	
+	<br><hr><br> 
+	
+	<input id="stereo" type="hidden" value="_sderi@U"></input>
+	<p class="general"><b>stereo</b> &nbsp; n(c,u) &nbsp;
+	/<span class="ipa" id="show_stereo"></span>/</p>
+	<p class="meaning">立體聲</p>
+	<p class="example">1/ <span class="remark">n(u)</span>: 
+		The concert will be broadcasted in stereo.</p>
+	<p class="example">2/ <span class="remark">n(c)</span>: 
+		Loud music was coming from the car stereo.</p>	
+	<p class="example">3/ <span class="remark">adj</span>: a home stereo system</p>	
+	
+	<br><hr><br> 
+	
+	<input id="cassette" type="hidden" value="k@_set"></input>
+	<p class="general"><b>cassette</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_cassette"></span>/</p>
+	<p class="example">1/ an audio cassette</p>
+	<p class="example">2/ a video cassette</p>
+	<p class="example">3/ a cassette recorder</p>
+	<p class="example">4/ a cassette player</p>
+	<p class="example">5/ a cassette tape</p>
+	<p class="example">6/ He listens to cassettes, CDs, even 
+		vinyl /'va&#618;n&#601;l/ (黑膠唱片) records</p>
+		
+	<br><hr><br> 
+	
+	<input id="compose" type="hidden" value="k@m_p@Uz"></input>
+	<p class="general"><b>be composed of</b> &nbsp;
+	/<span class="ipa" id="show_compose"></span>/</p>
+	<p class="meaning">consist of; be made of</p>
+	<p class="example">1/ Muscle is composed of different types of protein.</p>
+	<p class="example">2/ The audience was composed largely of young people.</p>
+	
+	<br><hr><br> 
+	
+	<input id="account-for" type="hidden" value=""></input>
+	<p class="general"><b>account for</b> &nbsp; (+percentage)
+	<span class="ipa" id="show_account-for"></span></p>
+	<p class="example">1/ High-tech companies account for 32% of the total value<br>
+		&nbsp; &nbsp; of the payrolls in the area.</p>
+	<p class="example">2/ People over 60 account for 50 percent
+		of the total population.</p>
+		
+	<br><hr><br> 
+	
+	<input id="comprise" type="hidden" value="k@m_praIz"></input>
+	<p class="general"><b>comprise (+ percentage)</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_comprise"></span>/</p>
+	<p class="meaning">consist of</p>
+	<p class="example">1/ Italian students comprise 60% of the class.</p>
+	<p class="example">2/ Manufacturing comprises 14% of the state's economy.</p>
+	
+	<br><hr><br> 
+	
+	<input id="make-up" type="hidden" value=""></input>
+	<p class="general"><b>make up</b>
+	<span class="ipa" id="show_make-up"></span></p>
+	<p class="example">1/ Car accident victims make up almost
+		a quarter of the hospital's patients.</p>
+	<p class="example">2/ Internet-based purchases, first offered about two years ago,<br>
+		&nbsp; &nbsp; now make up 10% of sales.</p>
+		
+	<br><hr><br> 
+	
+	<input id="take-up" type="hidden" value=""></input>
+	<p class="general"><b>take up</b>
+	<span class="ipa" id="show_take-up"></span></p>
+	<p class="meaning">to start doing a particular job or activity</p>
+	<p class="example">1/ He left a job in the City to take up farming.</p>
+	<p class="example">2/ He will take up his post as the head of the civil courts<br>
+		&nbsp; &nbsp; at the end of next month.</p>
+	<p class="meaning">to discuss something or deal with something</p>	
+	<p class="example">3/ Increasingly, more farmers are taking up the challenge of<br>
+		&nbsp; &nbsp; growing asparagus /&#601;'sber&#601;g&#601;s/ (蘆筍).</p>
+	<p class="example">4/ The school took the matter up with the police.</p>
+	<p class="meaning">	to fill an amount of space or time</p>
+	<p class="example">5/ I know how busy you must be and naturally I wouldn't want to<br>
+		&nbsp; &nbsp; take up too much of your time.</p>
+		
+	<br><hr><br> 
+	
+	<input id="different_from-one_another" type="hidden" value=""></input>
+	<p class="general"><b>different from one another</b>
+	<span class="ipa" id="show_different_from-one_another"></span></p>
+	<p class="general">remark: &nbsp; one another = each other</p>
+	<p class="example">1/ And these novels are all pretty different from one another in style,<br>
+		&nbsp; &nbsp; tone and content.</p>
+	<p class="example">2/ They are both very good and rather different from one another.</p>
+	
+	<br><hr><br> 
+	
+	<input id="vary-from_one-to_another" type="hidden" value=""></input>
+	<p class="general"><b>vary from one to another</b>
+	<span class="ipa" id="show_vary-from_one-to_another"></span></p>
+	<p class="example">see also: &nbsp; differ from one to another</p>
+	<p class="example">1/ Cities are unique and vary from one to another, and thus,<br>
+		&nbsp; &nbsp; one freight /fre&#618;t/ system may not be suitable to all urban areas.</p>
+	
+	<br><hr><br> 
+	
+	<input id="parcel" type="hidden" value="_pa:rs@l"></input>
+	<p class="general"><b>parcel</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_parcel"></span>/</p>
+	<p class="meaning">包裹, 郵包</p>
+	<p class="example">1/ a food parcel</p>
+	<p class="example">2/ There were several parcels waiting for her in the post room.</p>
+	
+	<br><hr><br> 
+	
+	<input id="up-to_the-minute" type="hidden" value=""></input>
+	<p class="general"><b>up-to_the-minute</b>
+	<span class="ipa" id="show_up-to_the-minute"></span></p>
+	<p class="meaning">containing the very last information or being the newest</p>
+	<p class="example">1/ up-to-the-minute news reports</p>
+	<p class="example">2/ up-to-the-minute design/ style/ fashion</p>
+	<p class="example">3/ The website provides up-to-the-minute information
+		on the best financial deals.</p>
+	
+	<br><hr><br> 
+	
+	<input id="adverse" type="hidden" value="_/aedv/3rs"></input>
+	<p class="general"><b>adverse effect</b> &nbsp;
+	/<span class="ipa" id="show_adverse"></span>/ or 
+	/<span class="ipa" id="show_adverse*"></span>/</p>
+	<p class="meaning">(adverse) having a negative of harmful effect on something</p>
+	<p class="example">1/ The match has been cancelled because of adverse weather conditions.</p>
+	<p class="example">2/ So far the drug is thought not to have any adverse effects.</p>
+	<p class="example">3/ Recent bad publicity has had an adverse efect on sales.</p>
+	<p class="example">4/ Body piercing is only one of the activities that have an adverse 
+		effect on health.</p> 
+	<br>
+	<p class="meaning">adverse outcome: (clinical)</p>	
+	<p class="example">5/ Patients older than 64 years were more likely to have an adverse outcome<br>
+		&nbsp; &nbsp; and prolonged hospital stay. </p>	
+		
+	<br><hr><br> 
+	
+	<input id="on-the_surface" type="hidden" value="_s/3rfIs"></input>
+	<p class="general"><b>on the surface</b> &nbsp;
+	/<span class="ipa" id="show_on-the_surface"></span>/</p>
+	<p class="meaning">superficially</p>
+	<p class="example">1/ On the surface, he seems like a very successful businessman,<br>
+	&nbsp; with his life all put together. But if you pull back the curtain a bit,<br>
+	&nbsp; you realize that his life is a mess.</p>
+	<p class="example">2/ Everything looked fine on the surface, but after we began we realized that<br>
+	&nbsp; the plan was fundamentally flawed.</p>
+	
+	<br><hr><br> 
+	
+	<input id="geographic" type="hidden" value="dZi@_gr/aefIk"></input>
+	<p class="general"><b>geographic</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_geographic"></span>/</p>
+	<p class="meaning">same as: &nbsp; geographical 
+		/<span class="remark" id="show_geographic*"></span>/</p>
+	<p class="example">1/ The company's fastest growing geographical area was Asia,<br>
+		&nbsp; which increased by 22%.</p>
+	<p class="example">2/ geographic features/conditions</p>
+	<p class="example">3/ geographic conditions of India</p>
+	<p class="example">4/ effects of geographic conditions upon social realities</p>	
+	
+	<br><hr><br> 
+	
+	<input id="sociable" type="hidden" value="_s@US@b@l"></input>
+	<p class="general"><b>sociable</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_sociable"></span>/</p>
+	<p class="general">antonym: &nbsp; unsociable /<span class="remark" id="show_sociable*"></span>/, 
+		&nbsp; antisocial</p>
+	<p class="general">synonym: &nbsp; gregarious /<span class="remark" id="show_sociable**"></span>/</p>
+	<p class="meaning">sociable people like to meet and spend time with other people</p>
+	<p class="example">1/ Rob's very sociable - he likes parties.</p>
+	<p class="example">2/ The event promises to provide a relaxed and sociable atmosphere<br>
+		&nbsp; where fans can mingle with stars.</p>
+	<p class="example">3/ I hope they won't think I'm antisocial if I don't join them in the bar.</p>
+	
+	<br><hr><br> 
+	
+	<input id="prickly" type="hidden" value="_prIk@li"></input>
+	<p class="general"><b>prickly</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_prickly"></span>/ 
+	or /<span class="ipa" id="show_prickly*"></span>/</p>
+	<p class="general">see also: &nbsp; pointy, &nbsp; prickle</p>
+	<p class="meaning">unfriendly and easily offended or annoyed</p>
+	<p class="example">1/ She was asked a couple of questions about her private life<br>
+		&nbsp; and got a little prickly.</p>
+	<p class="meaning">complicated and difficult to deal with</p>
+	<p class="example">2/ a prickly issue/situation</p>
+	
+	<p class="meaning">having sharp points that stick out, or causing a stinging feeling;<br>
+		covered with prickles /<span class="remark" id="show_prickly**"></span>/ 棘
+		&nbsp; (compare with: thorns)</p>
+	<p class="example">3/ a prickly cactus</p>
+	
+	<br><hr><br> 
+	
+	<input id="thorn" type="hidden" value="TO:rn"></input>
+	<p class="general"><b>thorn</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_thorn"></span>/</p>
+	<p class="meaning">荊棘; a thorn in your side 眼中釘</p>
+	<p class="example">1/ A relentless campaigner, he was a thorn in the government's side<br>
+		&nbsp; for a number of years.</p>
+	<p class="example">2/ She has become a thorn in the side of the government since publishing<br>
+		&nbsp; a number of reports pointing out that public cash was being mishandled.</p>
+	
+	<br><hr><br> 
+	
+	<input id="pointy" type="hidden" value="_pOInti"></input>
+	<p class="general"><b>pointy</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_pointy"></span>/</p>
+	<p class="meaning">shaped into a point; having a pointed tip or end</p>
+	<p class="example">1/ She was wearing a pointy hat.</p>
+	
+	<br><hr><br> 
+	
+	<input id="beyond_behind" type="hidden" value=""></input>
+	<p class="general"><b>beyond vs behind</b> &nbsp; &nbsp;
+	<span class="ipa" id="show_beyond_behind"></span></p>
+	<p class="meaning">distance: behind is the more general word. 
+		Beyond has the feeling of long distance</p>
+	<p class="example">1/ behind your back</p>
+	<p class="example">2/ behind the house</p>
+	<p class="example">3/ The town is beyond the mountain.</p>
+	<br>
+	<p class="meaning">behind</p>
+	<p class="example">4/ They'd been forced to leave behind their businesses and possessions.</p>
+	<p class="example">5/ The bus was behind schedule.</p>
+	<p class="example">6/ Now that the divorce is behind us, we can move on. (= the divorce is finished)</p>
+	<p class="example">7/ the man behind the modernization of the organization</p>
+	<p class="example">8/ The country was behind the president. </p>
+	<br>
+	<p class="meaning">beyond</p>
+	<p class="example">9/ Few children remain in school beyond the age of 16.</p>
+	<p class="example">10/ The situation has changed beyond recognition.</p>
+	<p class="example">11/ How he managed to find us is beyond me. (= I cannot understand it)</p>
+	<p class="example">12/ Her commitment to her profession is beyond doubt. (= no one can doubt it)</p>
+	<p class="example">13/ The mechanic announced that the engine was beyond repair.</p>
+	<br>
+	<p class="meaning">examples from VOA English</p>
+	<p class="example">14/ Mail deliveries usually fall behind around the winter holidays,<br>
+		&nbsp; but they improve beyond the new year.</p>
+	<p class="example">15/ People need to know math through their school years and beyond.</p>
+	<p class="example">16/ During the pandemic, many people got behind on their rent.<br> 
+		&nbsp; (= the rent payments were arriving late)</p>
+	<p class="example">17/ <span class="remark">(get behind with)</span> She got behind with her mortgage,<br>
+		&nbsp; and the house was repossessed.</p>
+		
+	<br><hr><br> 
+	
+	<input id="pass" type="hidden" value="p/aes"></input>
+	<p class="general"><b>pass</b> &nbsp; v &nbsp;
+	/<span class="ipa" id="show_pass"></span>/ or /<span class="ipa" id="show_pass*"></span>/</p>
+	<p class="meaning">see also: &nbsp; overtake, surpass, go past, pass through</p>
+	<p class="example">1/ He took a step backwards to allow her to pass.</p>
+	<p class="example">2/ After a strong start, she was passed by several runners on the final lap <br>
+		&nbsp; and finished ninth.</p>
+		
+	<p class="example">3/ I passed him on the stairs this morning.</p>	
+	<p class="example">4/ I was just passing by her house, so I thought I'd call in and see her.</p>
+	<p class="example">5/ Did you tell me about that? Sorry, it completely passed me by.<br>
+		&nbsp; (= I didn't notice it)</p>
+	
+	<br><hr><br> 
+	
+	<input id="overtake" type="hidden" value="@Uv@r_teIk"></input>
+	<p class="general"><b>overtake</b> &nbsp; v &nbsp;
+	/<span class="ipa" id="show_overtake"></span>/</p>
+	<p class="meaning">v(t) to go past something by being a greater amount or degree</p>
+	<p class="example">1/ Our US sales have now overtaken our sales in Europe.</p>
+	<p class="meaning">v(i,t) to come from behind another vehicle or a person and move<br>
+		&nbsp; in front of them; pass</p>
+	<p class="example">2/ Always check your rear view mirror before you overtake (another car).</p>
+	
+	<br><hr><br> 
+	
+	<input id="surpass" type="hidden" value="s@r_p/aes"></input>
+	<p class="general"><b>surpass</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_surpass"></span>/</p>
+	<p class="meaning">to do or be better than</p>
+	<p class="example">1/ His time for the 100 metres surpassed the previous world record 
+		by one hundredth of a second.</p>
+	<p class="example">2/ Our team's achievements surpass those of teams in earlier years.</p>
+	<br>
+	<p class="meaning">remark: surpass is to go beyond, esp in a metaphoric or technical manner; to exceed.<br>
+		&nbsp; Pass is to move or be moved from one place to another. </p>
+	
+	<br><hr><br> 
+	
+	
+	<!--------------------END-------------------->
+	<!-- DEMO:
+	<input id="" type="hidden" value=""></input>
+	<p class="general"><b></b> &nbsp; &nbsp;
+	/<span class="ipa" id=""></span>/</p>
+	<p class="meaning"></p>
+	<p class="example">1/</p>
+	<br><hr><br> 
+	-->
+	</div>
+</body>
+<script>
+	const vocabs = ["ramble", "wander", "pander", "flatter", "dwell", "delve", "mediocre",
+					"sceptical", "clutch", "attribute", "driving_force", "chances",
+					"not-only_but-also", "monotonous", "wake-up-on_the-wrong_side-of-bed",
+					"principle", "keep_something_at-bay", "on-sale_for-sale", "on-demand", 
+					"warrant", "vessel", "stereo", "cassette", "compose", "account-for",
+					"comprise", "make-up", "take-up", "different_from-one_another",
+					"vary-from_one-to_another", "parcel", "up-to_the-minute", "adverse",
+					"on-the_surface", "geographic", "sociable", "prickly", "thorn", "pointy",
+					"beyond_behind", "pass", "overtake", "surpass"];
+</script>
+
+<script type="text/javascript" src="myVocabJS.js"></script>
+
+<script>
+	var wordCount = vocabs.length;
+	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
+	
+	//display ipa* tags
+	var ipaAdverse = "@d_v/3rs";
+	var ipaGeographic = "dZi@_gr/aefIk@l";
+	var ipaSociable = "/2n_s@US@b@l";
+	var ipaSociable2 = "grI_geri@s";
+	var ipaPrickly = "_prIkli";
+	var ipaPrickly2 = "_prIk@lz";
+	var ipaPass = "pa:s";
+	for (let j=0; j<shorthands.length; j++){
+		ipaAdverse = ipaAdverse.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaGeographic = ipaGeographic.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaSociable = ipaSociable.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaSociable2 = ipaSociable2.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaPrickly = ipaPrickly.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaPrickly2 = ipaPrickly2.replaceAll(shorthands[j], htmlCodes[j]);
+	}			
+	document.getElementById("show_warrant*").innerHTML = document.getElementById("warrant").value;
+	document.getElementById("show_adverse*").innerHTML = ipaAdverse;
+	document.getElementById("show_geographic*").innerHTML = ipaGeographic;
+	document.getElementById("show_sociable*").innerHTML = ipaSociable;
+	document.getElementById("show_sociable**").innerHTML = ipaSociable2;
+	document.getElementById("show_prickly*").innerHTML = ipaPrickly;
+	document.getElementById("show_prickly**").innerHTML = ipaPrickly2;
+	document.getElementById("show_pass*").innerHTML = ipaPass;
+</script>
+
+</html>
