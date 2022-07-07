@@ -384,21 +384,26 @@
 	<br><hr><br> 
 	
 	<input id="account-for" type="hidden" value=""></input>
-	<p class="general"><b>account for</b> &nbsp; (+percentage)
+	<p class="general"><b>account for (+ percentage)</b> &nbsp; 
 	<span class="ipa" id="show_account-for"></span></p>
 	<p class="example">1/ High-tech companies account for 32% of the total value<br>
 		&nbsp; &nbsp; of the payrolls in the area.</p>
 	<p class="example">2/ People over 60 account for 50 percent
 		of the total population.</p>
+	<br>
+	<p class="meaning">consist of: &nbsp; be made of<br>
+	account for: &nbsp; form the total of something</p>
 		
 	<br><hr><br> 
 	
 	<input id="comprise" type="hidden" value="k@m_praIz"></input>
 	<p class="general"><b>comprise (+ percentage)</b> &nbsp; v(t) &nbsp;
 	/<span class="ipa" id="show_comprise"></span>/</p>
-	<p class="meaning">consist of</p>
+	<p class="meaning">account for</p>
 	<p class="example">1/ Italian students comprise 60% of the class.</p>
 	<p class="example">2/ Manufacturing comprises 14% of the state's economy.</p>
+	<p class="meaning">consist of</p>
+	<p class="example">3/ The course comprises a class book, a practice book, and a CD.</p>
 	
 	<br><hr><br> 
 	
@@ -476,10 +481,10 @@
 	
 	<br><hr><br> 
 	
-	<input id="adverse" type="hidden" value="_/aedv/3rs"></input>
+	<input id="adverse_effect" type="hidden" value="_/aedv/3rs"></input>
 	<p class="general"><b>adverse effect</b> &nbsp;
-	/<span class="ipa" id="show_adverse"></span>/ or 
-	/<span class="ipa" id="show_adverse*"></span>/</p>
+	/<span class="ipa" id="show_adverse_effect"></span>/ or 
+	/<span class="ipa" id="show_adverse_effect*"></span>/</p>
 	<p class="meaning">(adverse) having a negative of harmful effect on something</p>
 	<p class="example">1/ The match has been cancelled because of adverse weather conditions.</p>
 	<p class="example">2/ So far the drug is thought not to have any adverse effects.</p>
@@ -642,6 +647,39 @@
 	
 	<br><hr><br> 
 	
+	<input id="rift" type="hidden" value="rIft"></input>
+	<p class="general"><b>rift</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_rift"></span>/</p>
+	<p class="general">see also: &nbsp; a gorge /g&#596;:rd&#658;/, a valley</p>
+	<p class="meaning">a large crack in the ground or in rock</p>
+	<p class="example">1/ The stream had cut a deep rift in the rock.</p>
+	<p class="meaning">a crack, split, or break in something.</p>
+	<p class="example">2/ The wind had torn open a rift in the clouds.</p>
+	<p class="meaning">a serious break in friendly relations.</p>
+	<p class="example">3/ the rift between the two branches of the legal profession</p>
+	
+	<br><hr><br> 
+	
+	<input id="confront" type="hidden" value="k@n_fr/2nt"></input>
+	<p class="general"><b>confront</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_confront"></span>/</p>
+	<p class="meaning">to face, meet or deal with a difficult situation or person.</p>
+	<p class="example">1/ It's an issue we'll have to confront at some point, no matter how unpleasant it is.</p>
+	<p class="example">2/ I thought I would remain calm, but when I was confronted with/by<bt>
+		&nbsp; the TV camera, I became very nervous. </p>
+		
+	<br><hr><br> 
+	
+	<input id="siren" type="hidden" value="_saIr@n"></input>
+	<p class="general"><b>siren</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_siren"></span>/</p>
+	<p class="meaning">警鐘</p>
+	<p class="example">1/ fire sirens; police sirens</p>
+	<p class="example">2/ "When bells ring and sirens sound"</p>
+	<p class="example">3/ When the air raid siren went off people ran to their shelters.</p>
+	<p class="example">4/ Fire sirens: how do they sound the alert in an emergency?</p>
+	<br><hr><br> 
+	
 	
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -661,9 +699,10 @@
 					"principle", "keep_something_at-bay", "on-sale_for-sale", "on-demand", 
 					"warrant", "vessel", "stereo", "cassette", "compose", "account-for",
 					"comprise", "make-up", "take-up", "different_from-one_another",
-					"vary-from_one-to_another", "parcel", "up-to_the-minute", "adverse",
+					"vary-from_one-to_another", "parcel", "up-to_the-minute", "adverse_effect",
 					"on-the_surface", "geographic", "sociable", "prickly", "thorn", "pointy",
-					"beyond_behind", "pass", "overtake", "surpass"];
+					"beyond_behind", "pass", "overtake", "surpass", "rift", "confront",
+					"siren"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -689,7 +728,7 @@
 		ipaPrickly2 = ipaPrickly2.replaceAll(shorthands[j], htmlCodes[j]);
 	}			
 	document.getElementById("show_warrant*").innerHTML = document.getElementById("warrant").value;
-	document.getElementById("show_adverse*").innerHTML = ipaAdverse;
+	document.getElementById("show_adverse_effect*").innerHTML = ipaAdverse;
 	document.getElementById("show_geographic*").innerHTML = ipaGeographic;
 	document.getElementById("show_sociable*").innerHTML = ipaSociable;
 	document.getElementById("show_sociable**").innerHTML = ipaSociable2;
