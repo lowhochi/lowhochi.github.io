@@ -678,9 +678,49 @@
 	<p class="example">2/ "When bells ring and sirens sound"</p>
 	<p class="example">3/ When the air raid siren went off people ran to their shelters.</p>
 	<p class="example">4/ Fire sirens: how do they sound the alert in an emergency?</p>
+	
 	<br><hr><br> 
 	
+	<input id="engine" type="hidden" value="_endZ@n"></input>
+	<p class="general"><b>engine</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_engine"></span>/</p>
+	<p class="meaning">engineer: &nbsp; /<span class="ipa" id="show_engine*"></span>/ <br>
+		engineering: &nbsp; /<span class="ipa" id="show_engine**"></span>/ </p>
+	<p class="example">1/ a fire engine/ a fire truck 消防車</p>
 	
+	<br><hr><br> 
+	
+	<input id="outlet" type="hidden" value="_aUtlet"></input>
+	<p class="general"><b>outlet</b> &nbsp; n(c)&nbsp;
+	/<span class="ipa" id="show_outlet"></span>/</p>
+	<p class="meaning">a market for a commodity 特賣場</p>
+	<p class="example">1/"The eight best USA outlet shopping malls" (see also: outlet malls)</p>
+	<p class="example">2/ a fast-food outlet</p>
+	<p class="example">3/ The company has more than 1200 retail outlets nationwide.</p>
+	<p class="meaning">(electricity) an electrical outlet 電源插座</p>
+	<p class="example">4/ a wall outlet</p>
+	
+	<br><hr><br> 
+	
+	<input id="electricity" type="hidden" value="Ilek_trIs@ti"></input>
+	<p class="general"><b>electricity</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_electricity"></span>/</p>
+	<p class="meaning">Mains electricity is a general-purpose alternating-current(AC) electric power supply.</p>
+	<br>
+	<p class="meaning">plug, socket, outlet</p>
+	<p class="example">1/ (AC power) plugs and sockets</p>
+	<p class="example">2/ an electrical outlet</p>
+	<p class="meaning">a power cord 電源線</p>
+	<p class="example">3/ (also known as) a power cable/ a line cord/ an extension cord</p>
+	<p class="meaning">a power strip 電源板</p>
+	<p class="example">4/ A power strip with built-in surge protector and multiple outlets</p>
+	<p class="meaning">an (AC) adaptor 轉換插頭</p>
+	<p class="example">5/ (also known as) a power adaptor/ a plug adaptor</p> 
+	<p class="example">6/ "The worldwide mini travel adapter"</p> 
+	<p class="example">7/ "Multiway adpators, safe or not?"</p>
+
+	<br><hr><br> 
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -702,7 +742,7 @@
 					"vary-from_one-to_another", "parcel", "up-to_the-minute", "adverse_effect",
 					"on-the_surface", "geographic", "sociable", "prickly", "thorn", "pointy",
 					"beyond_behind", "pass", "overtake", "surpass", "rift", "confront",
-					"siren"];
+					"siren", "engine", "outlet", "electricity"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -719,6 +759,10 @@
 	var ipaPrickly = "_prIkli";
 	var ipaPrickly2 = "_prIk@lz";
 	var ipaPass = "pa:s";
+	var ipaEngine = "endZI_nI@r";
+	var ipaEngine2 = "endZI_nI@rIN";
+	
+	
 	for (let j=0; j<shorthands.length; j++){
 		ipaAdverse = ipaAdverse.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaGeographic = ipaGeographic.replaceAll(shorthands[j], htmlCodes[j]);
@@ -726,6 +770,8 @@
 		ipaSociable2 = ipaSociable2.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaPrickly = ipaPrickly.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaPrickly2 = ipaPrickly2.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaEngine = ipaEngine.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaEngine2 = ipaEngine2.replaceAll(shorthands[j], htmlCodes[j]);
 	}			
 	document.getElementById("show_warrant*").innerHTML = document.getElementById("warrant").value;
 	document.getElementById("show_adverse_effect*").innerHTML = ipaAdverse;
@@ -735,6 +781,8 @@
 	document.getElementById("show_prickly*").innerHTML = ipaPrickly;
 	document.getElementById("show_prickly**").innerHTML = ipaPrickly2;
 	document.getElementById("show_pass*").innerHTML = ipaPass;
+	document.getElementById("show_engine*").innerHTML = ipaEngine;
+	document.getElementById("show_engine**").innerHTML = ipaEngine2;
 </script>
 
 </html>
