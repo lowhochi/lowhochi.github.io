@@ -1136,6 +1136,63 @@
 	
 	<br><hr><br>
 
+	<input id="advantage" type="hidden" value="@d_va:ntIdZ"></input>
+	<p class="general"><b>advantage</b> &nbsp; n(c,u)&nbsp;
+	/<span class="ipa" id="show_advantage"></span>/ or 
+	/<span class="ipa" id="show_advantage*"></span>/</p>
+	<p class="meaning">see also: &nbsp; advantage/disadvantage, pro/con, strength/weakness</p>
+	<p class="example">1/ The advantage of booking tickets in advance is that you get better seats.</p>
+	<p class="example">2/ What are the advantages and disadvantages of outsourcing?</p>
+	<p class="example">3/ For a goalkeeper, it's a great advantage to have big hands.</p>
+	<p class="example">4/ His height and reach give him a big advantage over other boxers.</p>
+	<p class="example">5/ Qualifications are important but practical experience is always an advantage.</p>
+	<p class="example">6/ Test scores show no advantage for students in the new schools.</p>
+	<p class="example">7/ There are advantages for both employers and employees in flexible working hours.</p>
+	<p class="example">8/ Online advertising can have some major advantages.</p>
+	<p class="example">9/ There can be distinct advantages in having a dominant individual presence<br>
+		&nbsp; in the boardroom.</p>
+	<br>
+	<p class="meaning">take advantage of someone/something: make good use of, exploit</p>
+	<p class="example">10/ I thought I'd take advantage of the sports facilities while I'm here.</p>
+	<p class="example">11/ I think she takes advantage of his good nature.</p>
+	<br>
+	<p class="meaning">(put somebody) at an advantage</p>
+	<p class="example">12/ With the dollar weakening, US exporters will be at an advantage.</p>
+	<p class="example">13/ Your experience as a legal secretary undoubtedly puts you at an advantage<br>
+		&nbsp; in terms of legal knowledge.</p>
+	<p class="example">14/ Does it put me at an advantage if I work harder than everyone else?</p>
+	<br>
+	<p class="meaning">to someone's advantage</p>
+	<p class="example">15/ You look beautiful. That color really suits you to advantage.</p>
+	<p class="example">16/ You would be spending your time to better advantage if you did<br>
+		&nbsp; what I suggested.</p>
+	<p class="meaning">be/work to someone's advantage</p>
+	<p class="example">17/ It would be to your advantage to argree his demands.</p>
+	<p class="example">18/ The bank thought e-commerce could work to its advantage because these<br>
+		&nbsp; markets tended to be highly protected by regulation. </p>
+	<p class="example">19/ I know you're disappointed about the delay, but I think this can<br>
+		&nbsp; actually work to our advantage.</p>
+	<p class="meaning">use/turn something to someone's (own) advantage</p>
+	<p class="example">20/ She had some important contacts in the government, which she used<br>
+		&nbsp; to her advantage.</p>
+	
+	<p class="example">21/ They turned the buyout /'ba&#618;.a&#650;t/ deal to their advantage<br>
+		&nbsp; by working in a clause whether they would receive pro rata compensation<br>
+		&nbsp; for earnings from merchandising.</p>
+		
+	<br><hr><br> 
+
+	<input id="advantageous" type="hidden" value=",/aedv@n_teIdZ@s"></input>
+	<p class="general"><b>advantageous</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_advantageous"></span>/</p>
+	<p class="meaning">see also: &nbsp; favourable</p>
+	<p class="example">1/ The lower tax rate is particularly advantageous to poorer families.</p>
+	<p class="example">2/ How can we make economic growth more advantageous for small communities?</p>
+	<p class="example">3/ Pre-selling is advantageous to both customers and stores.</p>
+	<p class="example">4/ Unfortunately, we are no longer in the competitively advantageous<br>
+		&nbsp; position we were in five years ago.</p>
+	
+	<br><hr><br> 
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -1155,7 +1212,7 @@
 					"leanr-of_learn-about", "learn_by-heart", "beware", "hear-of_hear-about",
 					"study", "study-about", "inform", "prototype", "protocol", "course_of-action",
 					"frustrate", "frustrated", "escape", "trouble", "troubling", "troublesome",
-					"disappoint", "disappointed"];
+					"disappoint", "disappointed", "advantage", "advantageous"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1168,11 +1225,13 @@
 	var ipaAdvocate = "_/aedv@k@t";
 	var ipaStagnate = "sd/aeg_neIt";
 	var ipaFrustrate = "_fr/2sdreIt";
+	var ipaAdvantage = "@d_v/aentIdZ";
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaAdvocate = ipaAdvocate.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaStagnate = ipaStagnate.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaFrustrate = ipaFrustrate.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaAdvantage = ipaAdvantage.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 	
 	document.getElementById("show_alert*").innerHTML = document.getElementById("alert").value;
@@ -1183,6 +1242,7 @@
 	document.getElementById("show_frustrate*").innerHTML = ipaFrustrate;
 	document.getElementById("show_escape*").innerHTML = document.getElementById("escape").value;
 	document.getElementById("show_trouble*").innerHTML = document.getElementById("trouble").value;
+	document.getElementById("show_advantage*").innerHTML = ipaAdvantage;
 </script>
 
 </html>
