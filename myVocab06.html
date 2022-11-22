@@ -243,6 +243,72 @@
 	
 	<br><hr><br> 
 	
+	<input id="sentence" type="hidden" value="_sent@ns"></input>
+	<p class="general"><b>sentence</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_sentence"></span>/</p>
+	<p class="meaning">decide and say officially what a punishment will be</p>
+	<p class="example">1/ He was sentenced to life imprisonment.</p>
+	<p class="example">2/ He was sentenced to three years in jail and fined $40,000.</p>
+	<p class="example">3/ The judge sentenced the defendant to life in prison.</p>
+	<p class="example">4/ He was convicted and sentenced to a four-year jail term.</p>
+	<p class="example">4/ The court sentenced him to serve nine months for the assault.</p>
+	<p class="example">5/ She was sentenced to do 30 hours of community service.</p>
+	<p class="example">6/ The same judge had previously sentenced him for burglary.</p>
+	<p class="example">7/ "Any prisoner sentenced to death in Hong Kong has the right to petition<br>
+		&nbsp; Her Majesty the Queen for clemency /'klem.&#601;n.si/."</p>
+	<br>
+	<p class="general"><b>sentence</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_sentence*"></span>/</p>
+	<p class="meaning">(punishment)</p>
+	<p class="example">1/ He got a heavy(/light) sentence.</p>
+	<p class="example">2/ The offence carries a jail(/a prison/a life sentence/a five-year sentence).</p>
+	<p class="example">3/ He was given a non-custodial /k&#652;s'd&#601;&#650;di&#601;l/ sentence.</p>
+	<p class="example">4/ He was given a suspended sentence.</p>
+	<p class="example">5/ She served a three-year prison sentence.</p>
+	<p class="meaning">(of a judge) pronounce sentence</p>
+	<p class="example">6/ The judge will pronounce sentence on the defendant this afternoon.</p>
+	
+	<br><hr><br> 
+	
+	<input id="parole" type="hidden" value="p@_r@Ul"></input>
+	<p class="general"><b>parole</b> &nbsp; n(u)&nbsp;
+	/<span class="ipa" id="show_parole"></span>/</p>
+	<p class="meaning">the release of a prisoner before that person’s period in prison is finished,<br>
+		&nbsp; with the agreement that the person will behave well:</p>
+	<p class="example">1/ He was released on parole.</p>
+	<p class="example">2/ He was sentenced to life without parole.</p>
+	<p class="example">3/ She hopes to be eligible for parole in three years.</p>
+	<br>
+	<p class="meaning">v(t) parole</p>
+	<p class="example">4/ He was paroled after serving ten years.</p>
+	<p class="example">5/ He was paroled from prison last year after serving about four years.</p>
+	<p class="example">6/ I am not happy with the possibility he could be paroled in 20 years.</p>
+	
+	<br><hr><br> 
+	
+	<input id="bail" type="hidden" value="beIl"></input>
+	<p class="general"><b>bail</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_bail"></span>/</p>
+	<p class="meaning">a sum of money given to a law court by a person accused of a crime <br>
+		&nbsp; so that the person can be released until the trial, at which time<br>
+		&nbsp; the money will be returned</p>
+	<p class="example">1/ He was released(/remanded) on bail of $100,000.</p>
+	<p class="example">2/ The suspect is now out on bail.</p>
+	<p class="example">3/ Because of a previous conviction, the judge refused to grant bail.</p>
+	<p class="example">4/ Her parents have agreed to put up(/stand) bail for her.</p>
+	<p class="example">5/ He was released on bail of $100,000.</p>
+	<p class="example">6/ The Court of Appeals let him remain free on bail during the appeal<br>
+		&nbsp; of his conviction.</p>
+	<p class="example">7/ "If you have prior domestic charges or if the facts of the offense<br>
+		&nbsp; are very serious, the prosecutor can request that you are held without bail."</p>
+	<br>
+	<p class="meaning">v(t) bail</p>
+	<p class="example">8/ Her lawyer bailed her out of the jail.</p>
+	<p class="example">9/ She was yesterday bailed for three weeks on drink-driving offences.</p>
+	<p class="example">10/ He was bailed to appear at the Magistrates' Court next month.</p>
+	<p class="example">11/ She was bailed after being charged with fraud.</p>
+	
+	<br><hr><br> 
 	
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -256,7 +322,8 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["threshold", "restore", "hallmark", "landmark", "waste", "benchmark"];
+	const vocabs = ["threshold", "restore", "hallmark", "landmark", "waste", "benchmark", "sentence",
+					"parole", "bail"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -269,6 +336,7 @@
 	document.getElementById("show_waste*").innerHTML = document.getElementById("waste").value;
 	document.getElementById("show_benchmark*").innerHTML = document.getElementById("benchmark").value;
 	document.getElementById("show_benchmark**").innerHTML = document.getElementById("benchmark").value;
+	document.getElementById("show_sentence*").innerHTML = document.getElementById("sentence").value;
 </script>
 
 </html>
