@@ -37,7 +37,22 @@
 	
 	<br><hr><br> 	
 		
-		
+	<input id="blink" type="hidden" value="blINk"></input>
+	<p class="general"><b>blink</b> &nbsp; v(i,t) &nbsp;
+	/<span class="ipa" id="show_blink"></span>/</p>
+	<p class="meaning">an eye blinks</p>
+	<p class="example">1/ You've got something in your eye - try blinking a few times.</p>
+	<p class="example">2/ He stared at us without blinking.</p>
+	<p class="example">3/ Now blink your eyes to say yes.</p>
+	<br><br>
+	
+	<p class="general"><b>blink</b> &nbsp; n(c, singular) &nbsp;
+	/<span class="ipa" id="show_blink*"></span>/</p>
+	<p class="meaning">in the blink of an eye: extremely quickly</p>
+	<p class="example">1/ In the blink of an eye, he was gone.</p>
+	<p class="example">2/ It happened so fast, and the resolve was in the blink of an eye.</p>
+	
+	<br><hr><br> 	
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -51,7 +66,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["crossroads"];
+	const vocabs = ["crossroads", "blink"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -60,6 +75,7 @@
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	//display ipa* tags
+	document.getElementById("show_blink*").innerHTML = document.getElementById("blink").value;
 	
 </script>
 
