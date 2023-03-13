@@ -54,7 +54,7 @@
 	
 	<br><hr><br> 	
 	
-	<input id="underway" type="hidden" value="''/2nd@r_weIy"></input>
+	<input id="underway" type="hidden" value="__/2nd@r_weIy"></input>
 	<p class="general"><b>underway</b> &nbsp; adj(after verb)&nbsp;
 	/<span class="ipa" id="show_underway"></span>/</p>
 	<p class="meaning">(also: under way) if something is underway, it is happening now</p>
@@ -64,6 +64,22 @@
 	<p class="meaning">get underway: begin</p>
 	<p class="example">4/ The film festival gets underway on 11 July .</p>
 	<p class="example">5/ It’s time to get this project underway.</p>
+	<p class="meaning">remark: ongoing</p>
+
+	<br><hr><br> 
+	
+	<input id="ongoing" type="hidden" value="_/6n__g@U.IN"></input>
+	<p class="general"><b>ongoing</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_ongoing"></span>/ 
+	or /<span class="ipa" id="show_ongoing*"></span>/ </p>
+	<p class="meaning">continuing to exist or develop, or happening at the present moment</p>
+	<p class="example">1/ an ongoing investigation(/project/process)</p>
+	<p class="example">2/ an ongoing debate(/discussion)</p>
+	<p class="example">2/ No agreement has yet been reached and the negotiations are still ongoing.</p>
+	<p class="example">3/ There are a number of ongoing difficulties with the project.</p>
+	<p class="example">4/ There is an ongoing investigation into the cause of the crash.</p>
+	<p class="example">5/ Discussions between local residents and the developers of the new<br>
+		&nbsp; shopping centre are ongoing.</p>
 	
 	<br><hr><br> 
 	
@@ -79,7 +95,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["crossroads", "blink", "underway"];
+	const vocabs = ["crossroads", "blink", "underway", "ongoing"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -87,9 +103,15 @@
 <script>
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
+	
+	var ipaOngoing = "__/6n_g@U.IN";
+	for (let j=0; j<shorthands.length; j++){
+		ipaOngoing = ipaOngoing.replaceAll(shorthands[j], htmlCodes[j]);
+	}	
+	
 	//display ipa* tags
 	document.getElementById("show_blink*").innerHTML = document.getElementById("blink").value;
-	
+	document.getElementById("show_Ongoing*").innerHTML = ipaOngoing;
 </script>
 
 </html>
