@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>myVocab Search</title>
+	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
+</head>
+
+<body>
+	<a class="previous" href="">Previous</a>
+	<a class="next" href="myVocab01.html">Next</a>
+	<h1>Search Page</h1>
+	<h2 id="wordCount"></h2>
+	
+	<div class="mainPage"> 
+		<div class="leftPage" id="myList"></div>
+		<div class="rightPage" id="myLink"></div>
+	
+	</div>
+	
+</body>
+<!------------------------------SCRIPT------------------------------>
+<script>
+	var wordCount;
+	const vocabsArray = [];
+	var sTotal = "";
+	var linkTotal = "";
+	var temp;
+	
+	function replaceIPA(myString){
+		myString = myString.replaceAll("_", " ");
+		myString = myString.replaceAll("-", " ");
+		return myString;
+	}
+
+	const vocabs01 = ["ramble", "wander", "pander", "flatter", "dwell", "delve", "mediocre",
+					"sceptical", "clutch", "attribute", "driving_force", "chances",
+					"not-only_but-also", "monotonous", "wake-up-on_the-wrong_side-of-bed",
+					"principle", "keep_something_at-bay", "on-sale_for-sale", "on-demand", 
+					"warrant", "vessel", "stereo", "cassette", "compose", "account-for",
+					"comprise", "make-up", "take-up", "different_from-one_another",
+					"vary-from_one-to_another", "parcel", "up-to_the-minute", "adverse_effect",
+					"on-the_surface", "geographic", "sociable", "prickly", "thorn", "pointy",
+					"beyond_behind", "pass", "overtake", "surpass", "rift", "confront",
+					"siren", "engine", "outlet", "electricity"];//04 Mar 2023
+					
+	const vocabs02 = ["compare", "albeit", "alibi", "hold-up", "resilient", "asthma",
+				    "rant", "chrysanth", "at-your_service", "rocky", "rough", "push-back",
+					"strip", "deprive", "setback", "set-back", "somewhat", "somehow", "overrun", 
+					"go-past", "pass-through", "compliment", "appreciate", "appreciation",
+					"provoke", "invoke", "evoke", "adopt", "habit", "silhouette", "ready",
+					"at-hand", "place", "ravage", "bygone", "let-go-of", "en-route", "case-by-case",
+					"forgo", "of-which", "put-out", "the-finer_things_in-life", "beige",
+					"landslide", "landscape", "scenery", "cityscape", "skyline", "concern",
+					"concerned", "stab"];//04 Mar 2023			
+					
+	const vocabs03 = ["hold-back", "trip", "tumble", "stumble", "slip", "slip-away", "back-to-back", "abruptly", 
+					"abroad", "aboard", "board", "airline_meal", "per-se", "rooted", "ingrain",
+					"plant", "reserve", "interfere", "intervene", "disrupt", "disturb",
+					"interrupt", "glamorous", "glamour", "vivid", "come_across", "come_through",
+					"the_cutting_edge", "mitigate", "ease", "weaken", "lessen", "preclude",
+					"foundation", "hedge_your-bets", "as-far-as_it-goes", "trait", "custom", 
+					"customize", "redeem", "redeemable", "get-hold-of", "take-your_life-in_your-hands",
+					"take_something_into-your_own-hands", "bring-out", "bring-forth", "bring_forward",
+					"ahead-of", "get-ahead_of-yourself", "pursue", "chase", "go-after"];//04 Mar 2023				
+	
+	const vocabs04 = ["crush", "smash", "crash", "smack", "squash", "crack", "slap", "slam",
+					"throw", "throw-away", "toss", "toss-away", "contend", "contest", "uncontested", 
+					"initiative", "proactive", "enterprising", "intoxicate", "undertake", "handful", 
+					"effort", "effect", "relation", "relationship", "get-through", "go-through", "get-over",
+					"engage", "engaged", "alma-mater", "carry-out", "hang", "put-on", "worth", 
+					"worthy", "worthwhile", "aid", "take-to", "pick-up"];//04 Mar 2023
+					
+	const vocabs05 = ["volatile", "alert", "aware", "awareness", "the-like_of-which",
+					"advocate", "devotee", "undermine", "chip_away-at", "level-off",
+					"stagnate", "stagnant", "flatten", "holiday", "except", "besides",
+					"apart-from", "know-of_know-about", "hesitate", "hesitant", 
+					"learn-of_learn-about", "learn_by-heart", "beware", "hear-of_hear-about",
+					"study", "study-about", "inform", "prototype", "protocol", "course_of-action",
+					"frustrate", "frustrated", "escape", "trouble", "troubling", "troublesome",
+					"disappoint", "disappointed", "advantage", "advantageous"];//04 Mar 2023				
+					
+	const vocabs06 = ["threshold", "restore", "hallmark", "landmark", "waste", "benchmark", "sentence",
+					"parole", "bail", "influence", "wholesome", "healthy", "wear-down", "wear-out",
+					"worn-out", "wear-off", "brink", "cache", "confident", "exchange", "parallel",
+					"made-of_made-from", "cultivated", "nag", "chivvy", "better-off", "reminiscent", 
+					"brace", "embrace", "huddle", "carve", "engrave", "get-along_get-on", "reward", 
+					"all-round", "forget", "remember", "think-of_think-about", "rail", "railing",
+					"railway"];//04 Mar 2023
+	
+	const vocabs07 = ["crossroads", "blink", "underway", "ongoing"]; //04 Mar 2023
+	
+
+	for (let s of vocabs01){
+		vocabsArray.push([s,"myVocab01"]);
+	}
+	for (let s of vocabs02){
+		vocabsArray.push([s,"myVocab02"]);
+	}
+	for (let s of vocabs03){
+		vocabsArray.push([s,"myVocab03"]);
+	}
+	for (let s of vocabs04){
+		vocabsArray.push([s,"myVocab04"]);
+	}
+	for (let s of vocabs05){
+		vocabsArray.push([s,"myVocab05"]);
+	}
+	for (let s of vocabs06){
+		vocabsArray.push([s,"myVocab06"]);
+	}
+	for (let s of vocabs07){
+		vocabsArray.push([s,"myVocab07"]);
+	}
+	
+	//sort vocabsArray
+	vocabsArray.sort();
+	
+	//construct the left minipage
+	for (let t of vocabsArray){
+		temp = "<a class='search' href='";
+		temp += t[1] + ".html#show_";
+		temp += t[0] +"'>";
+		temp += t[1];
+		temp += "</a>";
+		linkTotal += temp + "<br>";
+		linkTotal += "<hr align='left'>";
+		
+		t[0] = replaceIPA(t[0]);
+		sTotal += t[0] + "<br>";
+		sTotal += "<hr align='left'>";
+	}
+	document.getElementById("myList").innerHTML = sTotal;
+	document.getElementById("myList").style.fontSize = "2vw";
+	document.getElementById("myList").style.color = "black";
+	//construct the right minipage
+	document.getElementById("myLink").innerHTML = linkTotal;
+	document.getElementById("myLink").style.fontSize = "2vw";
+	document.getElementById("myLink").style.color = "black";
+
+	wordCount = vocabsArray.length;
+	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
+</script>
+</html>

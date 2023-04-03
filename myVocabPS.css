@@ -155,4 +155,30 @@ span.invs{
 	visibility:hidden;
 }
 
+/*--------------------Search Page-------------------- */
+
+div.leftPage { 
+	font-family:courier;
+	padding: 0 0 0 0;
+	margin-left:0%; 
+	width:55vw;
+	float:left; 
+}
+
+div.rightPage { 
+	font-family:courier;
+	padding: 0 0 0 0;
+	margin-left:-10%;
+	width:20vw; 
+	float:left; 
+}
+
+a.search {
+	margin: 0 0 0 0;
+	font-family:courier;
+	font-size:2vw;
+	text-decoration:none;
+	color:blue;
+}
+
 /*--------------------End-------------------- */
