@@ -178,6 +178,7 @@ a.search {
 	font-family:courier;
 	font-size:2vw;
 	text-decoration:none;
+	text-align: left;
 	color:blue;
 	position: absolute;
 }
