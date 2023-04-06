@@ -160,9 +160,9 @@ span.invs{
 div.leftPage { 
 	font-family:courier;
 	padding: 0 0 0 0;
-	margin-left: 0%; 
-	width: 80vw;
-	float: left; 
+	margin-left:0%; 
+	width:80vw;
+	float:left; 
 }
 
 div.rightPage { 
@@ -174,12 +174,12 @@ div.rightPage {
 }
 
 a.search {
-	margin-left: 50vw;
+	margin-left:50%;
 	font-family:courier;
 	font-size:2vw;
 	text-decoration:none;
 	color:blue;
-	position: absolute;
+	position:absolute;
 }
 
 /*--------------------End-------------------- */
