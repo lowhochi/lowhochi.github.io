@@ -161,7 +161,7 @@ div.leftPage {
 	font-family:courier;
 	padding: 0 0 0 0;
 	margin-left:0%; 
-	width:55vw;
+	width:80vw;
 	float:left; 
 }
 
@@ -180,5 +180,11 @@ a.search {
 	text-decoration:none;
 	color:blue;
 }
+
+span.search {
+	margin-left: 10%;
+	position: absolute;
+}
+
 
 /*--------------------End-------------------- */
