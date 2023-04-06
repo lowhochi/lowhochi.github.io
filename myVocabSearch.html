@@ -115,6 +115,8 @@
 	vocabsArray.sort();
 	
 	//construct the left minipage
+	document.getElementById("myList").style.fontSize = "2vw";
+	document.getElementById("myList").style.color = "black";
 	for (let curr of vocabsArray){
 		// insert <span class='search'><a class='search' href='~link~'>CLICK</a></span>
 		temp = "<span class='search'><a class='search' href='";
@@ -127,8 +129,7 @@
 		sTotal += "<hr align='left'>";
 	}
 	document.getElementById("myList").innerHTML = sTotal;
-	document.getElementById("myList").style.fontSize = "2vw";
-	document.getElementById("myList").style.color = "black";
+	
 
 	wordCount = vocabsArray.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
