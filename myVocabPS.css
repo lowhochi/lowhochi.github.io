@@ -183,7 +183,8 @@ a.search {
 
 span.search {
 	margin-left: 50%;
-	position: absolute;
+	position: relative;
+	float: left;
 }
 
 
