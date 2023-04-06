@@ -13,8 +13,7 @@
 	
 	<div class="mainPage"> 
 		<div class="leftPage" id="myList"></div>
-		<div class="rightPage" id="myLink"></div>
-	
+		<!--<div class="rightPage" id="myLink"></div>-->
 	</div>
 	
 </body>
@@ -116,26 +115,20 @@
 	vocabsArray.sort();
 	
 	//construct the left minipage
-	for (let t of vocabsArray){
-		temp = "<a class='search' href='";
-		temp += t[1] + ".html#show_";
-		temp += t[0] +"'>";
-		temp += t[1];
-		temp += "</a>";
-		linkTotal += temp + "<br>";
-		linkTotal += "<hr align='left'>";
+	for (let curr of vocabsArray){
+		// insert <span class='search'><a class='search' href='~link~'>CLICK</a></span>
+		temp = "<span class='search'><a class='search' href='";
+		temp += curr[1] + ".html#show_";
+		temp += t[0] + "'>" + t[1];
+		temp += "</a></span>";
 		
-		t[0] = replaceIPA(t[0]);
-		sTotal += t[0] + "<br>";
+		curr[0] = replaceIPA(curr[0]);
+		sTotal += curr[0] + "<span></span>" + temp + "<br>";
 		sTotal += "<hr align='left'>";
 	}
 	document.getElementById("myList").innerHTML = sTotal;
 	document.getElementById("myList").style.fontSize = "2vw";
 	document.getElementById("myList").style.color = "black";
-	//construct the right minipage
-	document.getElementById("myLink").innerHTML = linkTotal;
-	document.getElementById("myLink").style.fontSize = "2vw";
-	document.getElementById("myLink").style.color = "black";
 
 	wordCount = vocabsArray.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
