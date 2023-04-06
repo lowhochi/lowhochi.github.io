@@ -182,8 +182,8 @@ a.search {
 }
 
 span.search {
-	position: relative;
-	left: 50%;
+	position: absolute;
+	left: 50vw;
 }
 
 
