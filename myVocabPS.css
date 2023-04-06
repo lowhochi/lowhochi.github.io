@@ -161,7 +161,7 @@ div.leftPage {
 	font-family:courier;
 	padding: 0 0 0 0;
 	margin-left: 0%; 
-	width: 70vw;
+	width: 80vw;
 	float: left; 
 }
 
@@ -182,6 +182,8 @@ a.search {
 }
 
 span.search {
+	position: relative;
+	left: 50%;
 }
 
 
