@@ -174,17 +174,12 @@ div.rightPage {
 }
 
 a.search {
-	margin: 0 0 0 0;
+	margin-left: 50%;
 	font-family:courier;
 	font-size:2vw;
 	text-decoration:none;
 	color:blue;
-}
-
-span.search {
-	margin-left: 50vw;
 	position: absolute;
 }
-
 
 /*--------------------End-------------------- */
