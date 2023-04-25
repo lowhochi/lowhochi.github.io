@@ -421,7 +421,40 @@
 	<p class="example">11/ It was a fair compromise between the two sides.</p>
 	
 	<br><hr><br> 
+	
+	<input id="pop-up" type="hidden" value="p/6p"></input>
+	<p class="general"><b>pop up</b> &nbsp; v &nbsp;
+	/<span class="ipa" id="show_pop-up"></span>/</p>
+	<p class="meaning">appear, sometimes unexpectedly</p>
+	<p class="example">1/ Her name keeps popping up in the newspapers.</p>
+	<p class="example">2/ Click here, and a list of files will pop up.</p>
+	<p class="example">3/ An error message pops up on the computer screen.</p>
+	<p class="example">4/ When a problem pops up, my emotions rise and I tend to avoid it.</p>
+	<br>
+	<p class="meaning">move quickly and suddenly from a closed or flat position to a vertical one</p>
+	<p class="example">5/ This tent pops up fully formed in a couple of seconds.</p>
+	<p class="example">6/ Liven up a handmade Christmas card with a tree or snowman that pops up!</p>
+	
+	<br><br>
 
+	<p class="general"><b>pop-up</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_pop-up*"></span>/</p>
+	<p class="meaning">adj/n(c) (computer)</p>
+	<p class="example">1/ Block pop-up ads and windows in Safari.</p>
+	<p class="example">2/ Allow or block pop-ups on one website.</p>
+	<p class="example">3/ Select the option you want from the pop-up menu.</p>
+	<br>
+	<p class="meaning">a shop or other business that opens quickly in a temporary location<br>
+		&nbsp; and is intended to operate for only a short period of time.</p>
+	<p class="example">4/ At the new pop-up restaurant that has appeared in the neighborhood,<br>
+		&nbsp; diners pay what they think the meal is worth.</p>
+	<p class="meaning">a pop-up store</p>
+	<p class="example">5/ Pop-up stores are a great way for online retailers to gain new customers<br>
+		&nbsp; who like to see, touch and test out products in real life.</p>
+	<p class="example">6/ Most people visit pop-up stores because they want an opportunity to<br>
+		&nbsp; experience a limited-time event.</p>
+
+	<br><hr><br> 
 
 
 	<!--------------------END-------------------->
@@ -439,9 +472,9 @@
 	const vocabs = ["crossroads", "blink", "underway", "ongoing", "inquire", "inquiry",
 			"set-out", "set-off", "name-after", "stitch", "heartwarming", "hearten",
 		        "signboard", "billboard", "display_board", "bulletin_board", 
-		        "risk-averse", "risk-loving", "on-par-with", "compromise", ];
+		        "risk-averse", "risk-loving", "on-par-with", "compromise", "pop-up"];
 </script>
-
+ 
 <script type="text/javascript" src="myVocabJS.js"></script>
 
 <script>
@@ -449,8 +482,10 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	
 	var ipaOngoing = "__/6n_g@U.IN";
+	var ipaPopup = "_p/6p./2p"
 	for (let j=0; j<shorthands.length; j++){
 		ipaOngoing = ipaOngoing.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaPopup = ipaPopup.replaceAll(shorthands[j], htmlCodes[j]);
 	}	
 	
 	//display ipa* tags
@@ -458,6 +493,7 @@
 	document.getElementById("show_ongoing*").innerHTML = ipaOngoing;
 	document.getElementById("show_stitch*").innerHTML = document.getElementById("stitch").value;
 	document.getElementById("show_compromise*").innerHTML = document.getElementById("compromise").value;
+	document.getElementById("show_pop-up*").innerHTML = ipaPopup;
 </script>
 
 </html>
