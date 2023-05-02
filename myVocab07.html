@@ -589,6 +589,45 @@
 	<p class="example">2/ Unfortunately this vintage magazine has a rip on the cover.</p>
 
 	<br><hr><br> 
+	
+	<input id="rip-off" type="hidden" value="rIp"></input>
+	<p class="general"><b>rip off</b> &nbsp; v &nbsp;
+	/<span class="ipa" id="show_rip-off"></span>/</p>
+	<p class="meaning">(rip something off) remove something very quickly and carelessly</p>
+	<p class="example">1/ They ripped off their clothes and ran into the sea.</p>
+	<p class="meaning">see also: take off clothes</p>
+	<br>
+	<p class="meaning">(rip something off) steal something</p>
+	<p class="example">2/ He rips stuff off from supermarkets to pay for his heroin.</p>
+	<p class="example">3/ Some accuse the company of ripping off the programming language<br>
+		&nbsp; from its competitor.</p>
+	<p class="example">4/ "How artist who ripped off Gucci ended up collaborating with<br>
+		&nbsp; the fashion label and holding an exhibition in Shanghai"</p>
+	<p class="meaning">see also: "forge an iPhone 5"</p>
+	<br>
+	<p class="meaning">(rip someone off) cheat someone by charging too much money</p>
+	<p class="example">5/ We got ripped off buying our new car.</p>
+	<p class="example">6/ Bob's tickets cost much less than ours - I think we've been ripped off.</p>
+	<p class="example">7/ Their parents, or their grandparents, whoever, may not realize they're<br>
+		&nbsp; being ripped off by a scalper when buying it as a Christmas gift.</p>
+	<p class="example">8/ Get ripped off by a scalper with counterfeit tickets.</p>
+	
+	<br><br>
+	
+	<p class="general"><b>rip-off</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_rip-off*"></span>/</p>
+	<p class="meaning">something that costs more than it is worth</p>
+	<p class="example">1/ Loan protection is the biggest rip-off in banking today.</p>
+	<p class="example">2/ rip-off prices</p>
+	<p class="example">3/ Don’t eat in the museum restaurant – it’s a rip-off.</p>
+	<p class="example">4/ $300 for that shirt? - That's a complete rip-off.</p>	
+	<br>
+	<p class="meaning">n(c) a cheap or bad copy of something</p>
+	<p class="example">5/ He's fed up with the endless high-street rip-offs of his collections.</p>
+	<p class="example">6/ All along the road there were market stalls selling rip-off Versace,<br>
+		&nbsp; Gucci and Lacoste.</p>
+
+	<br><hr><br> 
 
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -618,9 +657,11 @@
 	
 	var ipaOngoing = "__/6n_g@U.IN";
 	var ipaPopup = "_p/6p./2p"
+	var ipaRipoff = "_rIp.Of"
 	for (let j=0; j<shorthands.length; j++){
 		ipaOngoing = ipaOngoing.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaPopup = ipaPopup.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaRipoff = ipaRipoff.replaceAll(shorthands[j], htmlCodes[j]);
 	}	
 	
 	//display ipa* tags
@@ -631,6 +672,7 @@
 	document.getElementById("show_pop-up*").innerHTML = ipaPopup;
 	document.getElementById("show_peel*").innerHTML = document.getElementById("peel").value;
 	document.getElementById("show_rip*").innerHTML = document.getElementById("rip").value;
+	document.getElementById("show_rip-off*").innerHTML = ipaRipoff;	
 </script>
 
 </html>
