@@ -33,6 +33,48 @@
 
 	<br><hr><br> 
 	
+	<input id="comfort" type="hidden" value="_k/2m.f@rt"></input>
+	<p class="general"><b>comfort</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_comfort"></span>/</p>
+	<p class="meaning">make someone feel better when they are sad or worried</p>
+	<p class="example">1/ The girl's mother was at home today, being comforted by relatives.</p>
+	<p class="example">2/ I tried to comfort him, but it was no use.</p>
+	<br><br>
+	<p class="general"><b>comfort</b> &nbsp; n &nbsp;
+	/<span class="ipa" id="show_comfort*"></span>/</p>
+	<p class="meaning">n(u) the state of being physically relaxed and free from pain; the state of<br>
+		&nbsp; having a pleasant life, with everything that you need</p>
+	<p class="example">1/ The hotel offers a high standard of comfort and service.</p>
+	<p class="example">2/ I didn't want to leave the comfort of my bed.</p>
+	<p class="example">3/ He's beginning to find a comfort level with his teammates now.</p>
+	<p class="meaning">in comfort</p>
+	<p class="example">4/ They had enough money to live in comfort in their old age.</p>
+	<p class="meaning">in the comfort of something</p>
+	<p class="example">5/ Watch the latest movies in the comfort of your own home.</p>
+	<p class="meaning">from the comfort of something</p>
+	<p class="example">6/ From the comfort of your own armchair, you can witness all the action live.</p>
+	<p class="meaning">for comfort</p>
+	<p class="example">7/ I dress for comfort rather than elegance.</p>
+	<p class="example">8/ These tennis shoes are designed for comfort and performance.</p>
+	<br>
+	<p class="meaning">n(u) a feeling of not suffering or worrying so much; a feeling of<br>
+		&nbp; being less unhappy</p>
+	<p class="example">9/ I tried to offer a few words of comfort.</p>
+	<p class="example">10/ His words were of little comfort in the circumstances.</p>
+	<p class="meaning">take comfort from something</p>
+	<p class="example">11/ I take comfort from your words.</p>
+	<p class="meaning">find comfort in something</p>
+	<p class="example">12/ We know that they will find comfort in the knowledge that he died doing the job he loved</p>
+	<p class="meaning">be/give/provide comfort to someone</p>
+	<p class="example">13/ If it's any comfort to you, I'm in the same situation.</p>
+	<p class="example">14/ Help those who cannot help themselves, give comfort to the lonely and the homeless<br>
+		&nbsp; and let your family become the focus of hope and life to those who need it.</p>
+	<br>
+	
+	
+	
+	
+	<br><hr><br> 
 	
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -46,7 +88,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["yearn"];
+	const vocabs = ["yearn", "comfort"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -54,8 +96,9 @@
 <script>
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
-	//display ipa* tags
 	
+	//display ipa* tags
+	document.getElementById("show_comfort*").innerHTML = document.getElementById("comfort").value;
 </script>
 
 </html>
