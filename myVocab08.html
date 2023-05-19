@@ -106,6 +106,37 @@
 	<p class="example">3/ Sometimes you have to step out of your comfort zone and challenge yourself.</p>
 
 	<br><hr><br> 
+
+	<input id="mark-up" type="hidden" value="ma:rk"></input>
+	<p class="general"><b>mark up</b> &nbsp; &nbsp;
+	/<span class="ipa" id="show_mark-up"></span>/</p>
+	<p class="meaning">increase the price of something</p>
+	<p class="example">1/ Suppliers mark up the price paid for gas at the border before selling it on.</p>
+	<p class="example">2/ They buy paintings at auctions, mark them up, and then resell them<br>
+		&nbsp; at a vast profit to collectors.</p>
+	<p class="example">3/ In the days of hyperinflation, we would rush to the market as soon as we were paid<br>
+		&nbsp; and buy our weekly groceries before they were marked up.</p>
+	<p class="example">4/ Shares in retail businesses were marked up on the news that consumer spending<br>
+		&nbsp; rose last month.</p>
+	<p class="meaning">mark up something by 10%</p>
+	<p class="example">5/ Retail chains routinely mark up groceries by 80-90%.</p>
+	<p class="meaning">mark up (something) 10%</p> 
+	<p class="example">6/ Shares in the company were marked up 46p to £13.04.</p>	
+	<p class="example">7/ "Knowing that you should mark up 10 percent for overhead and 10 percent for profit,<br>
+		&nbsp; is the kind of pseudo-knowledge that can get you into a deep hole pretty quickly."</p>
+	<br><br>
+	<p class="general"><b>mark-up</b> &nbsp; n(c,u) &nbsp;
+	/<span class="ipa" id="show_mark-up*"></span>/</p>
+	<p class="meaning">the amount by which the price of something is increased before it is sold again</p>
+	<p class="example">1/ Most products sold in those stores are sold at a 5% markup.</p>
+	<p class="example">2/ Some states have laws forbidding the resale markup on tickets.</p>
+
+	<br><hr><br> 
+
+
+	<br><hr><br> 
+
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -118,7 +149,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["yearn", "comfort", "comfort-zone"];
+	const vocabs = ["yearn", "comfort", "comfort-zone", "mark-up"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -127,8 +158,14 @@
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	
+	var ipaMarkup = "_ma:rk/2p";
+	for (let j=0; j<shorthands.length; j++){
+		ipaMarkup = ipaMarkup.replaceAll(shorthands[j], htmlCodes[j]);
+	}	
+	
 	//display ipa* tags
 	document.getElementById("show_comfort*").innerHTML = document.getElementById("comfort").value;
+	document.getElementById("show_mark-up*").innerHTML = ipaMarkup;
 </script>
 
 </html>
