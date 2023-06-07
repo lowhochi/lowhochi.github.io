@@ -1035,6 +1035,41 @@
 
 	<br><hr><br> 	
 
+	<input id="chance" type="hidden" value="tSa:ns"></input>
+	<p class="general"><b>chance</b> &nbsp; n &nbsp;
+	/<span class="ipa" id="show_chance"></span>/ or /<span class="ipa" id="show_chance*"></span>/</p>
+	<p class="meaning">n(c,u) an opportunity</p>
+	<p class="example">1/ I didn't get(/have) a chance to speak to her.</p>
+	<p class="example">2/ If you give me a chance to speak, I'll explain.</p>
+	<p class="example">3/ Society has to give prisoners a second chance when they come out of jail.</p>
+	<p class="example">4/ He left and I missed my chance to say goodbye to him.</p>
+	<br>
+	<p class="meaning">n(c) (possibility) an 10% chance of something/doing something</p>
+	<p class="meaning">see also: n(c,u) probability, n(plural) odds</p>
+	<p class="example">5/ The fifty-fifty rule states that everything has a fifty percent chance<br>
+		&nbsp; of either working in a person's favor or not.</p>
+	<p class="example">6/ I must have a one hundred percent chance of bad luck today.</p>
+	<p class="example">7/ You have a 50% chance to survive.</p>
+	<p class="example">8/ There is a 50-50 chance of me posting this on this article.</p>
+	<p class="meaning">with 10% chance (of something/doing something)</p>
+	<p class="example">9/ Tuesday's forecast - cloudy with fifty percent chance of rain.</p>
+	<p class="example">10/ Two weeks of testing are enough to discover a software vulnerability<br>
+		&nbsp; of high severity with fifty percent chance.</p>
+	<p class="example">11/ "And while I downed that potion to qualify - the one with<br>
+		&nbsp; fifty percent chance of killing me - what were you doing?"</p>
+	<p class="meaning">chances of something/doing something</p>
+	<p class="example">12/ Her resignation has improved my chances of promotion.</p>
+	<p class="example">13/ What are her chances of survival?</p>
+	<p class="example">14/ <span class="remark">n(u)</span> There is little chance of that happening.</p>
+	<p class="meaning">stand/have a chance</p>
+	<p class="example">15/ I don't think I stand a chance of winning.</p>
+
+	<br>
+	
+	
+
+	<br><hr><br> 
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -1052,7 +1087,8 @@
 		       "shameful", "shameless", "plunge", "soothe", "immerse", "submerge",
 		       "regret", "regretful", "regrettable", "duration", "wager", "refresh",
 		       "refresher", "refreshed", "refreshment", "zigzag", "alleviate",
-		       "edge", "edge-out", "rough-edges", "benefit", "beneficial", "off-chance"];
+		       "edge", "edge-out", "rough-edges", "benefit", "beneficial", "off-chance",
+		       "chance"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1063,9 +1099,11 @@
 	
 	var ipaMarkup = "_ma:rk/2p";
 	var ipaReassure = "__ri:.@_SUr";
+	var ipaChance = "tS/aens";
 	for (let j=0; j<shorthands.length; j++){
 		ipaMarkup = ipaMarkup.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaReassure = ipaReassure.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaChance = ipaChance.replaceAll(shorthands[j], htmlCodes[j]);
 	}	
 	
 	//display ipa* tags
@@ -1078,6 +1116,7 @@
 	document.getElementById("show_wager*").innerHTML = document.getElementById("wager").value;
 	document.getElementById("show_wager*").innerHTML = document.getElementById("wager").value;
 	document.getElementById("show_benefit*").innerHTML = document.getElementById("benefit").value;
+	document.getElementById("show_chance*").innerHTML = ipaChance;
 </script>
 
 </html>
