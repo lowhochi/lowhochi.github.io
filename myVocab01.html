@@ -155,7 +155,7 @@
 	<p class="general"><b>flatter</b> &nbsp; v(t) &nbsp;
 	/<span class="ipa" id="show_flatter"></span>/</p>
 	<p class="meaning">to praise someone in order to make them feel attractive or important,<br>
-	&nbsp; &nbsp; sometimes in a way that is not sincere</p>
+		&nbsp; sometimes in a way that is not sincere</p>
 	<p class="example">1/ I knew he was only flattering me 
 		because he wanted to borrow some money.</p>
 	<br>
@@ -164,7 +164,7 @@
 	<p class="example">2/ Steve flatters himself that he is an excellent speaker.</p>
 	<br>
 	<p class="meaning">be/feel flattered: to feel very pleased and proud because someone has said<br>
-		&nbsp; &nbsp; good things about you or has made you feel important</p>
+		&nbsp; good things about you or has made you feel important</p>
 	<p class="example">3/ They were flattered to be invited to dinner by the mayor /mer/.</p>
 	<p class="example">4/ She was flattered by his attention.</p>
 	<br>
@@ -176,7 +176,7 @@
 	<input id="dwell" type="hidden" value="dwel"></input>
 	<p class="general"><b>dwell on something</b> &nbsp; v(i) &nbsp;
 	/<span class="ipa" id="show_dwell"></span>/</p>
-	<p class="meaning">to keep thinking or talking about something, especially something bad or unpleasant</p>
+	<p class="meaning">to keep thinking or talking about something, esp something bad or unpleasant</p>
 	<p class="example">1/ In his speech, he dwelt on the plight of the sick and the hungry.</p>
 	
 	<br><hr><br>
@@ -186,9 +186,8 @@
 	/<span class="ipa" id="show_delve"></span>/</p>
 	<p class="general">synonym: &nbsp; investigate</p>
 	<p class="meaning">to examine something carefully in order to discover<br>
-		more information about someone/something</p>
-	<p class="example">1/ It's not always a good idea to delve too deeply
-		into someone's past.</p>
+		&nbsp; more information about someone/something</p>
+	<p class="example">1/ It's not always a good idea to delve too deeplyinto someone's past.</p>
 		
 	<br><hr><br>
 	
@@ -197,8 +196,7 @@
 	/<span class="ipa" id="show_mediocre"></span>/</p>
 	<p class="general">synonym: &nbsp; ordinary, &nbsp; average</p>
 	<p class="meaning">not very good</p>
-	<p class="example">1/ The film's plot is predictable and the acting 
-		is mediocre.</p>
+	<p class="example">1/ The film's plot is predictable and the acting is mediocre.</p>
 		
 	<br><hr><br>	
 	
@@ -210,11 +208,52 @@
 	<br><hr><br>
 	
 	<input id="clutch" type="hidden" value="kl/2tS"></input>
-	<p class="general"><b>clutch</b> &nbsp; (group) &nbsp;
+	<p class="general"><b>clutch</b> &nbsp; v(i,t) &nbsp;
 	/<span class="ipa" id="show_clutch"></span>/</p>
-	<p class="meaning">a small group of people or things</p>
+	<p class="meaning">take or try to take hold of something tightly, usually in<br>
+		&nbsp; fear, worry or pain</p>
+	<p class="example">1/ Silent and pale, she clutched onto her mother's hand.</p>
+	<p class="example">2/ Clutching the money to his chest, he hurried back to the bank.</p>
+	<p class="example">3/ He collapsed, clutching his stomach.</p>
+	<p class="meaning">see also: hold onto something</p>
+	<br>
+	<p class="meaning">clutch at something: try very hard to hold something</p>
+	<p class="example">4/ Feeling herself fall, she clutched at a branch.</p>
+	<br><br>
+	<p class="general"><b>clutch</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_clutch*"></span>/</p>
+	<p class="meaning">(group) a small group of people or things</p>
 	<p class="example">1/ a fresh clutch of students</p>
-		
+	<br>
+	<p class="meaning">(vehicle) 離合器/極力子</p>
+	<p class="example">2/ Push the clutch in, put the car into gear, rev the engine,<br>
+		&nbsp; and then gently let the clutch out.</p>
+	<br>
+	<p class="meaning">n(c) a difficult and important situation that needs a lot of skill<br>
+		&nbsp; to deal with successfully</p>
+	<p class="example">3/ This team was able to perform in the clutch every time, he said</p>	
+	<p class="example">4/ He remained cool under pressure and made accurate throws<br>
+		&nbsp; in clutch situations.</p>
+	<br>
+	<p class="meaning">somebody's clutches: the control of somebody</p>
+	<p class="example">5/ He has fallen into the clutches of that woman.</p>
+	
+	<br><br>
+	
+	<p class="general"><b>clutch</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_clutch**"></span>/</p>
+	<p class="meaning">(before noun) able to do something when it is especially difficult<br>
+		&nbsp; or especially needed</p>
+	<p class="example">1/ Moose, always reliable under pressure was an amazing clutch hitter.</p>
+	<p class="example">2/ He developed the reputation for being the bigger winner,<br>
+		&nbsp; the clutch performer.</p>
+	<br>
+	<p class="meaning">(before noun) done successfully when this is especially difficult<br>
+		&nbsp; or especially important</p>
+	<p class="example">3/ It was his leadership and clutch play that made him special.</p>
+	<p class="example">4/ The team managed only three hits after falling behind<br>
+		&nbsp; but came up with the clutch hit when it needed it the most.</p>
+
 	<br><hr><br>
 	
 	<input id="attribute" type="hidden" value="@_trIbju:t"></input>
@@ -871,6 +910,9 @@
 		ipaEngine = ipaEngine.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaEngine2 = ipaEngine2.replaceAll(shorthands[j], htmlCodes[j]);
 	}			
+	
+	document.getElementById("show_clutch*").innerHTML = document.getElementById("clutch").value;
+	document.getElementById("show_clutch**").innerHTML = document.getElementById("clutch").value;
 	document.getElementById("show_warrant*").innerHTML = document.getElementById("warrant").value;
 	document.getElementById("show_adverse_effect*").innerHTML = ipaAdverse;
 	document.getElementById("show_geographic*").innerHTML = ipaGeographic;
