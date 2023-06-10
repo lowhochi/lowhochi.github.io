@@ -40,7 +40,6 @@
 		&nbsp; she views the world.</p>
 	<p class="example">9/ You are considerate about the satisfaction and safety of your customers.</p>
 	<p class="example">10/ Everybody likes it when we are considerate about their feelings.</p>
-	<br>
 	<p class="meaning">synonym: thoughtful, caring</p>
 	<p class="meaning">antonym: inconsiderate, selfish</p>
 	
@@ -73,7 +72,39 @@
 	
 	<br><hr><br> 	
 		
-		
+	<input id="overload" type="hidden" value="__@uv@r_l@Ud"></input>
+	<p class="general"><b>overload</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_overload"></span>/</p>
+	<p class="meaning">put too many things in or on something</p>
+	<p class="example">1/ Don't overload the washing machine, or it won't get the clothes clean.</p>
+	<p class="example">2/ Many companies limit personal downloads so that they don't<br>
+		&nbsp; overload the computer system.</p>
+	<p class="example">3/ His desk is overloaded with papers and books.</p>
+	<p class="example">4/ The company had overloaded the truck, which was illegal.</p>
+	<br>
+	<p class="meaning">v(t) give somebody more work or problems than they can deal with</p>
+	<p class="example">5/ Try not to overload yourself with work.</p>
+	<p class="example">6/ We are doing our best in a highly competitive environment<br>
+		&nbsp; with an overloaded staff.</p>
+	<br>
+	<p class="meaning">put too much electricity through an electrical system</p>
+	<p class="example">7/ Avoid overloading outlets and extension cords.</p>
+	<br><br>
+
+	<p class="general"><b>overload</b> &nbsp; n(c,u) &nbsp;
+	/<span class="ipa" id="show_overload*"></span>/</p>
+	<p class="meaning">the fact that something or somebody is overloaded</p>
+	<p class="example">1/ People today suffer from information overload.</p>
+	<p class="example">2/ There was an overload on the electrical circuit and the fuse blew.</p>
+	<p class="meaning">an overload of something</p>
+	<p class="example">3/ There is an overload of factors that confront consumers<br>
+		&nbsp; in the marketplace.</p>
+	<p class="example">4/ "Get ready for an overload of cuteness!"</p>
+	<p class="example">5/ "Pass out from an overload of cuteness"<br>
+		&nbsp; (see also: "Pass out from cuteness overload")</p>
+
+	<br><hr><br>
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -86,7 +117,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["considerate", "patient"];
+	const vocabs = ["considerate", "patient", "overload"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -95,8 +126,15 @@
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	
+	var ipaOverload = "_@uv@r.l@Ud";
+	
+	for (let j=0; j<shorthands.length; j++){
+		ipaOverload = ipaOverload.replaceAll(shorthands[j], htmlCodes[j]);
+	}
+	
 	//display ipa* tags
 	document.getElementById("show_patient*").innerHTML = document.getElementById("patient").value;
+	document.getElementById("show_overload*").innerHTML = ipaOverload;
 	
 </script>
 
