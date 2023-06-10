@@ -28,18 +28,45 @@
 		&nbsp; careful not to hurt or upset others</p>
 	<p class="example">1/ Try to be a bit more considerate.</p>
 	<p class="example">2/ Louis was a kind, caring and considerate young man.</p>
-	<p class="meaning">be considerate towards</p>
+	<p class="meaning">be considerate towards somebody</p>
 	<p class="example">3/ She is always polite and considerate towards her employees.</p>
 	<p class="example">4/ How often are we considerate towards others?</p>
-	<p class="meaning">It is considerate of somebody to do something</p>
-	<p class="example">5/ It was very considerate of him to wait.</p>
-	<p class="example">6/ It wasn't very considerate of you to drink all the milk.</p>
+	<p class="example">5/ Draw a picture of how you feel when you are considerate to others. </p>
+	<p class="meaning">It is considerate of do to do something</p>
+	<p class="example">6/ It was very considerate of him to wait.</p>
+	<p class="example">7/ It wasn't very considerate of you to drink all the milk.</p>
 	<p class="meaning">synonym: thoughtful</p>
 	<p class="meaning">antonym: inconsiderate, selfish</p>
 	
 	<br><hr><br> 
 		
-		
+	<input id="patient" type="hidden" value="_peI.S@nt"></input>
+	<p class="general"><b>patient</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_patient"></span>/</p>
+	<p class="meaning">having patience</p>
+	<p class="example">1/ Dinner will be ready in half an hour - just be patient!</p>
+	<p class="example">2/ You'll just have to be patient and wait till I'm finished.</p>
+	<p class="meaning">be patient with somebody</p>
+	<p class="example">3/ Be patient with her - she's very young.</p>
+	<p class="example">4/ She's very patient with young children.</p>
+	<p class="meaning">It is patient of you to do something</p>
+	<p class="example">5/ Also, it is very patient of you to offer to teach him Altai.</p>
+	<p class="example">6/ It is very patient of you to come back here for me.</p>
+	<p class="meaning">antonym: impatient</p>
+	<p class="meaing">see also: calm, gentle, forgiving, tolerant, understanding,<br>
+		&nbsp; reckless, rash, impulsive</p>
+	
+	<br><br>
+	
+	<p class="general"><b>patient</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_patient*"></span>/</p>
+	<p class="meaning">(person) a patient</p>
+	<p class="example">1/ a patient with heart disease</p>
+	<p class="example">2/ I'm a patient of Dr Stephens; please could I make an appointment to see her?</p>
+	<p class="example">3/ Hospitals are treating more patients than ever before.</p>
+	<p class="example">4/ This doctor only takes private patients.</p>
+	
+	<br><hr><br> 	
 		
 		
 	<!--------------------END-------------------->
@@ -54,7 +81,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["considerate"];
+	const vocabs = ["considerate", "patient"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -62,7 +89,9 @@
 <script>
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
+	
 	//display ipa* tags
+	document.getElementById("show_patient*").innerHTML = document.getElementById("patient").value;
 	
 </script>
 
