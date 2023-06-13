@@ -29,6 +29,9 @@ for (let i=0; i<vocabs.length; i++){
 	myLI.className = "navigation";
 	myAtag.href = "#"+"show_"+vocabs[i]; //remain on current page
 	myAtag.innerHTML = temp;
+	if (temp.length>=12){
+		myAtag.style.fontSize = "1vw";
+	}
 	myLI.appendChild(myAtag);
 	myUL.appendChild(myLI);
 }
