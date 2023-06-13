@@ -28,7 +28,7 @@ div.navigation {
 p.navigation { 
 	font-family:courier;
 	text-align:center;
-	font-size:1.25vw;
+	font-size:2vw;
 	margin:0;
 	padding:0;
 }
@@ -42,7 +42,7 @@ ul.navigation {
 
 li.navigation { 
 	text-align:center; 
-	font-size:2vw; 
+	font-size:1.5vw; 
 	font-family:courier;
 	margin: 2vh 0;
 }
