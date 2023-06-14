@@ -23,13 +23,12 @@ div.navigation {
 	height:90vh; 
 	overflow-y:auto;
 	overflow-x:hidden;
-	font-size:1.0vw;
 }
 	
 p.navigation { 
 	font-family:courier;
 	text-align:center;
-	/*font-size:2vw;*/
+	font-size:1.5vw;
 	margin:0;
 	padding:0;
 }
@@ -44,7 +43,7 @@ ul.navigation {
 li.navigation { 
 	text-align:center; 
 	font-family:courier;
-	/*font-size:2vw;*/
+	font-size:1.5vw;
 	margin: 2vh 0;
 }
 	
