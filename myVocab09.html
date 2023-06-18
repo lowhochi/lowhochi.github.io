@@ -1116,9 +1116,9 @@
 
 	<br><hr><br> 
 	
-	<input id="wear_attire" type="hidden" value="wer"></input>
+	<input id="wear_attire_look" type="hidden" value="wer"></input>
 	<p class="general"><b>wear</b> &nbsp; n(u) &nbsp;
-	/<span class="ipa" id="show_wear_attire"></span>/</p>
+	/<span class="ipa" id="show_wear_attire_look"></span>/</p>
 	<p class="meaning">clothes designed for a particular use or of a particular type</p>
 	<p class="meaning">example: casual wear, evening wear, bridal wear, sportswear, business wear</p>
 	<p class="example">1/ She designed sportswear and very elegant evening wear.</p>
@@ -1142,7 +1142,7 @@
 	<br><br>
 
 	<p class="general"><b>attire</b> &nbsp; n(u) &nbsp;
-	/<span class="ipa" id="show_wear_attire*"></span>/</p>
+	/<span class="ipa" id="show_wear_attire_look*"></span>/</p>
 	<p class="meaning">(wear) clothes, esp of a particular or formal type</p>
 	<p class="example">1/ I hardly think jeans are appropriate attire for a wedding.</p>
 	<p class="example">2/ "I dressed in evening attire for the inauguration ceremony."</p>	
@@ -1154,7 +1154,7 @@
 	<br><br>
 
 	<p class="general"><b>look</b> &nbsp; n(c) &nbsp;
-	/<span class="ipa" id="show_wear_attire**"></span>/</p>
+	/<span class="ipa" id="show_wear_attire_look**"></span>/</p>
 	<p class="meaning">(appearance) the way somebody/something looks</p>
 	<p class="example">1/ I like her look. (see also: "I like the way she looks")</p>
 	<p class="example">2/ Looks can be deceptive.</p>	
@@ -1183,6 +1183,21 @@
 
 	<br><hr><br> 
 
+	<input id="outlook" type="hidden" value="_aUt.lUk"></input>
+	<p class="general"><b>outlook</b> &nbsp; n(singular) &nbsp;
+	/<span class="ipa" id="outlook"></span>/</p>
+	<p class="meaning">the likely future situation</p>
+	<p class="example">1/ "The economic outlook of Hong Kong is gloomy."</p>	
+	<p class="example">2/ Tomorrow's outlook is for rain in the morning, clearing up in the afternoon.</p>
+	<p class="meaning">the outlook for something</p>
+	<p class="example">3/ The outlook for jobs is bleak.</p>
+	<p class="example">4/ The outlook for today is cloudy and dry at first with showers later.</p>
+	<p class="example">5/ The outlook for the weekend is dry and sunny.</p>
+
+
+	<br><hr><br> 
+
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -1200,7 +1215,7 @@
 		       "responsibility", "responsible", "quell", "intelligent", "phobia",
 		       "xenophobia", "discriminate", "zip", "button", "shoelace", "do-up",
 		       "buckle", "buckle-up", "replenish", "stock", "store", "store-up_trouble",
-		       "storage", "stockpile", "outfit", "wear_attire"];
+		       "storage", "stockpile", "outfit", "wear_attire_look", "outlook"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1231,8 +1246,8 @@
 	document.getElementById("show_stock*").innerHTML = document.getElementById("stock").value;
 	document.getElementById("show_store*").innerHTML = document.getElementById("store").value;
 	document.getElementById("show_outfit*").innerHTML = document.getElementById("outfit").value;
-	document.getElementById("show_wear_attire*").innerHTML = ipaAttire;
-	document.getElementById("show_wear_attire**").innerHTML = ipaLook;
+	document.getElementById("show_wear_attire_look*").innerHTML = ipaAttire;
+	document.getElementById("show_wear_attire_look**").innerHTML = ipaLook;
 	
 </script>
 
