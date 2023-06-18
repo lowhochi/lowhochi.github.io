@@ -1084,20 +1084,22 @@
 	<p class="general"><b>outfit</b> &nbsp; n(c) &nbsp;
 	/<span class="ipa" id="show_outfit"></span>/</p>
 	<p class="meaning">(clothes) a set of clothes worn for a particular occasion or activity</p>
-	<p class="example">1/ a weing outfit
-	<p class="example">2/ You should bring at least one extra outfit to the conference.</p>
-	<p class="example">3/ She was wearing an expensive new outfit.</p>
-	<p class="example">4/ Our reception staff all wear matching outfits.</p>
-	<p class="example">5/ I'm going to wear my vampire outfit for Halloween.</p>
-	<p class="example">6/ "Surprise my boyfriend in a Spiderman outfit."</p>
-	<p class="example">7/ "You look great in your wedding outfit."</p>
+	<p class="example">1/ a wedding outfit</p>
+	<p class="example">2/ That client's outfit is very trendy.</p>
+	<p class="example">3/ That baseball cap and the cargo pants make a nice outfit.</p>
+	<p class="example">4/ You should bring at least one extra outfit to the conference.</p>
+	<p class="example">5/ She was wearing an expensive new outfit.</p>
+	<p class="example">6/ Our reception staff all wear matching outfits.</p>
+	<p class="example">7/ I'm going to wear my vampire outfit for Halloween.</p>
+	<p class="example">8/ "Surprise my boyfriend in a Spiderman outfit."</p>
+	<p class="example">9/ "You look great in your wedding outfit."</p>
 	<p class="meaning">an outfit for something</p>
-	<p class="example">8/ "When you need an elegant outfit for dinner with your family, wear it<br>
+	<p class="example">10/ "When you need an elegant outfit for dinner with your family, wear it<br>
 		&nbsp; with your favourite pair of heels and a chic clutch."</p>
 	<br>
 	<p class="meaning">n(c) a set of equipment for a particular purpose</p>
-	<p class="example">9/ She got a complete ski outfit as a gift from her parents.</p>
-	<p class="example">10/ "I always wear my diving outfit so I can escape into the water<br>
+	<p class="example">11/ She got a complete ski outfit as a gift from her parents.</p>
+	<p class="example">12/ "I always wear my diving outfit so I can escape into the water<br>
 		&nbsp; whenever possible!"</p>
 	
 	<br><br>
@@ -1147,7 +1149,32 @@
 	<p class="example">3/ "Although she is dressed in business attire she is slightly disheveled."</p>
 	<p class="example">4/ "There is no authority on what is and is not fine-dining attire<br>
 		&nbsp; - most people would agree that a jacket is, and blue jeans are not."</p>
-	<p class="meaning">see also: dress code</p>
+	<p class="meaning">see also: n(c) dress code</p>
+
+	<br><br>
+
+	<p class="general"><b>look</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_wear-&-attire**"></span>/</p>
+	<p class="meaning">(appearance) the way somebody/something looks</p>
+	<p class="example">1/ I like her look. (see also: "I like the way she looks")</p>
+	<p class="example">2/ Looks can be deceptive.</p>	
+	<p class="example">3/ I didn't like the look of the salad so I didn't touch it.</p>
+	<p class="example">4/ "Get a refreshing look with a new hair cut."</p>
+	<p class="meaning">by/from the look(s) of somebody/something</p> 
+	<p class="example">5/ It's going to rain today by the look of it.</p>
+	<p class="example">6/ By the looks of it, someone's already staying in this room.</p>
+	<p class="example">7/ From the looks of things, he was not at all happy.</p>
+	<p class="example">8/ Joe isn't getting much sleep from the look of him.</p>
+	<br>
+	<p class="meaning">n(plural) looks: a person’s appearance, esp when the person is attractive</p>
+	<p class="example">9/ She has her father's good looks.</p>
+	<p class="example">10/ He lost his looks in later life.</p>
+	<p class="meaning">see also: (adj) good-looking</p>
+	<br>
+	<p class="meaning">n(singular) a fashion or a style</p>
+	<p class="example">11/ They've given the place a completely new look.</p>
+	<p class="example">12/ Wear the top with jeans for a more casual look.</p>
+	<p class="example">13/ "It should be a staple in your summer look."</p>
 
 	<br><hr><br> 
 
@@ -1179,12 +1206,13 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	
 	var ipaOverload = "_@Uv@r.l@Ud";
-	var ipaWearNattire = "@_taIr";
-	
+	var ipaAttire = "@_taIr";
+	var ipaLook = "lUk";
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaOverload = ipaOverload.replaceAll(shorthands[j], htmlCodes[j]);
-		ipaWearNattire = ipaWearNattire.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaAttire = ipaAttire.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaLook = ipaLook.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 	
 	//display ipa* tags
@@ -1199,7 +1227,8 @@
 	document.getElementById("show_stock*").innerHTML = document.getElementById("stock").value;
 	document.getElementById("show_store*").innerHTML = document.getElementById("store").value;
 	document.getElementById("show_outfit*").innerHTML = document.getElementById("outfit").value;
-	document.getElementById("show_wear-&-attire*").innerHTML = ipaWearNattire;
+	document.getElementById("show_wear-&-attire*").innerHTML = ipaAttire;
+	document.getElementById("show_wear-&-attire**").innerHTML = ipaLook;
 	
 </script>
 
