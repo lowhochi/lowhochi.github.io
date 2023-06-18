@@ -1090,15 +1090,18 @@
 	<p class="example">4/ Our reception staff all wear matching outfits.</p>
 	<p class="example">5/ I'm going to wear my vampire outfit for Halloween.</p>
 	<p class="example">6/ "Surprise my boyfriend in a Spiderman outfit."</p>
+	<p class="example">7/ "You look great in your wedding outfit."</p>
 	<p class="meaning">an outfit for something</p>
-	<p class="example">7/ "When you need an elegant outfit for dinner with your family, wear it<br>
+	<p class="example">8/ "When you need an elegant outfit for dinner with your family, wear it<br>
 		&nbsp; with your favourite pair of heels and a chic clutch."</p>
 	<br>
 	<p class="meaning">n(c) a set of equipment for a particular purpose</p>
-	<p class="example">8/ She got a complete ski outfit as a gift from her parents.</p>
-	<p class="example">9/ "I always wear my diving outfit so I can escape into the water<br>
+	<p class="example">9/ She got a complete ski outfit as a gift from her parents.</p>
+	<p class="example">10/ "I always wear my diving outfit so I can escape into the water<br>
 		&nbsp; whenever possible!"</p>
-
+	
+	<br><br>
+	
 	<p class="general"><b>outfit</b> &nbsp; v(t) &nbsp;
 	/<span class="ipa" id="show_outfit*"></span>/</p>
 	<p class="meaning">outfit somebody/something with something: provide somebody or something<br>
@@ -1110,7 +1113,43 @@
 	<p class="meaning">see also: equip, be equipped with something, accommodate somebody</p>
 
 	<br><hr><br> 
+	
+	<input id="wear-&-attire" type="hidden" value="wer"></input>
+	<p class="general"><b>wear</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_wear-&-attire"></span>/</p>
+	<p class="meaning">clothes designed for a particular use or of a particular type</p>
+	<p class="meaning">example: casual wear, evening wear, bridal wear, sportswear, business wear</p>
+	<p class="example">1/ She designed sportswear and very elegant evening wear.</p>
+	<p class="example">2/ Women's wear is on the first floor.</p>
+	<p class="example">3/ They have developed a full range of leisure wear, ranging from<br>
+		&nbsp; trainers to tracksuits.</p>
+	<p class="example">4/ The fashion world began to sell one-piece overalls as high-quality<br>
+		&nbsp; leisure wear.</p>	
+	<p class="meaning">in casual/business/leisure wear</p>
+	<p class="example">5/ "It is important to know what not to wear when dressing in casual wear."</p>
+	<p class="example">6/ "Are ticket collectors of the Indian Railways allowed in casual wear?"</p>
+	<p class="example">7/ Cheers to new color in your business wear!</b>
+	<p class="example">8/ "In smart casual wear, T-shirts are typically selected with care to ensure<br>
+		&nbsp; they maintain a neat and polished appearance."</p>
+	<p class="example">9/ "If you are more courageous in your business wear and like to<br>
+		&nbsp; make a statement at work, choose a selection of both notch and peak lapels<br>
+		&nbsp; for your business suits."</p>
+	<p class="example">10/ "Senior high school girls in my school wear flats or heels,<br>
+		&nbsp; but why do some of them wear them barefoot?"</p>
 
+	<br><br>
+
+	<p class="general"><b>attire</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_wear-&-attire*"></span>/</p>
+	<p class="meaning">(wear) clothes, esp of a particular or formal type</p>
+	<p class="example">1/ I hardly think jeans are appropriate attire for a wedding.</p>
+	<p class="example">2/ "I dressed in evening attire for the inauguration ceremony."</p>	
+	<p class="example">3/ "Although she is dressed in business attire she is slightly disheveled."</p>
+	<p class="example">4/ "There is no authority on what is and is not fine-dining attire<br>
+		&nbsp; - most people would agree that a jacket is, and blue jeans are not."</p>
+	<p class="meaning">see also: dress code</p>
+
+	<br><hr><br> 
 
 
 	<!--------------------END-------------------->
@@ -1130,7 +1169,7 @@
 		       "responsibility", "responsible", "quell", "intelligent", "phobia",
 		       "xenophobia", "discriminate", "zip", "button", "shoelace", "do-up",
 		       "buckle", "buckle-up", "replenish", "stock", "store", "store-up_trouble",
-		       "storage", "stockpile", "outfit"];
+		       "storage", "stockpile", "outfit", "wear-&-attire"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1140,9 +1179,12 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	
 	var ipaOverload = "_@Uv@r.l@Ud";
+	var ipaWearNattire = "@_taIr";
+	
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaOverload = ipaOverload.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaWearNattire = ipaWearNattire.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 	
 	//display ipa* tags
@@ -1157,6 +1199,7 @@
 	document.getElementById("show_stock*").innerHTML = document.getElementById("stock").value;
 	document.getElementById("show_store*").innerHTML = document.getElementById("store").value;
 	document.getElementById("show_outfit*").innerHTML = document.getElementById("outfit").value;
+	document.getElementById("show_wear-&-attire*").innerHTML = ipaWearNattire;
 	
 </script>
 
