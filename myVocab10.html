@@ -97,7 +97,7 @@
 
 	<input id="derail" type="hidden" value="__di:_reIl"></input>
 	<p class="general"><b>derail</b> &nbsp; v(i,t) &nbsp;
-	/<span class="ipa" id="show_derail"></span>/</p>
+	/<span class="ipa" id="show_derail"></span>/ or /<span class="ipa" id="show_derail*"></span>/</p>
 	<p class="meaning">if a train derails or is derailed, it comes off the railway tracks</p>
 	<p class="example">1/ The train derailed and plunged into the river.</p>
 	<p class="example">2/ The impact did not derail the train, but did ignite the crude oil and caused<br>
@@ -178,9 +178,17 @@
 <script>
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
+
+	var ipaDerail = "dI_reIl";
+
+	for (let j=0; j<shorthands.length; j++){
+		ipaDerail = ipaDerail.replaceAll(shorthands[j], htmlCodes[j]);
+	}
+	
 	
 	//display ipa* tags
 	document.getElementById("show_detour*").innerHTML = document.getElementById("detour").value;
+	document.getElementById("show_derail*").innerHTML = ipaDerail;
 	
 </script>
 
