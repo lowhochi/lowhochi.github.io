@@ -254,13 +254,21 @@
 	<br><hr><br>
 	
 	<input id="attribute" type="hidden" value="@_trIbju:t"></input>
-	<p class="general"><b>attribute <u>something</u> to somebody/something</b> &nbsp;
+	<p class="general"><b>attribute</b> &nbsp; v(t) &nbsp;
 	/<span class="ipa" id="show_attribute"></span>/</p>
-	<p class="meaning">say or think that <u>something</u> is the result or work of something or somebody else</p>
-	<p class="example">1/ The doctors have attributed the cause
-		of the illness to an unknown virus.</p>
+
+	<p class="meaning">attribute <b>something</b> to somebody/something:<br>	
+		&nbsp; say or think that <b>something</b> is the result or work of somebody/something else</p>	
+	<p class="example">1/ The doctors have attributed the cause of the illness to an unknown virus.</p>
 	<p class="example">2/ Her success can be attributed to three main factors.</p>
-		
+
+
+	<p class="general"><b>attribute</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_attribute*"></span>/</p>
+	<p class="meaning"></p>
+	<p class="example">1/</p>
+
+
 	<br><hr><br>
 	
 	<input id="driving_force" type="hidden" value=""></input>
@@ -959,6 +967,7 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	
 	//display ipa* tags
+	var ipaAttribute = "_/aetrI.bju:t/";
 	var ipaAdverse = "@d_v/3rs";
 	var ipaGeographic = "dZi@_gr/aefIk@l";
 	var ipaSociable = "/2n_s@US@b@l";
@@ -971,6 +980,7 @@
 	
 	
 	for (let j=0; j<shorthands.length; j++){
+		ipaAttribute = ipaAttribute.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaAdverse = ipaAdverse.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaGeographic = ipaGeographic.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaSociable = ipaSociable.replaceAll(shorthands[j], htmlCodes[j]);
@@ -983,6 +993,7 @@
 	
 	document.getElementById("show_clutch*").innerHTML = document.getElementById("clutch").value;
 	document.getElementById("show_clutch**").innerHTML = document.getElementById("clutch").value;
+	document.getElementById("show_attribute*").innerHTML = ipaAttribute;
 	document.getElementById("show_warrant*").innerHTML = document.getElementById("warrant").value;
 	document.getElementById("show_adverse_effect*").innerHTML = ipaAdverse;
 	document.getElementById("show_geographic*").innerHTML = ipaGeographic;
