@@ -445,17 +445,41 @@
 	<input id="proactive" type="hidden" value="pr@u_/aektIv"></input>
 	<p class="general"><b>proactive</b> &nbsp; adj &nbsp;
 	/<span class="ipa" id="show_proactive"></span>/</p>
-	<p class="meaning">intending or intended to produce a good result or avoid a problem, rather than<br>
-		&nbsp; waiting until there is a problem</p>
-	<p class="example">1/ a proactive approach/role</p>
-	<p class="example">2/ The agency decided to take a proactive approach to better serve its clients.</p>
-	<p class="example">3/ Companies are going to have to be more proactive about environmental<br>
-		&nbsp; management.</p>
+	<p class="meaning">taking action to make changes yourself rather than<br>
+		&nbsp; reacting to things that happen</p>
+	<p class="example">1/ The agency decided to take a proactive approach to better serve its clients.</p>
+	<p class="example">2/ "We encourage young people to play a proactive role in the society."</p>
+	<p class="meaning">be proactive about something</p>
+	<p class="example">3/ Companies are going to have to be more proactive about<br>
+		&nbsp; environmental management.</p>
+	<p class="example">4/ Employees need to be proactive about their workplace rights,</p>
+	<p class="meaning">be proactive in something/doing something</p>
+	<p class="example">5/ Managers must be proactive in identifying and preventing<br>
+		&nbsp; potential problems.</p>
+	<p class="example">6/ "We are inspired to organize a volunteer club in Bomi County to help<br>
+		&nbsp; young people be proactive in community service projects."</p>
+	<p class="example">7/ "He appeals to the youth to be more proactive in community service."</p> 
+	<br>
 	<p class="meaning">a proactive person</p>
-	<p class="example">4/ Do you want to have a proactive attitude?</p>
-	<p class="example">5/ "Eight ways to become the most proactive person you know"</p>
+	<p class="example">8/ Do you want to have a proactive attitude?</p>
+	<p class="example">9/ "Eight ways to become the most proactive person you know"</p>
 	<p class="meaning">remark: (antonym) reactive</p>
-	
+
+	<br><br>
+
+	<p class="general"><b>proactively</b> &nbsp; adv &nbsp;
+	/<span class="ipa" id="show_proactive*"></span>/</p>
+	<p class="meaning">in a way that causes change by taking action,<br>
+		&nbsp; rather than reacting to changes</p>
+	<p class="example">1/ "Learn proactively, not reactively for greater success."</p>
+	<p class="example">2/ She help other people proactively.</p>
+	<p class="example">3/ "Live chat is a helpful tool to reach customers proactively."</p>	
+	<p class="example">4/ "Employees who help proactively may gain much more benefit than<br>
+		&nbsp; those helping reactively."</p>
+	<p class="example">5/ "We encouraged students to strive for excellence and study proactively<br>
+		&nbsp; so as to contribute to the development of Hong Kong as a bioinformatics hub."</p>	
+	<p class="meaning">see also: spontaneously, voluntarily</p>
+		
 	<br><hr><br> 
 	
 	<input id="enterprising" type="hidden" value="_ent@rpraIzIN"></input>
@@ -1339,9 +1363,11 @@
 	
 	//display ipa* tags
 	var ipaContest = "_k/6ntest";
+	var ipaProactive = "__pr@U_/aektIvli";
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaContest = ipaContest.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaProactive = ipaProactive.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	document.getElementById("show_crush*").innerHTML = document.getElementById("crush").value;
@@ -1353,6 +1379,7 @@
 	document.getElementById("show_slam*").innerHTML = document.getElementById("slam").value;
 	document.getElementById("show_toss*").innerHTML = document.getElementById("toss").value;
 	document.getElementById("show_contest*").innerHTML = ipaContest;
+	document.getElementById("show_proactive*").innerHTML = ipaProactive;
 	document.getElementById("show_effect*").innerHTML = document.getElementById("effect").value;
 	document.getElementById("show_hang*").innerHTML = document.getElementById("hang").value;
 	document.getElementById("show_aid*").innerHTML = document.getElementById("aid").value;
