@@ -1641,13 +1641,23 @@
 	<p class="example">8/ "Attract more people to take part in voluntary work."</p> 
 	<p class="example">9/ "They can initiate voluntary work and save money at the same time."</p>
 	<p class="example">10/ "Voluntary work is a way to give back to the community,<br>
-		&nbsp; but it can also provide you with professional benefits like valuable experience<br>
-		&nbsp; and leadership."</p>
+		&nbsp; but it can also provide you with professional benefits like valuable<br>
+		&nbsp; experience and leadership."</p>
 	<p class="example">11/ "Unfortunately, tertiary students are not willing to spend time on<br>
 		&nbsp; voluntary work because they think it is not worthwhile doing so."</p>
+	<p class="meaning">see also: involuntary, compulsory, mandatory</p>
+		
+	<br><br>
 
-
-
+	<p class="general"><b>voluntarily</b> &nbsp; adv &nbsp;
+	/<span class="ipa" id="show_voluntary*"></span>/</p>
+	<p class="meaning">willingly; without being forced</p>
+	<p class="example">1/ If you don't leave voluntarily then we will send you away.</p>
+	<p class="example">2/ We decided to voluntarily withdraw the drug from the market.</p>
+	<p class="example">3/ "This would be the last round of massive layoffs if enough workers<br>
+		&nbsp; resign or retire from the company voluntarily."</p>
+	<p class="example">4/ "She enjoyed the lesson when she dared to answer a question voluntarily."</p>
+	<p class="example">5/ "Students at that time were expected to help the elderly voluntarily."</p>
 		
 	<br><hr><br> 
 
@@ -1684,11 +1694,13 @@
 	var ipaDerail = "dI_reIl";
 	var ipaSimultaneous = "__saIm@l_teIni@sli";
 	var ipaSpontaneous = "sb/6_teIni@sli";
+	var ipaVoluntary = "__v/6l@n_ter@li";
 
 	for (let j=0; j<shorthands.length; j++){
 		ipaDerail = ipaDerail.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaSpontaneous = ipaSpontaneous.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaSimultaneous = ipaSimultaneous.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaVoluntary = ipaVoluntary.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 	
 	//display ipa* tags
@@ -1704,6 +1716,7 @@
 	document.getElementById("show_level**").innerHTML = document.getElementById("level").value;
 	document.getElementById("show_simultaneous*").innerHTML = ipaSimultaneous;
 	document.getElementById("show_spontaneous*").innerHTML = ipaSpontaneous;
+	document.getElementById("show_voluntary*").innerHTML = ipaVoluntary;
 </script>
 
 </html>
