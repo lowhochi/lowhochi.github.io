@@ -20,7 +20,15 @@
 	<h2 id="wordCount"></h2>
 	
 	<!--------------------Vocabulary-------------------->
-	
+
+	<input id="" type="hidden" value=""></input>
+	<p class="general"><b></b> &nbsp; &nbsp;
+	/<span class="ipa" id=""></span>/</p>
+	<p class="meaning"></p>
+	<p class="example">1/</p>
+
+	<br><hr><br> 
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -33,7 +41,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = [];
+	const vocabs = ["fancy"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -41,7 +49,16 @@
 <script>
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
+
+	//var ipa = "";
+	
+	for (let j=0; j<shorthands.length; j++){
+		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+	}
+	
 	//display ipa* tags
+	//document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
+	
 	
 </script>
 
