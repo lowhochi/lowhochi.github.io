@@ -5,6 +5,7 @@ body{
 div.mainPage { 
 	margin-left:15%; 
 	height:95vh; 
+	font-size:2vw;
 }
 
 /*--------------------Navigation-------------------- */
