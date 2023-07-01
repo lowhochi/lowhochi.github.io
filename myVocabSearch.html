@@ -8,8 +8,8 @@
 <body>
 	<a class="previous" href="">Previous</a>
 	<a class="next" href="myVocab01.html">Next</a>
-	<h1 style="font-size:2.2vw;">Search Page</h1>
-	<h2 id="wordCount" style="font-size:2.2vw;"></h2>
+	<h1>Search Page</h1>
+	<h2 id="wordCount"></h2>
 	
 	<div class="mainPage"> 
 		<div class="leftPage" id="myList"></div>
@@ -160,7 +160,7 @@
 	vocabsArray.sort();
 	
 	//construct the left minipage
-	document.getElementById("myList").style.fontSize = "2.2vw";
+	document.getElementById("myList").style.fontSize = "2vw";
 	document.getElementById("myList").style.color = "black";
 	for (let curr of vocabsArray){
 		// insert <span class='search'><a class='search' href='~link~'>CLICK</a></span>
