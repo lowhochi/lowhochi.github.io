@@ -178,7 +178,7 @@ a.search {
 	font-family:courier;
 	font-size:2vw;
 	text-decoration:none;
-	text-align:right;
+	align:right;
 	color:blue;
 	position:absolute;
 	left:65%;
