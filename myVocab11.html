@@ -287,7 +287,65 @@
 		&nbsp; the People's Republic of China was at midnight on 1 July 1997."</p>
 		
 	<br><hr><br> 
+
+	<input id="favourite" type="hidden" value="_feIvr@t"></input>
+	<p class="general"><b>favourite</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_favourite"></span>/ or 
+	/<span class="ipa" id="show_favourite*"></span>/ </p>
+	<p class="meaning">(before noun) liked more than others of the same kind</p>
+	<p class="example">1/ It's one of my favourite movies.</p>
+	<p class="example">2/ What is your all-time favourite song?</p>
+	<p class="example">3/ Who is your favourite writer?</p>
+	<p class="meaning">least favourite</p>
+	<p class="example">4/ Cleaning the toilets is my least favourite job.</p>
+	<p class="example">5/ January is my least favourite month.</p>
+	<p class="meaning">(US: favorite)</p>
 	
+	<br><br>
+
+	<p class="general"><b>favourite</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_favourite**"></span>/</p>
+	<p class="meaning">a person or thing that you like more than the others of the same type</p>
+	<p class="example">1/ These are my favourites.</p>
+	<p class="example">2/ The band played all my old favourites.</p>
+	<p class="example">3/ How clever of you to buy chocolate chip cookies - they're my favourites.</p>
+	<p class="meaning">one of my favourites</p>
+	<p class="example">4/ One of my personal favourites is a movie that should please every age group.</p>
+	<p class="example">5/ "Maybe this day is not one of your favourites, but never forget that<br>
+		&nbsp; every day you wake up is an amazing gift."</p>
+	<p class="meaning">a favourite of somebody's</p>
+	<p class="example">6/ This song is a particular favourite of mine.</p>
+	<p class="example">7/ "This vintage midi skirt is about to be a favourite of yours!"</p>
+	<p class="meaning">a favourite with somebody</p>
+	<p class="example">8/ The programme has become a firm favourite with young people.</p>
+	<p class="example">9/ "Chinese Chess is a favourite with the elderly."</p>
+	<br>
+	<p class="meaning">n(c) a person who is liked better by somebody and receives<br>
+		&nbsp; better treatment than others</p>
+	<p class="example">10/ Parents should never have favourites.</p>
+	<p class="example">11/ She loved all her grandchildren but Ann was her favourite.</p>
+	<p class="meaning">a favourite with somebody</p>	
+	<p class="example">12/ "He is a favourite with teachers for his mild manners."</p>
+	<p class="meaning">a favourite among somebody</p>
+	<p class="example">13/ "She is a favourite among our pre-schoolers,<br>
+		&nbsp; and her boundless energy and enthusiasm constantly leaves us in awe."</p>
+	<br>
+	<p class="meaning">n(c) the person or animal most people expect to win a race or competition</p>
+	<p class="example">14/ The favourite came third.</p>
+	<p class="example">15/ Great Gold is the favourite in the 2.00 race at Epsom.</p>
+	<p class="meaning">the hot favourite</p>
+	<p class="example">16/ He's the hot favourite to win the election.</p>
+	<p class="meaning">the favourite for something</p>
+	<p class="example">17/ Her horse is the hot favourite for the race.</p>
+	<p class="example">18/ She is the favourite for the job.</p>	
+	<p class="meaning">the favourite to do something</p>
+	<p class="example">19/ Brazil are favourites to win this year's World Cup.</p>
+	<p class="example">20/ She is the favourite to succeed him as leader.</p>
+		
+	<br><hr><br> 
+
+
+		
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -300,7 +358,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["fancy", "dream", "hand-over"];
+	const vocabs = ["fancy", "dream", "hand-over", "favourite"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -309,17 +367,18 @@
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
-	//var ipa = "";
+	var ipaFavourite = "_feIv@r@t";
 	
 	for (let j=0; j<shorthands.length; j++){
-		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaFavourite = ipaFavourite.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 	
 	//display ipa* tags
 	document.getElementById("show_fancy*").innerHTML = document.getElementById("fancy").value;
 	document.getElementById("show_fancy**").innerHTML = document.getElementById("fancy").value;
 	document.getElementById("show_dream*").innerHTML = document.getElementById("dream").value;
-	
+	document.getElementById("show_favourite*").innerHTML = ipaFavourite;
+	document.getElementById("show_favourite**").innerHTML = document.getElementById("favourite").value;
 	
 </script>
 
