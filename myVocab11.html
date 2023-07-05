@@ -1445,7 +1445,18 @@
 	<p class="example">14/ "It feels like that I am living my childhood all over again."</p>
 	
 	<br><hr><br> 
+
+	<input id="rope_cable_string" type="hidden" value="r@Up"></input>
+	<p class="general"><b>rope, cable, string</b> &nbsp; &nbsp;
+	/<span class="ipa" id="show_rope_cable_string"></span>/, 
+	/<span class="ipa" id="show_rope_cable_string*"></span>/,
+	/<span class="ipa" id="show_rope_cable_string**"></span>/</p>
+	<p class="meaning"></p>
+	<p class="example">1/</p>
 		
+	<br><hr><br> 
+
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -1462,7 +1473,7 @@
 		       "query", "kiosk", "stall", "outstanding", "stand-out", "fantasy", 
 		       "fantasize", "fantastic", "roll", "yummy", "winding", "versatile",
 		       "bounty", "cereal", "make-do", "coil", "roller_skating", "maintenance",
-		       "take-on", "feel-like"];
+		       "take-on", "feel-like", "rope_cable_string"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1472,9 +1483,13 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
 	var ipaFavourite = "_feIv@r@t";
+	var ipaCable = "_keIb@l";
+	var ipaString = "sdrIN";
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaFavourite = ipaFavourite.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaCable = ipaCable.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaString = ipaString.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 	
 	//display ipa* tags
@@ -1487,6 +1502,8 @@
 	document.getElementById("show_query*").innerHTML = document.getElementById("query").value;
 	document.getElementById("show_roll*").innerHTML = document.getElementById("roll").value;
 	document.getElementById("show_coil*").innerHTML = document.getElementById("coil").value;
+	document.getElementById("show_rope_cable_string*").innerHTML = ipaCable;
+	document.getElementById("show_rope_cable_string**").innerHTML = ipaString;
 	
 </script>
 
