@@ -1536,7 +1536,7 @@
 	<p class="example">1.8/ A winch is a device which is used to wind up a cable.</p>
 	<p class="example">1.9/ When a tractor starts to retreat, the torque motor rotates normally<br>
 		&nbsp; to wind a cable on the reel.</p>
-	<p class="meaning">1.10/ Wind a microphone or music cable so it does not tangle.</p>
+	<p class="example">1.10/ Wind a microphone or music cable so it does not tangle.</p>
 	<br>
 	<p class="meaning">n(c) a laptop charger, a chromebook charger</p>
 	<p class="example">2.1/ Wrap the charger around my phone.</p>
@@ -1550,12 +1550,13 @@
 		&nbsp; holding the original loops in place.</p>
 	<p class="example">2.6/ Do not wind the power cord of AC adaptor around<br>
 		&nbsp; the main body and the stand.</p>
+	<p class="example">2.7/ Wrap up a laptop charger or a chromebook charger for storage.</p>
 	<br>
 	<p class="meaning">a bundle of power cord: the cord of a laptop charger may wind<br>
 		&nbsp; naturally in a bundle. The charger cord winds up and down, and the loops<br>
 		&nbsp; are held closely together by a velcro strap attached to the cord.</p>
-	<p class="example">2.7/ "The fast charger comes with a Velcro piece to bundle up the cord."</p>
-	<p class="example">2.8/ "Just bundle up a cord and tuck it into one of the three dedicated pockets,<br>
+	<p class="example">2.8/ "The fast charger comes with a Velcro piece to bundle up the cord."</p>
+	<p class="example">2.9/ "Just bundle up a cord and tuck it into one of the three dedicated pockets,<br>
 		&nbsp; then pull over the leather flap to secure it in place."</p>
 	<br>
 	<p class="meaning">n(plural) headphones, earphones, earbuds</p>
@@ -1613,6 +1614,24 @@
 		
 	<br><hr><br> 
 
+	<input id="battery" type="hidden" value="_b/aetri"></input>
+	<p class="general"><b>battery</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_battery"></span>/ or /<span class="ipa" id="show_battery*"></span>/</p>
+	<p class="meaning">(usual meaning) types of batteries:<br>
+		&nbsp; a dry battery, an AA battery, a car battery, a rechargeable battery</p>
+	<p class="example">1/ This alarm clock takes two AA batteries.</p>
+	<p class="example">1/ "You have a torch that requires two batteries to light up."</p>
+	<p class="example">1/ "My underwater scooter takes a lithium battery."</p>
+	<br>
+	<p class="meaning">battery voltage</p>
+	<p class="example">1/ "There are ten batteries, and each battery is of 2V."</p> 
+	<p class="example">1/ "With the engine off, the fully charged car battery voltage will<br>
+		&nbsp; measure 12.6 volts."</p>
+	<p class="example">1/ "A battery of 10 volts carries 20,000C of charge through a resistance of 20&Omega;."</p>
+	<p class="example">1/ "I want to read the voltage of my battery, so I can send a message<br>
+		&nbsp; when the battery is below 10%."</p>
+	<br><hr><br>
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -1629,7 +1648,7 @@
 		       "query", "kiosk", "stall", "outstanding", "stand-out", "fantasy", 
 		       "fantasize", "fantastic", "roll", "yummy", "winding", "versatile",
 		       "bounty", "cereal", "make-do", "coil", "roller_skating", "maintenance",
-		       "take-on", "feel-like", "rope", "cable", "yarn"];
+		       "take-on", "feel-like", "rope", "cable", "yarn", "battery"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1639,9 +1658,11 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
 	var ipaFavourite = "_feIv@r@t";
+	var ipaBattery = "_b/aet@ri";
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaFavourite = ipaFavourite.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaBattery = ipaBattery.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 	
 	//display ipa* tags
@@ -1654,6 +1675,7 @@
 	document.getElementById("show_query*").innerHTML = document.getElementById("query").value;
 	document.getElementById("show_roll*").innerHTML = document.getElementById("roll").value;
 	document.getElementById("show_coil*").innerHTML = document.getElementById("coil").value;
+	document.getElementById("show_battery*").innerHTML = ipaBattery;
 	
 </script>
 
