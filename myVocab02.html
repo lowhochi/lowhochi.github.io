@@ -164,10 +164,31 @@
 	
 	<input id="asthma" type="hidden" value="_/aesm@"></input>
 	<p class="general"><b>asthma</b> &nbsp; n(u) &nbsp;
-	/<span class="ipa" id="show_asthma"></span>/</p>
-	<p class="meaning">(US) /'&#230;zm&#601;/</p>
-	<p class="example">1/ an asthma sufferer</p>
-	<p class="example">2/ an asthma attack</p>
+	/<span class="ipa" id="show_asthma"></span>/ or /<span class="ipa" id="show_asthma*"></span>/</p>
+	<p class="meaning">(a medical condition) 哮喘</p>
+	<p class="example">1/ "Asthma is a common long-term condition that can cause coughing, wheezing,<br>
+		&nbsp; chest tightness and breathlessness.</p>
+	<p class="example">2/  The main symptoms of asthma are wheezing, shortness of breath, coughing<br>
+		&nbsp; and a tight chest."</p>
+	<p class="meaning">develop asthma</p>
+	<p class="example">3/ "People can develop asthma after exposure to things that irritate the airways."</p>
+	<p class="meaning">suffer from asthma</p>
+	<p class="example">4/ "About 300 million people suffer from asthma globally,<br>
+		&nbsp; with 250,000 annual deaths traced to the disease."</p>
+	<p class="example">5/ "Children of mothers with asthma are three times more likely to<br>
+		&nbsp; suffer from asthma."</p>
+	<p class="meaning">an asthma sufferer</p>
+	<p class="example">6/ "A severe asthma sufferer has been taking steroids for over 30 years."</p>
+	<p class="example">7/ "I am an asthma sufferer and have been since the age of three."</p>
+	<p class="meaning">an asthma attack</p>
+	<p class="example">8/ Medics tended to a boy who was having an asthma attack.</p>
+	<p class="example">9/ "If you or someone you know has ever experienced an asthma attack,<br>
+		&nbsp; you know how scary and overwhelming it can be."</p>
+	<p class="meaning">a treatment of asthma, a reliever inhaler</p>
+	<p class="example">10/ Most people with asthma will be given a reliever inhaler.</p>
+	<p class="example">11/ "Inhalers, which are devices that let you breathe in medicine,<br>
+		&nbsp; are the main treatment of asthma."</p>
+	<p class="example">12/ "Reliever inhalers, usually blue, are taken to relieve asthma symptoms quickly."</p>
 	
 	<br><hr><br> 
 	
@@ -914,10 +935,15 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	
 	//display ipa* tags
+	var ipaAsthma = "_/aezm@";
 	var ipaChrysanth = "krI_s/aenT@m@m";
+	
 	for (let j=0; j<shorthands.length; j++){
-			ipaChrysanth = ipaChrysanth.replaceAll(shorthands[j], htmlCodes[j]);
-	}			
+		ipaChrysanth = ipaChrysanth.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaAsthma = ipaAsthma.replaceAll(shorthands[j], htmlCodes[j]);
+	}	
+
+	document.getElementById("show_asthma*").innerHTML = ipaAsthma;
 	document.getElementById("show_chrysanth*").innerHTML = ipaChrysanth;
 	document.getElementById("show_compliment*").innerHTML = document.getElementById("compliment").value;
 	document.getElementById("show_silhouette*").innerHTML = document.getElementById("silhouette").value;
