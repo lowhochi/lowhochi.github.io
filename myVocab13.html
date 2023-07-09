@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>myVocab13</title>
+	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
+</head>
+<body>
+	<!--------------------Navigation Bar-------------------->
+	<div class="navigation">
+	<p class="navigation">Word Search</p>
+		<div id="myDiv"></div>
+	</div>
+	
+	<!--------------------Main Page-------------------->
+	<div class="mainPage"> 
+	
+	<a class="previous" href="myVocab12.html">Previous</a>
+	<a class="next" href="">Next</a>
+	<h1>My Vocabulary Page</h1>	
+	<h2 id="wordCount"></h2>
+	
+	<!--------------------Vocabulary-------------------->
+	
+	<!--------------------END-------------------->
+	<!-- DEMO:
+	<input id="" type="hidden" value=""></input>
+	<p class="general"><b></b> &nbsp; &nbsp;
+	/<span class="ipa" id=""></span>/</p>
+	<p class="meaning"></p>
+	<p class="example">1/</p>
+	<br><hr><br> 
+	-->
+	</div>
+</body>
+<script>
+	const vocabs = [];
+</script>
+
+<script type="text/javascript" src="myVocabJS.js"></script>
+
+<script>
+	var wordCount = vocabs.length;
+	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
+
+	//var ipa = "";
+
+	for (let j=0; j<shorthands.length; j++){
+		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+	}
+
+	//display ipa* tags
+	// document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
+	
+</script>
+
+</html>
