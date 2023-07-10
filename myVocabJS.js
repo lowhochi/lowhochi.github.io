@@ -15,13 +15,6 @@ function showIPA(){
 	}
 }
 
-function showPicture(clickedID){
-	let name = clickedID.substring(6);
-	let display = "show_"+clickedID.substring(10);
-	alert(name);
-	alert(display);
-}
-
 var myDiv = document.getElementById("myDiv");
 var myUL = document.createElement("ul");
 myUL.className = "navigation";
