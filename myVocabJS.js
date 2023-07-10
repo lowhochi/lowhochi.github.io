@@ -15,17 +15,6 @@ function showIPA(){
 	}
 }
 
-function showImg(nameID, hasShown){
-	alert("Great!");
-	if (hasShown==true){
-		document.getElementById(nameID).style.display = "none";
-		hasShown = false;
-	}else{
-		document.getElementById(nameID).style.display = "block";
-		hasShown = true;
-	}
-}
-
 var myDiv = document.getElementById("myDiv");
 var myUL = document.createElement("ul");
 myUL.className = "navigation";
