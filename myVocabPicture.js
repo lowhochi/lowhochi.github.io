@@ -1,7 +1,7 @@
 var check_zebra_crossing = false;
 
 function showPicture(nameID, check){
-  alert("hello world");
+  alert(check);
   if (check==true){
     document.getElementById(nameID).style.display = "none";
     check = false;
