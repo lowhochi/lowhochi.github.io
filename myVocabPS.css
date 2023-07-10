@@ -161,6 +161,14 @@ img.mypic{
 	margin-right:auto;
 }
 
+button.mypic{
+	text-align:center;
+	font-size:2vw;
+	color:white;
+	background-color:aqua;
+	font-family:monaco;
+}
+
 /*--------------------Search Page-------------------- */
 
 div.leftPage { 
