@@ -1,4 +1,4 @@
-var check_zebra_crossing = false;
+var checks = { zebra_crossing: false };
 
 function showPicture(nameID, check){
   alert(check);
