@@ -1,3 +1,5 @@
+var check_zebra_crossing = false;
+
 function showPicture(nameID, check){
   alert("hello world");
   if (check==true){
