@@ -1,0 +1,3 @@
+function showPicture(nameID, check){
+
+}
