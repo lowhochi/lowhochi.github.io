@@ -18,13 +18,8 @@ function showIPA(){
 function showPicture(clickedID){
 	let name = clickedID.substring(6);
 	let display = "show_"+clickedID.substring(10);
-	if (eval(display)){
-		document.getElementById(name).innerHTML.style.display = "none";
-		eval(display) = false;
-	}else{
-		document.getElementById(name).innerHTML.style.display = "block"; 
-		eval(display) = true;
-	}
+	alert(name);
+	alert(display);
 }
 
 var myDiv = document.getElementById("myDiv");
