@@ -17,10 +17,10 @@ function showIPA(){
 
 function showImg(nameID, hasShown){
 	if (hasShown){
-		document.getElementById(nameID) = "none";
+		document.getElementById(nameID).style.display = "none";
 		hasShown = false;
 	}else{
-		document.getElementById(nameID) = "block";
+		document.getElementById(nameID).style.display = "block";
 		hasShown = true;
 	}
 }
