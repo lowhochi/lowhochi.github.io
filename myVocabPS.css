@@ -156,18 +156,9 @@ span.invs{
 }
 
 img.mypic{
-	display:none;
 	width:20vw;
 	margin-left:auto;
 	margin-right:auto;
-}
-
-button.mypic{
-	background-color:aqua;
-	border:none;
-	color:orange;
-	font-size: 2vw;
-	text-align:center;
 }
 
 /*--------------------Search Page-------------------- */
