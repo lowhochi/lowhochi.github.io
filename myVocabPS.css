@@ -156,9 +156,10 @@ span.invs{
 }
 
 img.mypic{
-	width: 20vw;
-	margin-left: auto;
-	margin-right: auto;
+	display:none;
+	width:20vw;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 button.mypic{
@@ -167,9 +168,7 @@ button.mypic{
 	color:orange;
 	font-size: 2vw;
 	text-align:center;
-	text-family:courier;
 }
-
 
 /*--------------------Search Page-------------------- */
 
