@@ -1,4 +1,4 @@
-var checks = { zebra_crossing: false };
+var checks = { "zebra_crossing": false };
 
 function showPicture(input){
         alert(checks[input]);
