@@ -155,6 +155,11 @@ span.invs{
 	visibility:hidden;
 }
 
+img.mypic{
+	width: 20vw;
+	align: center;
+}
+
 /*--------------------Search Page-------------------- */
 
 div.leftPage { 
