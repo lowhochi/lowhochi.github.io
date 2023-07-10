@@ -1,7 +1,7 @@
 var checks = { zebra_crossing: false };
 
 function showPicture(input, checks){
-        alert("HELLO WORLD");
+        alert("checks[input] = "+checks[input]);
         nameID = "pic_"+input;        
         if (check==true){
                 document.getElementById(nameID).style.display = "none";
