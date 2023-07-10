@@ -15,6 +15,16 @@ function showIPA(){
 	}
 }
 
+function showImg(nameID, hasShown){
+	if (hasShown){
+		document.getElementById(nameID) = "none";
+		hasShown = false;
+	}else{
+		document.getElementById(nameID) = "block";
+		hasShown = true;
+	}
+}
+
 var myDiv = document.getElementById("myDiv");
 var myUL = document.createElement("ul");
 myUL.className = "navigation";
