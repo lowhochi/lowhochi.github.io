@@ -15,6 +15,15 @@ function showIPA(){
 	}
 }
 
+function showPicture(clickedID){
+	let name = clickedID.substring(6);
+	if (document.getElementById(name).innerHTML.style.display == "none"){
+		document.getElementById(name).innerHTML.style.display = "block"; 
+	}else{
+		document.getElementById(name).innerHTML.style.display = "none"; 
+	}
+}
+
 var myDiv = document.getElementById("myDiv");
 var myUL = document.createElement("ul");
 myUL.className = "navigation";
