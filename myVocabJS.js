@@ -16,7 +16,8 @@ function showIPA(){
 }
 
 function showImg(nameID, hasShown){
-	if (hasShown){
+	alert("Great!");
+	if (hasShown==true){
 		document.getElementById(nameID).style.display = "none";
 		hasShown = false;
 	}else{
