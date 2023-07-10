@@ -2181,7 +2181,7 @@
 	<p class="general"><b>zebra crossing</b> &nbsp; n(c) &nbsp;
 	/<span class="ipa" id="show_zebra_crossing"></span>/
 	<button class="mypic" onclick="showZebraCrossing()">PICTURE</button></p>
-	<img class="mypic" id="zebra_crossing" src="myPictures/zebraCrossing.jpg" style="display:none;">
+	<img class="mypic" id="pic_zebra_crossing" src="myPictures/zebraCrossing.jpg" style="display:none;">
 
 	<p class="meaning">(UK) an area of road marked with broad black and white lines<br>
 		&nbsp; where vehicles must stop for people to walk across</p>
@@ -2271,10 +2271,10 @@
 	var show_zebra_crossing = false;
 	function showZebraCrossing(){
 		if (show_zebra_crossing==false){
-			document.getElementById("zebra_crossing").style.display = "block";
+			document.getElementById("pic_zebra_crossing").style.display = "block";
 			show_zebra_crossing = true;
 		}else{
-			document.getElementById("zebra_crossing").style.display = "none";
+			document.getElementById("pic_zebra_crossing").style.display = "none";
 			show_zebra_crossing = false;
 		}
 	}
