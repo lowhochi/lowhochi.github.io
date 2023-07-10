@@ -2271,8 +2271,19 @@
 
 	//display img tags
 	var show_zebra_crossing = false;
-	function showZebraCrossing(){ showImg("pic_zebra_crossing", show_zebra_crossing); }
+	
+	function showImg(nameID, isShown){
+		alert("Great!);
+		if (isShown){
+			document.getElementById(nameID).style.display = "none";
+			isSHown = false;
+		}else{
+			document.getElementById(nameID).style.display = "block";
+			isSHown = true;
+		}
+	}
 
+	function showZebraCrossing(){ showImg("pic_zebra_crossing", show_zebra_crossing); }
 	/*
 	function showZebraCrossing(){
 		alert("Great!");
