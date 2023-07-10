@@ -157,7 +157,19 @@ span.invs{
 
 img.mypic{
 	width: 20vw;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+button.mypic{
+	background-color:aqua;
+	border:none;
+	color:orange;
+	font-size: 2vw;
+	text-align:center;
+	text-family:courier;
+}
+
 
 /*--------------------Search Page-------------------- */
 
@@ -175,7 +187,7 @@ div.rightPage {
 	padding: 0 0 0 0;
 	margin-left:-10%;
 	width:20vw; 
-	float:left; 
+	float:left;
 }
 
 a.search {
