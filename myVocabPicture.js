@@ -1,8 +1,9 @@
 // <script type="text/javascript" src="myVocabPicture.js"></script>
-// <button class="mypic" onclick="showPicture('WORD')">PICTURE</button></p>
+// <button class="mypic" onclick="showPicture('WORD')">PICTURE</button>
 // <img class="mypic" id="pic_WORD" src="myPictures/WORD.jpg" style="display:none;">
 
-var checks = { "zebra_crossing": false };
+var checks = {"zebra_crossing": false,
+              "beige": false};
 
 function showPicture(input){
         //alert(checks[input]);
