@@ -194,6 +194,43 @@
 		
 	<br><hr><br> 
 
+	<input id="trade-off" type="hidden" value="treId"></input>
+	<p class="general"><b>trade off</b> &nbsp; v &nbsp;
+	/<span class="ipa" id="show_trade-off"></span>/</p>
+	<p class="meaning"><b>trade off something: accept something bad in order to have something good</b></p>
+	<p class="meaning">trade off A for B: accept (the loss of) A in order to get B</p>
+	<p class="example">1/ They are uneasy with trading off future revenue for easy cash now.</p>
+	<p class="example">2/ I get up early and trade off sleep for exercise.</p>
+	<p class="example">3/ "People would be willing to trade off integrity for a better individual outcome."</p>
+	<p class="example">4/ "Consumers pursuing long-term goals often face choices that<br>
+		&nbsp; trade off immediate pleasure for long-term benefits."</p> 
+	<p class="example">5/ "To choose death to avoid further loss of dignity is not to trade off<br>
+		&nbsp; dignity for desire, but rather choosing death for the sake of dignity."</p>
+	<p class="meaning">trade off A against B: accept (the loss of) A in order to get B</p>	
+	<p class="example">6/ Economic policy is about trading off costs against benefits.</p>
+	<p class="example">7/ "We won't trade off privacy against other objectives."</p>
+	
+	<br><br>
+
+	<p class="general"><b>trade-off</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_trade-off*"></span>/</p>
+	<p class="meaning"><b>the act of balancing two things that are opposed to each other</b></p>
+	<p class="meaning">n(singular) a trade-off between A and B</p>
+	<p class="example">1/ There is a trade-off between doing the job accurately and doing it quickly.</p>	
+	<p class="example">2/ There is a trade-off between the benefits of the drug and<br>
+		&nbsp; the risk of side effects.</p>
+	<p class="example">3/ She said that she'd had to make a trade-off between her job and her family.</p>
+	<p class="meaning">n(singular) a trade-off for something</p>
+	<p class="example">4/ For some car buyers, lack of space is an acceptable trade-off<br>
+		&nbsp; for a sporty design.</p>
+	<p class="meaning">in a trade off for something</p>
+	<p class="example">5/ "Personal data is constantly recorded, and individuals often willingly share<br>
+		&nbsp; their personal data in a trade-off for convenience or other benefits."</p>
+		
+	<br><hr><br> 
+
+
+		
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -206,7 +243,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["trade", "venture"];
+	const vocabs = ["trade", "venture", "trade-off"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -216,15 +253,18 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
 	//var ipa = "";
+	var ipaTradeoff = "_treId./6f";
 
 	for (let j=0; j<shorthands.length; j++){
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaTradeoff = ipaTradeoff.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
 	//document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
 	document.getElementById("show_trade*").innerHTML = document.getElementById("trade").value;
 	document.getElementById("show_venture*").innerHTML = document.getElementById("venture").value;
+	document.getElementById("show_trade-off*").innerHTML = ipaTradeoff;
 	
 </script>
 
