@@ -3,7 +3,8 @@
 // <img class="mypic" id="pic_WORD" src="myPictures/WORD.jpg" style="display:none;">
 
 var checks = {"zebra_crossing": false,
-              "beige": false};
+              "beige": false,
+              "xylophone": false};
 
 function showPicture(input){
         //alert(checks[input]);
