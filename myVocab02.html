@@ -1001,15 +1001,17 @@
 	//display ipa* tags
 	var ipaAsthma = "_/aezm@";
 	var ipaChrysanth = "krI_s/aenT@m@m";
+	var ipaCompliment = "_k/6mplIment";
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaChrysanth = ipaChrysanth.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaAsthma = ipaAsthma.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaCompliment = ipaCompliment.replaceAll(shorthands[j], htmlCodes[j]);
 	}	
 
 	document.getElementById("show_asthma*").innerHTML = ipaAsthma;
 	document.getElementById("show_chrysanth*").innerHTML = ipaChrysanth;
-	document.getElementById("show_compliment*").innerHTML = document.getElementById("compliment").value;
+	document.getElementById("show_compliment*").innerHTML =  ipaCompliment;
 	document.getElementById("show_silhouette*").innerHTML = document.getElementById("silhouette").value;
 	document.getElementById("show_concern*").innerHTML = document.getElementById("concern").value;
 	
