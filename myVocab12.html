@@ -1182,18 +1182,20 @@
 	<br><hr><br> 
 
 	<input id="knock-off" type="hidden" value="n/6k"></input>
-	<p class="general"><b>knock off</b> &nbsp; v &nbsp;
+	<p class="general"><b>knock off</b> &nbsp; v(i,t) &nbsp;
 	/<span class="ipa" id="show_knock-off"></span>/</p>
 	<p class="meaning"><b>knock off (something): stop working or doing something</b></p>
 	<p class="example">1.1/ I don't knock off until six.</p>
 	<p class="example">1.2/ Do you want to knock off early today?</p>
-	<p class="example">1.3/ Let's knock off for lunch.</p>
-	<p class="example">1.4/ The carpenter knocked off early to take his kid to baseball practice.</p>
+	<p class="example">1.3/ The carpenter knocked off early to take his kid to baseball practice.</p>
+	<p class="meaning">knock off for lunch</p>
+	<p class="example">1.4/ Let's knock off for lunch.</p>
 	<p class="meaning">knock off work</p>
 	<p class="example">1.5/ What time do you knock off work?</p>
+	<p class="example">1.6/	We usually knock off work at about twelve on Saturday.</p>
 	<p class="meaning">knock off doing something</p>
-	<p class="example">1.6/ "How do you know I'm not studying in the house after I knock off cleaning?"</p>
-	<p class="example">1.7/ "He had decided to work really hard during the week until Friday<br>
+	<p class="example">1.7/ "How do you know I'm not studying in the house after I knock off cleaning?"</p>
+	<p class="example">1.8/ "He had decided to work really hard during the week until Friday<br>
 		&nbsp; when he can knock off studying early and wind down over the weekend."</p>
 	<br>
 	<p class="meaning"><b>v(t) knock something off (something):<br>
@@ -1202,18 +1204,46 @@
 	<p class="example">2.2/ One of the side mirrors on the truck got knocked off.</p>
 	<p class="meaning">see also: knock</p>
 	<br>	
-	<p class="meaning"><b>(US: knock something over) knock something off:<br>
+	<p class="meaning"><b>v(t) (US: knock over something) knock off something:<br>
 		&nbsp; steal something; steal something from a place</b></p>	
 	<p class="example">3.1/ "I knocked off a bank for 50 bucks."</p>
-	<p class="example">3.2/ He has a stack of computer equipment he's knocked off from various shops.</p>
+	<p class="example">3.2/ He has a stack of computer equipment he's knocked off<br>
+		&nbsp; from various shops.</p>
 	<p class="meaning">(adj) knocked-off</p>
 	<p class="example">3.3/ He was caught selling knocked-off car radios in the pub.</p>
 	<p class="example">3.4/ "When I open my eyes again I find myself in what seemed<br>
 		&nbsp; to be a knocked over car."</p>
 	<br>
-	<p class="meaning"></p>
-	<p class="example">1/</p>
+	<p class="meaning"><b>v(t) knock something off (something): reduce the price or value of something</b></p>
+	<p class="example">4.1/ The manager knocked $5 off because it was damaged.</p>
+	<p class="example">4.2/ The news knocked thirteen percent off the company's shares.</p>
+	<p class="example">4.3/ "Knock $10 off your first purchase when you spend $139 or more using this coupon."</p>
+	<p class="example">4.4/ "Knock $10 off your entire purchase of $55 or more when<br>
+		&nbsp; you apply this coupon at checkout."</p>
+	<br>
+	<p class="meaning"><b>v(t) knock off something: produce something quickly and easily</b></p>
+	<p class="example">5.1/ Roland makes a lot of money knocking off copies of famous paintings.</p> 
+	<p class="example">5.2/ She can knock off a novel in a couple of weeks.</p>
+		
+	<br><br>
 
+	<p class="general"><b>knock-off</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_knock-off*"></span>/</p>
+	<p class="meaning"><b>a cheap copy of something expensive</b></p>
+	<p class="example">1/ Is that the real thing or a knock-off?</p>
+	<p class="example">2/ It's an expensive knock-off, but a knock-off all the same.</p>
+	<p class="example">3/ "Marcus used to be the number one guy in selling knock-offs in Hong Kong."</p>
+	<p class="meaning">n(c) a knock-off product</p>	
+	<p class="example">4/ "Is buying a knock off handbag ever a good idea?"</p>
+	<p class="example">5/ "It could be a knock off product of the brand you trust."</p>
+	<p class="example">6/ "A knock-off phone is heavy because of the materials used to build it."</p>
+	<br>
+	<p class="meaning"><b>v(t) knock something off:<br>
+		&nbsp; produce a cheap copy of someone else's product, usually illegally</b></p>
+	<p class="example">7/ Small companies may see their inventions knocked off before<br>
+		&nbsp; they can make any money from them.</p>
+	<p class="example">8/ "We record how many games were knocked off."</p>
+		
 	<br><hr><br> 
 
 	<!--------------------END-------------------->
@@ -1243,10 +1273,12 @@
 
 	//var ipa = "";
 	var ipaTradeoff = "_treId./6f";
+	var ipaKnockoff = "_n/6k.O:f";
 
 	for (let j=0; j<shorthands.length; j++){
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaTradeoff = ipaTradeoff.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaKnockoff = ipaKnockoff.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -1256,6 +1288,7 @@
 	document.getElementById("show_trade-off*").innerHTML = ipaTradeoff;
 	document.getElementById("show_ply*").innerHTML = document.getElementById("ply").value;
 	document.getElementById("show_queue*").innerHTML = document.getElementById("queue").value;
+	document.getElementById("show_knock-off*").innerHTML = ipaKnockoff;
 	
 </script>
 
