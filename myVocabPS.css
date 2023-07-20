@@ -171,7 +171,7 @@ button.mypic{
 
 form.myForm{
 	display:inline;
-	margin:auto;
+	margin:0 auto;
 	width:15vw;
 }
 
@@ -186,9 +186,6 @@ button.myForm{
 	background-color:white;
 	font-family:monaco;
 }
-
-
-
 
 /*--------------------Search Page-------------------- */
 
