@@ -61,9 +61,13 @@
 	// document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
 
 	function goToPage(){
+		var myLink = "https://lowhochi.github.io/myVocab";
 		var temp = document.getElementById("myText").innerHTML;
 		alert("Hello World!");
 		alert(temp);
+		myLink += temp;
+		myLink += ".html";
+		location.replace(myLink);
 	}
 
 </script>
