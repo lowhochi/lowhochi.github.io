@@ -171,9 +171,9 @@ button.mypic{
 
 form.myForm{
 	display:inline;
-	margin-left:50%;
-	margin-right:35%
-	width:15%;
+	margin-left:auto;
+	margin-right:auto;
+	width:20%;
 }
 
 /*--------------------Search Page-------------------- */
