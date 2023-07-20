@@ -17,9 +17,6 @@
 	<a class="previous" href="myVocab12.html">Previous</a>
 	<form action="myVocab01.html">
 		<select id="page">
-		<option value="myVocab01">Page01</option>
-		<option value="myVocab02">Page02</option>
-		<option value="myVocab03">Page03</option>
 		</select>
 		<input type="submit" value="GO">
 	</form>
@@ -58,6 +55,22 @@
 
 	//display ipa* tags
 	// document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
+
+
+	var options = "";
+	var temp = "";
+	for (let j=1; j<=12; j++){
+		if (j<10){
+			temp += '0';
+			temp += j.toString();
+		}else{
+			temp += j.toString();
+		}
+		options += "<option value='myVocab" + temp + "'>Page" + temp;
+		options += "</option>"
+		temp = "";
+	}
+	document.getElementById("page").innerHTML = options;
 	
 </script>
 
