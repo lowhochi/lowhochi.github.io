@@ -179,6 +179,15 @@ input.myForm{
 	width:10vw;
 }
 
+button.myForm{
+	text-align:center;
+	font-size:2vw;
+	color:brown;
+	background-color:white;
+	font-family:monaco;
+}
+
+
 
 
 /*--------------------Search Page-------------------- */
