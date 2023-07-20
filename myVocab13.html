@@ -3,6 +3,7 @@
 <head>
 	<title>myVocab13</title>
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
+	<script type="text/javascript" src="myVocabGo.js"></script>
 	<style>
 	form.myForm{
 		display:inline;
@@ -22,7 +23,7 @@
 	<a class="previous" href="myVocab12.html">Previous</a>
 	<form class="myForm">
 		<input id="myText" type="text"/>
-		<button type="button" onclick="goToPage()">PRESS</button>
+		<button type="button" onclick="goToPage('myText')">PRESS</button>
 	</form>
 	<a class="next" href="myVocab14.html">Next</a>
 	<h1>My Vocabulary Page</h1>	
@@ -59,16 +60,7 @@
 
 	//display ipa* tags
 	// document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
-
-	function goToPage(){
-		var myLink = "https://lowhochi.github.io/myVocab";
-		var temp = document.getElementById("myText").value;
-		myLink += temp;
-		myLink += ".html";
-		alert(myLink);
-		window.location.href = myLink;
-	}
-
+	
 </script>
 
 </html>
