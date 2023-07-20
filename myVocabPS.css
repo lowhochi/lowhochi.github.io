@@ -171,20 +171,9 @@ button.mypic{
 
 form.myForm{
 	display:inline;
-	margin:0 auto;
-	width:15vw;
-}
-
-input.myForm{
-	width:5vw;
-}
-
-button.myForm{
-	text-align:center;
-	font-size:2vw;
-	color:brown;
-	background-color:white;
-	font-family:monaco;
+	margin-left:40%;
+	margin-right:40%
+	width:20%;
 }
 
 /*--------------------Search Page-------------------- */
