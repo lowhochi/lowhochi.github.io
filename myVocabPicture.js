@@ -5,7 +5,8 @@
 var checks = {"zebra_crossing": false,
               "beige": false,
               "xylophone": false,
-              "stereo": false};
+              "stereo": false,
+              "cassette": false};
 
 function showPicture(input){
         //alert(checks[input]);
