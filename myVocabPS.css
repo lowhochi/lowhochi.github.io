@@ -175,12 +175,13 @@ form.myForm{
 }
 
 input.myForm{
-	width:5vw;
+	width:4vw;
 	font-size:1.2vw;
 	font-family:monaco;
 }
 
 button.myForm{
+	width:4vw;
 	text-align:center;
 	font-size:1.2vw;
 	color:black;
