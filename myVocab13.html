@@ -5,10 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
 	<script type="text/javascript" src="myVocabGo.js"></script>
 	<style>
-	div.myForm{
-		display:flex;
-		justify-content:center;
-		width:10%;
+	form.myForm{
+		margin:0 auto;
+		width:10vw;
 	}
 		
 	</style>
@@ -17,12 +16,10 @@
 	<!--------------------Navigation Bar-------------------->
 	<div class="navigation">
 	<p class="navigation">Word Search</p>
-		<div class="myForm">
 		<form class="myForm">
-			<input class="myForm" id="myText" type="text"/>
-			<button class="myForm" type="button" onclick="goToPage('myText')">PRESS</button>
+		<input class="myForm" id="myText" type="text"/>
+		<button class="myForm" type="button" onclick="goToPage('myText')">PRESS</button>
 		</form>
-		</div>
 		<div id="myDiv"></div>
 	</div>
 	
