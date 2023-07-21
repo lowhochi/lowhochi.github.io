@@ -57,7 +57,26 @@
 	<p class="meaning">see also: leading, at the cutting edge of something</p>
 		
 	<br><hr><br> 
+
+	<input id="aftermath" type="hidden" value="_a:ft@.m/aeT"></input>
+	<p class="general"><b>aftermath</b> &nbsp; n(singular) &nbsp;
+	/<span class="ipa" id="show_aftermath"></span>/ or /<span class="ipa" id="show_aftermath*"></span>/</p>
+	<p class="meaning"><b>the situation that exists as a result of an important<br>
+		&nbsp; and usually unpleasant event, esp a war or an accident</b></p>
+	<p class="example">1/ "If you and your family are suffering from the aftermath of<br>
+		&nbsp; an industrial accident, please contact our law firm today."</p>
+	<p class="meaning">cope with the aftermath</p>
+	<p class="example">2/ How does a country cope with the aftermath of war?</p>
+	<p class="example">3/ "Residents cope with the aftermath of a fire that displaced 45 people<br>
+		&nbsp; at Dolley Brook condos in Westbrook."</p>
+	<p class="meaning">in the aftermath of something</p>	
+	<p class="example">4/ Many people died in the aftermath of the explosion.</p>
+	<p class="example">5/ We all worked together in the aftermath of the earthquake.</p>
+	<p class="example">6/ A lot of rebuilding took place in the aftermath of the war.</p>
+	<p class="example">7/ The president visited the region in the immediate aftermath of the disaster.</p>
 		
+	<br><hr><br> 
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -70,7 +89,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["meddle", "foremost"];
+	const vocabs = ["meddle", "foremost", "aftermath"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -79,14 +98,15 @@
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
-	//var ipa = "";
+	var ipaAftermath = "_/aeft@r.m/aeT";
 
 	for (let j=0; j<shorthands.length; j++){
-		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaAftermath = ipaAftermath.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
 	// document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
+	document.getElementById("show_aftermath*").innerHTML = ipaAftermath; 
 	
 </script>
 
