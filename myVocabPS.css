@@ -169,6 +169,26 @@ button.mypic{
 	font-family:monaco;
 }
 
+form.myForm{
+	width:10vw;
+	margin:0 auto;
+}
+
+input.myForm{
+	width:5vw;
+	font-size:1.2vw;
+	font-family:monaco;
+}
+
+button.myForm{
+	text-align:center;
+	font-size:1.2vw;
+	color:black;
+	background-color:lavender;
+	border-color:lime;
+	font-family:monaco;	
+}
+
 /*--------------------Search Page-------------------- */
 
 div.leftPage { 
