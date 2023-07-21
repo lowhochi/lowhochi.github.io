@@ -3,7 +3,8 @@
 <head>
 	<title>myVocab01</title>
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
-	 <script type="text/javascript" src="myVocabPicture.js"></script>
+	<script type="text/javascript" src="myVocabPicture.js"></script>
+	<script type="text/javascript" src="myVocabGo.js"></script>
 	<!--
 	<style>
 	div.mainPage { margin-left:15%; height:95vh; }
@@ -48,6 +49,10 @@
 	<!--------------------Navigation Bar-------------------->
 	<div class="navigation">
 	<p class="navigation">Word Search</p>
+		<form class="myForm">
+		<input class="myForm" id="myText" type="text"/>
+		<button class="myForm" type="button" onclick="goToPage('myText')">GO</button>
+		</form>
 		<div id="myDiv"></div>
 	</div>
 	
