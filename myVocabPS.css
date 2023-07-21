@@ -176,7 +176,8 @@ form.myForm{
 }
 
 input.myForm{
-	width:4vw;
+	size:4vw;
+	maxlength:4vw;
 	font-size:1.2vw;
 	font-family:monaco;
 }
