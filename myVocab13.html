@@ -5,10 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
 	<script type="text/javascript" src="myVocabGo.js"></script>
 	<style>
-		form.myForm{
-			display: inline;
-			width: 10vw;
-		}
+	div.myForm{
+		display:flex;
+		justify-content:center;
+		width:10%;
+	}
 		
 	</style>
 </head>
@@ -16,17 +17,22 @@
 	<!--------------------Navigation Bar-------------------->
 	<div class="navigation">
 	<p class="navigation">Word Search</p>
+		<div id="myForm">
+		<form class="myForm">
+			<input class="myForm" id="myText" type="text"/>
+			<button class="myForm" type="button" onclick="goToPage('myText')">PRESS</button>
+		</form>
+			
+		</div>
+
+		
 		<div id="myDiv"></div>
 	</div>
 	
 	<!--------------------Main Page-------------------->
 	<div class="mainPage"> 
-	
+		
 	<a class="previous" href="myVocab12.html">Previous</a>
-	<form class="myForm">
-		<input class="myForm" id="myText" type="text"/>
-		<button class="myForm" type="button" onclick="goToPage('myText')">PRESS</button>
-	</form>
 	<a class="next" href="myVocab14.html">Next</a>
 	<h1>My Vocabulary Page</h1>	
 	<h2 id="wordCount"></h2>
