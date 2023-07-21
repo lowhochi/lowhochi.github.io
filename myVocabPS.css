@@ -178,6 +178,7 @@ input.myForm{
 	width:4vw;
 	font-size:1.2vw;
 	font-family:monaco;
+	margin-right:-2vw;
 }
 
 button.myForm{
