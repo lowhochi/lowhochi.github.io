@@ -170,6 +170,7 @@ button.mypic{
 }
 
 form.myForm{
+	display:inline-block;
 	width:10vw;
 	margin:0 auto;
 }
