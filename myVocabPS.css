@@ -170,7 +170,7 @@ button.mypic{
 }
 
 form.myForm{
-	width:8vw;
+	width:10vw;
 	margin:0 auto;
 }
 
@@ -178,6 +178,7 @@ input.myForm{
 	width:4vw;
 	font-size:1.2vw;
 	font-family:monaco;
+	margin: 0;
 }
 
 button.myForm{
@@ -187,7 +188,8 @@ button.myForm{
 	color:black;
 	background-color:lavender;
 	border-color:lime;
-	font-family:monaco;	
+	font-family:monaco;
+	margin: 0;
 }
 
 /*--------------------Search Page-------------------- */
