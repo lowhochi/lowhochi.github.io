@@ -169,13 +169,6 @@ button.mypic{
 	font-family:monaco;
 }
 
-form.myForm{
-	display:inline;
-	margin-left:auto;
-	margin-right:auto;
-	width:15vw;
-}
-
 /*--------------------Search Page-------------------- */
 
 div.leftPage { 
