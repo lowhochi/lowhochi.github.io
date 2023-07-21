@@ -170,11 +170,12 @@ button.mypic{
 }
 
 form.myForm{
-	width:10vw;
+	width:8vw;
 	margin:0 auto;
 }
 
 input.myForm{
+	width:4vw;
 	font-size:1.2vw;
 	font-family:monaco;
 }
