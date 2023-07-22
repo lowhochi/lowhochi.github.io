@@ -2,6 +2,9 @@
 function goToPage(s){
         var myLink = "https://lowhochi.github.io/myVocab";
 	var temp = document.getElementById(s).value;
+	if (temp=="00"){
+		temp = "Search";
+	}
 	myLink += temp;
 	myLink += ".html";
 	window.location.href = myLink;
