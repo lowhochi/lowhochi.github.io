@@ -7,6 +7,6 @@ function goToPage(s){
 	}
 	myLink += temp;
 	myLink += ".html";
-	alert(myLink);
+	//alert(myLink);
 	window.location.href = myLink;
 }
