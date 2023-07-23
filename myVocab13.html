@@ -147,7 +147,24 @@
 	<p class="example">8/ "According to the employer, consequent on the incident the employee<br>
 		&nbsp; remained unauthorizedly absent for about three weeks."</p>
 	<p class="meaning">see also: resultant</p>
-		
+
+	<br><br>
+
+	<p class="general"><b>consequently</b> &nbsp; adv &nbsp;
+	/<span class="ipa" id="show_consequent*"></span>/</p>
+	<p class="meaning"><b>as a result; therefore</b></p>
+	<p class="example">1/ "Consequently, he spent the rest of his life in a wheelchair."</p>
+	<p class="example">2/ Consequently, we become more resistant to change.</p>
+	<p class="example">3/ I was very worried, and consequently I couldn’t concentrate.</p>
+	<p class="example">4/ This poses a threat to agriculture and the food chain,<br>
+		&nbsp; and consequently to human health.</p>
+	<p class="example">5/ She failed her exams and was consequently unable to<br>
+		&nbsp; start her studies at college.</p>
+	<p class="example">6/ I spent most of my money in the first week and consequently<br>
+		&nbsp; had very little to eat by the end of the holiday.</p>
+	<p class="example">7/ "In the coming winter their precious animals may die of starvation,<br>
+		&nbsp; and consequently many have turned to crime."</p>
+
 	<br><hr><br> 
 
 	<!--------------------END-------------------->
@@ -172,14 +189,17 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
 	var ipaAftermath = "_/aeft@r.m/aeT";
+	var ipaConsequent = "_k/6nsIkw@ntli";
 
 	for (let j=0; j<shorthands.length; j++){
 		ipaAftermath = ipaAftermath.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaConsequent = ipaConsequent.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
 	// document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
 	document.getElementById("show_aftermath*").innerHTML = ipaAftermath; 
+	document.getElementById("show_consequent*").innerHTML = ipaConsequent; 
 	
 </script>
 
