@@ -127,7 +127,8 @@
 	<input id="consequent" type="hidden" value="_k/6nsIkw@nt"></input>
 	<p class="general"><b>consequent</b> &nbsp; adj &nbsp;
 	/<span class="ipa" id="show_consequent"></span>/</p>
-	<p class="meaning"><b>happening as a result of something</b></p>
+	<p class="meaning"><b>happening as a result of something (also: consequential 
+		/<span class="ipa">''k&#594;ns&#618;'kwen&#643;&#601;l</span>/)</b></p>
 	<p class="meaning">a consequent effect</p>
 	<p class="example">1/ No cause acts without a consequent effect.</p>
 	<p class="example">2/ "This study is focused on investigation of the resistivity property of<br>
@@ -195,6 +196,32 @@
 	<p class="example">13/ Icy conditions resulted in two roads being closed.</p>
 
 	<br><hr><br> 
+
+	<input id="subsequent" type="hidden" value="_s/2bsIkw@nt"></input>
+	<p class="general"><b>subsequent</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_subsequent"></span>/</p>
+	<p class="meaning"><b>(before noun) happening or coming after something else</b></p>
+	<p class="example">1/ Subsequent events confirmed our doubts.</p>
+	<p class="example">2/ Developments on this issue will be dealt with in a subsequent report.</p>
+	<p class="example">3/ The book discusses his illness and subsequent resignation from politics.</p>
+	<p class="example">4/ Everything I do makes me better at each subsequent thing.</p>
+	<p class="example">5/ "The subsequent generations will be less diverse than the original population."</p>
+	<p class="meaning">subsequent to something: following</p>
+	<p class="example">6/ There have been further developments subsequent to our meeting.</p>
+	<p class="example">7/ Those explosions must have been subsequent to our departure<br>
+		&nbsp; because we didn't hear anything.</p>
+
+	<br><br>
+
+	<p class="general"><b>subsequently</b> &nbsp; adv &nbsp;
+	/<span class="ipa" id="show_subsequent*"></span>/</p>
+	<p class="meaning"><b>afterwards; later; after something else has happened</b></p>
+	<p class="example">1/ The original interview notes were subsequently lost.</p>
+	<p class="example">2/ Subsequently, new guidelines were issued to all employees.</p>
+	<p class="example">3/ He subsequently became chairman of the party.</p>
+	<p class="example">4/ He was made a partner, but he subsequently retired.</p>
+	
+	<br><hr><br> 
 	
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -208,7 +235,8 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["meddle", "foremost", "aftermath", "consequence", "consequent", "result-in"];
+	const vocabs = ["meddle", "foremost", "aftermath", "consequence", "consequent", "result-in",
+		       "subsequent"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -219,16 +247,19 @@
 
 	var ipaAftermath = "_/aeft@r.m/aeT";
 	var ipaConsequent = "_k/6nsIkw@ntli";
+	var ipaSubsequent = "_s/2bsIkw@ntli";
 
 	for (let j=0; j<shorthands.length; j++){
 		ipaAftermath = ipaAftermath.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaConsequent = ipaConsequent.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaSubsequent = ipaSubsequent.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
 	// document.getElementById("show_ipa*").innerHTML = document.getElementById("ipa").value;
 	document.getElementById("show_aftermath*").innerHTML = ipaAftermath; 
 	document.getElementById("show_consequent*").innerHTML = ipaConsequent; 
+	document.getElementById("show_subsequent*").innerHTML = ipasubsequent; 
 	
 </script>
 
