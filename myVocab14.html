@@ -682,17 +682,23 @@
 
 	<input id="sling" type="hidden" value="slIN"></input>
 	<p class="general"><b>sling</b> &nbsp; n(c) &nbsp;
-	/<span class="ipa" id="show_sling"></span>/</p>
-	<p class="meaning"><b>a band of cloth that is tied around a person’s neck and used to<br>
-		&nbsp; support a broken or injured arm</b></p>
+	/<span class="ipa" id="show_sling"></span>/ &nbsp;
+	<button class="mypic" onclick="showPicture('sling')">PICTURE</button></p>		
+	<img class="mypic" id="pic_sling" src="myPictures/sling.jpg" style="display:none;">
+	<p class="meaning"><b>a band of cloth that is tied around a person’s neck<br>
+		&nbsp; and used to support a broken or injured arm</b></p>
 	<p class="meaning">have an arm in a sling</p>
 	<p class="example">1.1/ He had his arm in a sling.</p>
 	<p class="example">1.2/ I had my arm in a sling for six weeks.</p>
 	<p class="example">1.3/ "I am a keen horse rider and so, regrettably, I often<br>
 		&nbsp; have my arm in a sling."</p>
+	<p class="meaning">put on a sling, put a sling on my shoulder</p>
+	<p class="example">1.4/ "Put on a shoulder sling correctly."</p>
+	<p class="example">1.5/ "I was taken to hospital and I've got bruises on my back, legs and arms.<br>
+		&nbsp; They also put a sling on my shoulder because there was a lot of pain there."</p>
 	<p class="meaning">see also: have a leg in plaster(/in a cast)</p>
-	<p class="example">1.4/ My leg was in plaster for about six weeks.</p>
-	<p class="example">1.5/ "I feel that people do treat me differently when I have<br>
+	<p class="example">1.6/ My leg was in plaster for about six weeks.</p>
+	<p class="example">1.7/ "I feel that people do treat me differently when I have<br>
 		&nbsp; my leg in plaster."</p>
 	<p class="meaning">see also: a walker, a cane</p>
 	<br>
@@ -700,9 +706,25 @@
 	<p class="example">2.1/ The engine was lifted in a sling of steel rope.</p>
 	<p class="example">2.2/ The cylinder was lifted from the seabed in a sling.</p>
 
-	
+	<br><br>
 
-		
+	<p class="general"><b>sling</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_sling*"></span>/</p>
+	<p class="meaning"><b>throw something somewhere in a careless way</b></p>
+	<p class="example">3.1/ Don't just sling your clothes on the floor.</p>
+	<p class="example">3.2/ She slung her coat into the back of the car.</p>
+	<p class="example">3.3/ If any of the letters aren't interesting just sling them in the bin.</p>
+	<p class="example">3.4/ I'll just sling together a few things and I'll be ready to go.
+	<p class="meaning">sling somebody something</p>
+	<p class="example">3.5/ Sling me a pen, will you?</p>
+	<p class="example">3.6/ Sling me an apple, will you?</p>	
+	<br>
+	<p class="meaning"><b>v(t) put something somewhere where it hangs loosely</b></p>
+	<p class="example">4.1/ I usually sling my jacket over the back of my chair.</p>
+	<p class="example">4.2/ She came in and slung her coat over a chair.</p>
+	<p class="example">4.3/ Her bag was slung over her shoulder.</p>
+	<p class="example">4.4/ We slung a hammock /<span class="ipa">'h&#230;m&#601;k</span>/ between two trees.</p>
+
 	<br><hr><br>
 	
 	<!--------------------END-------------------->
@@ -738,6 +760,7 @@
 	//display ipa* tags
 	document.getElementById("show_profile*").innerHTML = document.getElementById("profile").value;
 	document.getElementById("show_bruise*").innerHTML = document.getElementById("bruise").value;
+	document.getElementById("show_sling*").innerHTML = document.getElementById("sling").value;
 	
 </script>
 
