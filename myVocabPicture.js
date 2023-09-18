@@ -9,7 +9,8 @@ var checks = {"zebra_crossing": false,
               "cassette": false,
               "chrysanth": false,
               "grocery": false,
-              "bruise": false};
+              "bruise": false,
+              "sling": false};
 
 function showPicture(input){
         //alert(checks[input]);
