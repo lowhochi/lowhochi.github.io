@@ -11,7 +11,7 @@ var checks = {"zebra_crossing": false,
               "grocery": false,
               "bruise": false,
               "sling": false,
-              "cash-register": false};
+              "cash_register": false};
 
 function showPicture(input){
         //alert(checks[input]);
