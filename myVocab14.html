@@ -1268,6 +1268,35 @@
 		
 	<br><hr><br> 
 
+	<input id="fragile" type="hidden" value="_fr/ae.dZaIl"></input>
+	<p class="general"><b>fragile</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_fragile"></span>/ or /<span class="ipa" id="show_fragile*"></span>/</p>
+	<p class="meaning"><b>a fragile object is easily damaged or broken:</b></p>
+	<p class="example">1.1/ Be careful not to drop it; it’s very fragile.</p>
+	<p class="example">1.2/ Be careful with that vase - it's very fragile.</p>
+	<p class="example">1.3/ Some of the more fragile items are kept in a locked case.</p>
+	<p class="meaning">see also: breakable, delicate</p>
+	<br>
+	<p class="meaning"><b>(adj) easily destroyed, ended, or made to fail</b></p>
+	<p class="example">2.1/ The economy remains extremely fragile.</p>
+	<p class="example">2.2/ In her job she was used to dealing with actors' fragile egos.</p>
+	<p class="example">2.3/ Seasonal illnesses expose how fragile the region's healthcare infrastructure is.</p>
+	<p class="example">2.4/ The assassination could end the fragile peace agreement<br>
+		&nbsp; that was signed last month.</p>
+	<p class="example">2.5/ The changes would be disastrous for the fragile recovery of<br>
+		&nbsp; the UK's oil and gas industry.</p>
+	<p class="meaning">synonym: precarious, vulnerable</p>
+	<br>
+	<p class="meaning"><b>(adj) weak or in poor health, physically or mentally</b></p>
+	<p class="example">3.1/ He looked rather fragile after his operation.</p>
+	<p class="example">3.2/ The hospital wing provides a safer environment for medically fragile children.</p>
+	<p class="example">3.3/ Her father is now 86 and in fragile health.</p>
+	<p class="example">3.4/ I'm feeling a bit fragile after last night</p>
+	<p class="example">3.5/ No breakfast for me, thanks - I'm feeling a little fragile after last night's party.</p>
+	<p class="meaning">synonym: vulnerable, frail</p>
+		
+	<br><hr><br> 
+
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -1286,7 +1315,7 @@
 		       "high-profile", "low-profile", "switch-up", "rebellious", "bruise", "sling",
 		       "accumulate", "promise", "cashier", "cash_register", "checkout_counter",
 		       "dazzle", "instalment", "deposit", "on-deposit", "direct_deposit", "assimilate",
-		       "stuck-up"];
+		       "stuck-up", "fragile"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1297,9 +1326,11 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
 	//var ipa = "";
+	var ipaFragile = "_fr/ae.dZ@l";
 
 	for (let j=0; j<shorthands.length; j++){
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaFragile = ipaFragile.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -1308,6 +1339,7 @@
 	document.getElementById("show_sling*").innerHTML = document.getElementById("sling").value;
 	document.getElementById("show_promise*").innerHTML = document.getElementById("promise").value;
 	document.getElementById("show_deposit*").innerHTML = document.getElementById("deposit").value;
+	document.getElementById("show_fragile*").innerHTML = ipaFragile;
 	
 </script>
 
