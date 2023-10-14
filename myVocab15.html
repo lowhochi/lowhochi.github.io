@@ -4,6 +4,7 @@
 	<title>myVocab15</title>
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
 	<script type="text/javascript" src="myVocabGo.js"></script>
+	<script type="text/javascript" src="myVocabPicture.js"></script>
 </head>
 <body>
 	<!--------------------Navigation Bar-------------------->
@@ -28,7 +29,9 @@
 
 	<input id="tickle" type="hidden" value="_tIk@l"></input>
 	<p class="general"><b>tickle</b> &nbsp; v(i,t) &nbsp;
-	/<span class="ipa" id="show_tickle"></span>/</p>
+	/<span class="ipa" id="show_tickle"></span>/ &nbsp;
+	<button class="mypic" onclick="showPicture('tickle')">PICTURE</button>
+	<img class="mypic" id="pic_tickle" src="myPictures/tickle.jpg" style="display:none;">
 	<p class="meaning"><b>move your fingers on a sensitive part of somebody’s body<br>
 		&nbsp; in a way that makes them laugh</b></p>
 	<p class="example">1.1/ Stop tickling!</p>
