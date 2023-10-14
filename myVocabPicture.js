@@ -13,7 +13,8 @@ var checks = {"zebra_crossing": false,
               "sling": false,
               "cash_register": false,
               "backdrop": false,
-              "quad-bike": false};
+              "quad-bike": false,
+              "tickle": false};
 
 function showPicture(input){
         //alert(checks[input]);
