@@ -15,6 +15,7 @@ var checks = {"zebra_crossing": false,
               "backdrop": false,
               "quad-bike": false,
               "tickle": false,
+              "harness": false,
               "scaffolding": false};
 
 function showPicture(input){
