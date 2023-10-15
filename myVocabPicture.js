@@ -4,6 +4,7 @@
 
 var checks = {"zebra_crossing": false,
               "beige": false,
+              "zodiac": false,
               "xylophone": false,
               "stereo": false,
               "cassette": false,
