@@ -240,6 +240,32 @@
 
 	<br><hr><br> 
 
+	<input id="scaffolding" type="hidden" value="_sg/ae.f@l.dIN"></input>
+	<p class="general"><b>scaffolding</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_scaffolding"></span>/ or /<span class="ipa" id="show_scaffolding*"></span>/</p>
+	<p class="meaning"><b>a structure of metal poles and wooden boards put against a building for<br>
+		&nbsp; workers to stand on when they want to reach the higher parts of the building</b></p>
+	<p class="example">1/ The scaffolding rises 10 stories above the street. </p>
+	<p class="example">1/ The statue is currently surrounded by scaffolding.</p>
+	<p class="example">1/ Scaffolding has been erected around the tower and repair work<br>
+		&nbsp; will start next week.</p>
+	<p class="meaning">n(c) scaffolding poles, scaffolding tubes</p>
+	<p class="example">1/ "It is necessary to erect scaffolding poles accurately."</p>
+	<p class="example">1/ "We supply a large range of scaffolding tubes include 3.2mm wall tube,<br>
+		&nbsp; 4mm tube, used tube and aluminium tube."</p>
+	<p class="example">1/ "Our brand-new type 4, heavy-duty galvanised steel scaffolding tubes are used<br>
+		&nbsp; to create the framework on scaffold structures and also washing lines, handrails,<br>
+		&nbsp; bike & canoe racks, staircases, table legs, climbing frames, railings and more."</p>
+	<p class="meaning">n(c) a safety net, a scaffold safety net</p>
+	<p class="example">1/ Fa&#231;ade maintenance work carried out by two workers on a scaffold<br>
+		&nbsp; covered by a safety net.</p>
+	<br>
+	<p class="meaning"><b>n(c) scaffold /<span class="ipa">'sg&#230;.f&#601;&#650;ld</span>/:<br>
+		&nbsp; a structure made of scaffolding, for workers to stand on when they are working on a building</b></p>
+	<p class="example">1/</p>
+	
+	<br><hr><br> 
+		
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -252,7 +278,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["tickle", "nuisance", "acquaintance", "harness"];
+	const vocabs = ["tickle", "nuisance", "acquaintance", "harness", "scaffolding"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -262,14 +288,16 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
 	//var ipa = "";
+	var ipaScaffolding = "_sg/ae__f@UldIN";
 
 	for (let j=0; j<shorthands.length; j++){
-		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaScaffolding = ipaScaffolding.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
 	document.getElementById("show_tickle*").innerHTML = document.getElementById("tickle").value;
 	document.getElementById("show_harness*").innerHTML = document.getElementById("harness").value;
+	document.getElementById("show_scaffolding*").innerHTML = ipaScaffolding;
 	
 </script>
 
