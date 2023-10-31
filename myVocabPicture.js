@@ -18,7 +18,8 @@ var checks = {"zebra_crossing": false,
               "tickle": false,
               "harness": false,
               "scaffolding": false,
-              "roundabout": false};
+              "roundabout": false,
+              "incubator": false};
 
 function showPicture(input){
         //alert(checks[input]);
