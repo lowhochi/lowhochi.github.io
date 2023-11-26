@@ -19,7 +19,8 @@ var checks = {"zebra_crossing": false,
               "harness": false,
               "scaffolding": false,
               "roundabout": false,
-              "incubator": false};
+              "incubator": false,
+              "lip-balm": false};
 
 function showPicture(input){
         //alert(checks[input]);
