@@ -20,7 +20,8 @@ var checks = {"zebra_crossing": false,
               "scaffolding": false,
               "roundabout": false,
               "incubator": false,
-              "lip-balm": false};
+              "lip-balm": false,
+              "pickup": false};
 
 function showPicture(input){
         //alert(checks[input]);
