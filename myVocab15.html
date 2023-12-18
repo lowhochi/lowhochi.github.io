@@ -1611,8 +1611,8 @@
 	<p class="example">1.22/ On the advice of my doctor, I started riding my bicycle more frequently.</p>
 	<br>
 	<p class="meaning"><b>n(c,u) payment advice, pay advice</b></p>
-	<p class="example">2.1/ "Payment advice is a document of communication sent by a buyer to businesses<br>
-		&nbsp; which states that an invoice has been paid."</p>
+	<p class="example">2.1/ "Payment advice is a document of communication sent by a buyer to<br>
+		&nbsp; businesses which states that an invoice has been paid."</p>
 	<p class="example">2.2/ "A payment advice is a piece of information about an upcoming payment,<br>
 		&nbsp; for example that a customer sends out to a supplier to announce the payment<br>
 		&nbsp; of different goods."</p>
@@ -1622,6 +1622,15 @@
 		&nbsp; to each employee within one day of the payment of the relevant remuneration<br>
 		&nbsp; to the employee."</p>
 	
+	<br><hr><br> 
+
+	<input id="insurance" type="hidden" value="In_SO:.r@ns"></input>
+	<p class="general"><b>insurance</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_insurance"></span>/ or /<span class="ipa" id="show_insurance*"></span>/</p>
+	<p class="meaning"><b>an agreement in which you pay a company money and they pay your costs<br>
+		&nbsp; if you have an accident, injury</b></p>
+	<p class="example">1/</p>
+		
 	<br><hr><br> 
 		
 	<!--------------------END-------------------->
@@ -1642,7 +1651,7 @@
 		       "on-air", "in-the-air", "jingle", "inspire", "inspiration", "lip-balm",
 		       "manners", "refund", "reimburse", "reimbursement", "sublime", "sublimate",
 		       "landfill", "support", "adapt", "accommodate", "in-hand", "recommend", "advise",
-		       "advice"];
+		       "advice", "insurance"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1655,11 +1664,13 @@
 	var ipaScaffolding = "_s/uk/ae__f@UldIN";
 	var ipaRefund01 = "__ri:_f/2nd";
 	var ipaRefund02 = "rI_f/2nd";
+	var ipaInsurane = "In_SU@.r@ns";
 
 	for (let j=0; j<shorthands.length; j++){
 		ipaScaffolding = ipaScaffolding.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaRefund01 = ipaRefund01.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaRefund02 = ipaRefund02.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaInsurance = ipaInsurance.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -1673,6 +1684,7 @@
 	document.getElementById("show_refund**").innerHTML = ipaRefund02;
 	document.getElementById("show_sublime*").innerHTML = document.getElementById("sublime").value;
 	document.getElementById("show_support*").innerHTML = document.getElementById("support").value;
+	document.getElementById("show_insurance*").innerHTML = ipaInsurance;
 	
 </script>
 
