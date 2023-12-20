@@ -16,6 +16,8 @@ mySet.add("12");
 mySet.add("13");
 mySet.add("14");
 mySet.add("15");
+mySet.add("16");
+mySet.add("17");
 
 function goToPage(s){
         var myLink = "https://lowhochi.github.io/myVocab";
