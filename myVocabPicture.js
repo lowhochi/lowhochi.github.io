@@ -21,7 +21,8 @@ var checks = {"zebra_crossing": false,
               "roundabout": false,
               "incubator": false,
               "lip-balm": false,
-              "pickup": false};
+              "pickup": false,
+              "santa-claus": false};
 
 function showPicture(input){
         //alert(checks[input]);
