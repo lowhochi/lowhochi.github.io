@@ -2231,10 +2231,10 @@
 		
 	<br><hr><br> 
 
-	<input id="street-light" type="hidden" value="_sdri:t__laIt"></input>
+	<input id="street-light" type="hidden" value="_s/utri:t__laIt"></input>
 	<p class="general"><b>street light</b> &nbsp; n(c) &nbsp;
 	/<span class="ipa" id="show_street-light"></span>/</p>
-	<p class="meaning">(also: street lamp, light pole, lamp pole)</p>
+	<p class="meaning"><b>(also: street lamp, light pole, lamp pole, lamppost)</b></p>
 	<p class="example">1/ He crashed his car into a street light.</p>
 	<p class="example">2/ There are no street lights in the village.</p>
 	<p class="example">3/ These streetlights are mounted on cantilevers and wires.</p>
@@ -2242,10 +2242,34 @@
 		&nbsp; the only functioning street lamps of their kind in the city since 1967."</p> 	
 	<p class="example">5/ "Throughout the neighborhoods, you will find<br>
 		&nbsp; vintage street lights and mature trees."</p> 
-	<br>
-	<p class="meaning">(remark: 'lamp post' is a more generic term than 'street light',<br>
-		&nbsp; describing any lamp on top of a post.)</p>
+	<p class="meaning">remark: 'lamp post' or 'lamppost' is a more generic term than 'street light',<br>
+		&nbsp; describing any lamp on top of a post.</p>
 
+	<br><hr><br> 
+
+	<input id="advertisement" type="hidden" value="__/aed.v@r_taIz.m@nt"></input>
+	<p class="general"><b>advertisement</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_advertisement"></span>/ or /<span class="ipa" id="show_advertisement*"></span>/</p>
+	<p class="meaning"><b>(also: ad) a notice, picture or film telling people<br>
+		&nbsp; about a product, job or service</b></p>
+	<p class="example">1.1/ You can place an advertisement on a classifieds website.</p>
+	<p class="example">1.2/ Many companies run advertisements in the magazine.</p>
+	<p class="example">1.3/ The impression given in the advertisement is misleading.</p>
+	<p class="example">1.4/ She scanned the job advertisements in the paper.</p>
+	<p class="example">1.5/ She saw an advertisement asking for volunteers to take part in a study.</p>
+	<p class="example">1.6/ We have been deluged with replies to our advertisement.</p>
+	<p class="meaning">an advertisement for something</p>	
+	<p class="example">1.7/ I saw an advertisement for the new restaurant that opened in town.</p>
+	<p class="example">1.8/ Television and radio refused to carry advertisements for the album.</p>
+	<p class="example">1.9/ "We create and disseminate advertisements for job positions."</p>
+	<p class="meaning">an advertising video</p>
+	<p class="example">1.10/ "How often do we see an advertising video trending on YouTube?"</p>
+	<p class="example">1.11/ "Viewers can see an advertising video playing automatically with the sound off<br>
+		&nbsp; for around 30 seconds at the top of the YouTube Home feed."</p>
+	<p class="meaning">an advertising leaflet, an advertising mail</p>
+	<p class="example">1.12/ "We received an advertising leaflet for a newly openned restaurant."</p>
+	<p class="example">1.13/ "I got an advertising mail from <i>Twitch</i> last week."</p>
+		
 	<br><hr><br> 
 
 	<!--------------------END-------------------->
@@ -2266,7 +2290,7 @@
 		       "bounty", "cereal", "make-do", "coil", "roller_skating", "maintenance",
 		       "take-on", "feel-like", "rope", "cable", "yarn", "battery", "shade",
 		       "uniform", "school_uniform", "cramp", "cramped", "ratio", "wrap",
-		       "wrap-up", "zebra_crossing", "street-light"];
+		       "wrap-up", "zebra_crossing", "street-light", "advertisement"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -2277,10 +2301,12 @@
 
 	var ipaFavourite = "_feIv@r@t";
 	var ipaBattery = "_b/aet@ri";
+	var ipaAdvertisement = "@d_v/3:r.tIs.m@nt";
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaFavourite = ipaFavourite.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaBattery = ipaBattery.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaAdvertisement = ipaAdvertisement.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 	
 	//display ipa* tags
@@ -2298,6 +2324,7 @@
 	document.getElementById("show_uniform*").innerHTML = document.getElementById("uniform").value;
 	document.getElementById("show_cramp*").innerHTML = document.getElementById("cramp").value;
 	document.getElementById("show_wrap*").innerHTML = document.getElementById("wrap").value;
+	document.getElementById("show_advertisement*").innerHTML = ipaAdvertisement;
 	
 </script>
 
