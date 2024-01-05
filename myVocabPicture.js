@@ -22,7 +22,8 @@ var checks = {"zebra_crossing": false,
               "incubator": false,
               "lip-balm": false,
               "pickup": false,
-              "santa-claus": false};
+              "santa-claus": false,
+              "frown": false};
 
 function showPicture(input){
         //alert(checks[input]);
