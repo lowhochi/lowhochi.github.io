@@ -25,7 +25,8 @@ var checks = {"zebra_crossing": false,
               "santa-claus": false,
               "frown": false,
               "bucket": false,
-              "overpass": false};
+              "overpass": false,
+              "bridge": false};
 
 function showPicture(input){
         //alert(checks[input]);
