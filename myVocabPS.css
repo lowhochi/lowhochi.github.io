@@ -195,7 +195,8 @@ a.refer {
 	font-family:courier;
 	font-size:2vw;
 	text-decoration:none;
-	color:lavendar;
+	color:black;
+	background-color:lavender;
 }
 
 /*--------------------Search Page-------------------- */
