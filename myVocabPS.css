@@ -191,6 +191,13 @@ button.myForm{
 	font-family:monaco;
 }
 
+a.refer {
+	font-family:courier;
+	font-size:2vw;
+	text-decoration:none;
+	color:lavendar;
+}
+
 /*--------------------Search Page-------------------- */
 
 div.leftPage { 
