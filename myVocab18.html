@@ -4,6 +4,7 @@
 	<title>myVocab18</title>
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
 	<script type="text/javascript" src="myVocabGo.js"></script>
+	<script type="text/javascript" src="myVocabPicture.js"></script>
 </head>
 <body>
 	<!--------------------Navigation Bar-------------------->
@@ -79,7 +80,9 @@
 
 	<input id="curb" type="hidden" value="k/3:rb"></input>
 	<p class="general"><b>curb</b> &nbsp; n(c) &nbsp;
-	/<span class="ipa" id="show_curb"></span>/</p>
+	/<span class="ipa" id="show_curb"></span>/ &nbsp; 
+	<button class="mypic" onclick="showPicture('curb')">PICTURE</button></p>
+	<img class="mypic" id="pic_curb" src="myPictures/curb.jpg" style="display:none;">
 	<p class="meaning"><b>(UK: kerb) the edge of a raised path nearest the road</b></p>
 	<p class="example">1.1/ "The car was too close to the curb."</p>
 	<p class="example">1.2/ "Pedestrians on the curb are not allowed to cross the street at a red light."</p>
