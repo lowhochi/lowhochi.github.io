@@ -29,7 +29,8 @@ var checks = {"zebra_crossing": false,
               "bridge": false,
               "scouring_pad": false,
               "crown-braid": false,
-              "curb": false};
+              "curb": false,
+              "tally": false};
 
 function showPicture(input){
         //alert(checks[input]);
