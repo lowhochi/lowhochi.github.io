@@ -297,6 +297,38 @@
 	<p class="meaning">see also: be hung up about something</p>
 	
 	<br><hr><br> 
+
+	<input id="obedient" type="hidden" value="@_bi:.di.@nt"></input>
+	<p class="general"><b>obedient</b> &nbsp; &nbsp;
+	/<span class="ipa" id="show_obedient"></span>/ or /<span class="ipa" id="show_obedient*"></span>/</p>
+	<p class="meaning"><b>doing what you are told to do; willing to obey</b></p>
+	<p class="example">1/ "She used to be an obedient child of God."</p>
+	<p class="example">1/ "Obedient dogs respond properly and reliably to cues."</p>
+	<p class="example">1/ Students are expected to be quiet and obedient in the classroom.</p>
+	<p class="example">1/ "It is very easy to be obedient at home. All you have to do is to<br>
+		&nbsp; do what you are told to do, and don't be disrespectful to your parents<br>
+		&nbsp; or their friends."</p>
+	<p class="meaning">be obedient to somebody/something</p>
+	<p class="example">1/ He was always obedient to his father's wishes.</p>
+	<p class="example">1/ "Children, be obedient to your parents in all things, for this is<br>
+		&nbsp; well-pleasing to the Lord." (Colossians 3:20)</p>
+	<p class="example">1/ "American teachers and students are more equal,<br> 
+		&nbsp; while Chinese students might be more obedient to teachers." </p>
+	<p class="example">1/ "Discipline teaches us to be respectful and obedient to those<br>
+		&nbsp; in authority. Those who are obedient to teachers in school become<br>
+		&nbsp; obedient citizens when they grow up."</p>
+	<p class="meaning">be disobedient to somebody/something</p>	
+	<p class="example">1/ I was very disobedient to my father.</p>
+	<p class="example">1/ "Some teenagers are disobedient to their parents' words.<br>
+		&nbsp; Some of them don't heed what their parents tell them."</p>
+	<p class="meaning">see also: abide by something, be amenable to something, heed your advice/warning</p>
+	<br>
+	<p class="meaning"><b>n(u) obedience /<span class="ipa">&#601;(&#650;)'bi:.di.&#601;ns</span>/</b></p>
+	<p class="example">2/ He demands unquestioning obedience from his soldiers.</p>
+	<p class="meaning">in obedience to something (see also: in accord with something)</p>
+	<p class="example">2/ He has acted in obedience to the law.</p>
+	
+	<br><hr><br> 
 	
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -310,7 +342,8 @@
 	</div>
 </body>
 <script>
-	const vocabs = ["prank", "curb", "tally", "encompass", "chicken-out", "essence", "waver"];
+	const vocabs = ["prank", "curb", "tally", "encompass", "chicken-out", "essence", "waver",
+		       "obedient"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -320,14 +353,16 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
 	//var ipa = "";
+	var ipaObedient = "@U_bi:.di.@nt";
 
 	for (let j=0; j<shorthands.length; j++){
-		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaObedient = ipaObedient.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
 	document.getElementById("show_prank*").innerHTML = document.getElementById("prank").value;
 	document.getElementById("show_curb*").innerHTML = document.getElementById("curb").value;
+	document.getElementById("show_obedient*").innerHTML = ipaObedient;
 	
 </script>
 
