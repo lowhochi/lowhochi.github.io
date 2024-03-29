@@ -880,6 +880,28 @@
 	<p class="example">2.8/ "Fighting is an everyday occurrence in this area of this city."</p>
 
 	<br><hr><br> 
+
+	<input id="dedicate" type="hidden" value="_de.dIkeIt"></input>
+	<p class="general"><b>dedicate</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_dedicate"></span>/</p>
+	<p class="meaning"><b></b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+
+	<br><br>
+
+	<p class="general"><b>dedicated</b> &nbsp; adj &nbsp;
+	/<span class="ipa" id="show_dedicate*"></span>/</p>
+	<p class="meaning"><b></b></p>
+	<p class="example">2/</p>
+	<p class="example">2/</p>
+	<p class="example">2/</p>
+	<p class="example">2/</p>
+	
+	
+	<br><hr><br> 
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -895,7 +917,7 @@
 <script>
 	const vocabs = ["prank", "curb", "tally", "encompass", "chicken-out", "essence", "waver",
 		       "obedient", "schlep", "window_shopping", "upbringing", "bring-up",
-		       "budget", "blessing", "requirement", "daily-life"];
+		       "budget", "blessing", "requirement", "daily-life", "dedicate"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -906,9 +928,11 @@
 
 	//var ipa = "";
 	var ipaObedient = "@U_bi:.di.@nt";
+	var ipaDedicate = "_de.dIkeI.tEd";
 
 	for (let j=0; j<shorthands.length; j++){
 		ipaObedient = ipaObedient.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaDedicate = ipaDedicate.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -916,6 +940,7 @@
 	document.getElementById("show_curb*").innerHTML = document.getElementById("curb").value;
 	document.getElementById("show_obedient*").innerHTML = ipaObedient;
 	document.getElementById("show_schlep*").innerHTML = document.getElementById("schlep").value;
+	document.getElementById("show_dedicate*").innerHTML = ipaDedicate;
 	
 </script>
 
