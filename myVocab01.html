@@ -198,9 +198,9 @@
 	
 	<br><hr><br>
 	
-	<input id="pander" type="hidden" value="_p/aend@r"></input>
-	<p class="general"><b>pander to someone/something</b> &nbsp;
-	/<span class="ipa" id="show_pander"></span>/</p>
+	<input id="pander" type="hidden" value="_p/aen.d@/r"></input>
+	<p class="general"><b>pander to somebody/something</b> &nbsp;
+	/<span class="ipa" id="show_pander"></span>/ or /<span class="ipa" id="show_pander*"></span>/</p>
 	<p class="meaning"><b>please other people by doing or saying something what you think<br>
 		&nbsp; they want to do or say</b></p>
 	<p class="example">1/ It's not good the way she panders to his every whim /w&#618;m/.</p>
@@ -1532,6 +1532,7 @@
 	
 	//display ipa* tags
 	var ipaWander = "_w/6n.d/Ur";
+	var ipaPander = "_p/aen.d/Ur";
 	var ipaAttribute = "_/aetrI.bju:t";
 	var ipaAdverse = "@d_v/3rs";
 	var ipaGeographic = "dZi@_gr/aefIk@l";
@@ -1545,6 +1546,7 @@
 	
 	for (let j=0; j<shorthands.length; j++){
 		ipaWander = ipaWander.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaPander = ipaPander.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaAttribute = ipaAttribute.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaAdverse = ipaAdverse.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaGeographic = ipaGeographic.replaceAll(shorthands[j], htmlCodes[j]);
@@ -1557,6 +1559,7 @@
 	}		
 	
 	document.getElementById("show_wander*").innerHTML = ipaWander;
+	document.getElementById("show_pander*").innerHTML = ipaPander;
 	document.getElementById("show_clutch*").innerHTML = document.getElementById("clutch").value;
 	document.getElementById("show_clutch**").innerHTML = document.getElementById("clutch").value;
 	document.getElementById("show_attribute*").innerHTML = ipaAttribute;
