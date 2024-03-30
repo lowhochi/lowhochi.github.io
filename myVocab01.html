@@ -127,7 +127,7 @@
 	<br><hr><br>
 	
 	<!--------------------Vocabulary-------------------->
-	<input id="ramble" type="hidden" value="_r/aemb@l"></input>
+	<input id="ramble" type="hidden" value="_r/aem.b@l"></input>
 	<p class="general"><b>ramble</b> &nbsp; v(i) &nbsp;
 	/<span class="ipa" id="show_ramble"></span>/</p>
 	<p class="meaning"><b>walk for pleasure, esp in the countryside</b></p>
@@ -179,9 +179,9 @@
 	
 	<br><hr><br>
 	
-	<input id="wander" type="hidden" value="_w/6nd@r"></input>
+	<input id="wander" type="hidden" value="_w/6n.d@/r"></input>
 	<p class="general"><b>wander</b> &nbsp; v(i,t) &nbsp;
-	/<span class="ipa" id="show_wander"></span>/</p>
+	/<span class="ipa" id="show_wander"></span>/ or /<span class="ipa" id="show_wander*"></span>/</p>
 	<p class="meaning"><b>walk around slowly in a relaxed way or without any clear purpose or direction</b></p>
 	<p class="example">1/ We spent the morning wandering around the old part of the city.</p>
 	<p class="example">2/ She was found several hours later, wandering the street, lost.</p>
@@ -1531,6 +1531,7 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 	
 	//display ipa* tags
+	var ipaWander = "_w/6n.d/Ur";
 	var ipaAttribute = "_/aetrI.bju:t";
 	var ipaAdverse = "@d_v/3rs";
 	var ipaGeographic = "dZi@_gr/aefIk@l";
@@ -1542,8 +1543,8 @@
 	var ipaEngine = "endZI_nI@r";
 	var ipaEngine2 = "endZI_nI@rIN";
 	
-	
 	for (let j=0; j<shorthands.length; j++){
+		ipaWander = ipaWander.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaAttribute = ipaAttribute.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaAdverse = ipaAdverse.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaGeographic = ipaGeographic.replaceAll(shorthands[j], htmlCodes[j]);
@@ -1553,8 +1554,9 @@
 		ipaPrickly2 = ipaPrickly2.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaEngine = ipaEngine.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaEngine2 = ipaEngine2.replaceAll(shorthands[j], htmlCodes[j]);
-	}			
+	}		
 	
+	document.getElementById("show_wander*").innerHTML = ipaWander;
 	document.getElementById("show_clutch*").innerHTML = document.getElementById("clutch").value;
 	document.getElementById("show_clutch**").innerHTML = document.getElementById("clutch").value;
 	document.getElementById("show_attribute*").innerHTML = ipaAttribute;
