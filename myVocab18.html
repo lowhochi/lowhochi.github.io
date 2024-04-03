@@ -1519,6 +1519,19 @@
 		&nbsp; but it is important, especially now, to take care of yourself."</p>
 	
 	<br><hr><br> 
+
+	<input id="prioritize" type="hidden" value="praI_/6.r@.taIz"></input>
+	<p class="general"><b>prioritize</b> &nbsp; v(i,t) &nbsp;
+	/<span class="ipa" id="show_prioritize"></span>/ or /<span class="ipa" id="show_prioritize*"></span>/</p>
+	<p class="meaning"><b>decide which of a group of things are the most important<br>
+		&nbsp; so that you can deal with them first</b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	
+	<br><hr><br> 	
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -1535,7 +1548,7 @@
 	const vocabs = ["prank", "curb", "tally", "encompass", "chicken-out", "essence", "waver",
 		       "obedient", "schlep", "window_shopping", "upbringing", "bring-up",
 		       "budget", "blessing", "requirement", "daily-life", "dedicate", "applaud",
-		       "applause", "mind", "priority"];
+		       "applause", "mind", "priority", "prioritize"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1547,12 +1560,14 @@
 	//var ipa = "";
 	var ipaObedient = "@U_bi:.di.@nt";
 	var ipaDedicate = "_de.dIkeI.tId";
-	var ipaPriority = "praI_O:.r@.ti"
+	var ipaPriority = "praI_O:.r@.ti";
+	var ipaPrioritize = "praI_O:.r@.taIz";
 
 	for (let j=0; j<shorthands.length; j++){
 		ipaObedient = ipaObedient.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaDedicate = ipaDedicate.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaPriority = ipaPriority.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaPrioritize = ipaPrioritize.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -1563,6 +1578,7 @@
 	document.getElementById("show_dedicate*").innerHTML = ipaDedicate;
 	document.getElementById("show_mind*").innerHTML = document.getElementById("mind").value;
 	document.getElementById("show_priority*").innerHTML = ipaPriority;
+	document.getElementById("show_prioritize*").innerHTML = ipaPrioritize;
 	
 </script>
 
