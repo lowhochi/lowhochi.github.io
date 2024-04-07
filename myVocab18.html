@@ -1653,6 +1653,19 @@
 	<p class="example">5.6/ "The patient didn't come around for three hours."</p>
 		
 	<br><hr><br> 
+
+	<input id="contribute" type="hidden" value="k@n_trI.bju:t"></input>
+	<p class="general"><b>contribute</b> &nbsp; v(i,t) &nbsp;
+	/<span class="ipa" id="show_contribute"></span>/ or /<span class="ipa" id="show_contribute*"></span>/</p>
+	<p class="meaning"><b>give something, esp money or goods, to help achieve or provide something</b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+		
+	<br><hr><br> 	
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -1669,7 +1682,7 @@
 	const vocabs = ["prank", "curb", "tally", "encompass", "chicken-out", "essence", "waver",
 		       "obedient", "schlep", "window_shopping", "upbringing", "bring-up",
 		       "budget", "blessing", "requirement", "daily-life", "dedicate", "applaud",
-		       "applause", "mind", "priority", "prioritize", "come-to"];
+		       "applause", "mind", "priority", "prioritize", "come-to", "contribute"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1683,12 +1696,14 @@
 	var ipaDedicate = "_de.dIkeI.tId";
 	var ipaPriority = "praI_O:.r@.ti";
 	var ipaPrioritize = "praI_O:.r@.taIz";
+	var ipaContribute = "_k/6n.trI.bju:t";
 
 	for (let j=0; j<shorthands.length; j++){
 		ipaObedient = ipaObedient.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaDedicate = ipaDedicate.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaPriority = ipaPriority.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaPrioritize = ipaPrioritize.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaContribute = ipaContribute.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -1700,6 +1715,7 @@
 	document.getElementById("show_mind*").innerHTML = document.getElementById("mind").value;
 	document.getElementById("show_priority*").innerHTML = ipaPriority;
 	document.getElementById("show_prioritize*").innerHTML = ipaPrioritize;
+	document.getElementById("show_contribute*").innerHTML = ipaContribute;
 	
 </script>
 
