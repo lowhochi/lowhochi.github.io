@@ -30,7 +30,8 @@ var checks = {"zebra_crossing": false,
               "scouring_pad": false,
               "crown-braid": false,
               "curb": false,
-              "tally": false};
+              "tally": false,
+              "candle": false};
 
 function showPicture(input){
         //alert(checks[input]);
