@@ -2789,6 +2789,69 @@
 		&nbsp; you guys did a project."</p>
 	
 	<br><hr><br> 	
+
+	<input id="weekend" type="hidden" value="_wi:k.end"></input>
+	<p class="general"><b>weekend</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_weekend"></span>/ or /<span class="ipa" id="show_weekend*"></span>/</p>
+	<p class="meaning"><b>Saturday and Sunday, or Friday evening until Sunday night</b></p>
+	<p class="example">1/ Have a good weekend!</p>
+	<p class="example">1/ We go skiing most weekends in winter.</p>
+	<p class="meaning">this weekend, this coming weekend<</p>
+	<p class="example">1/ "They plan to visit the museum this weekend."</p>
+	<p class="example">1/ "Did the Easter Bunny visit your home this weekend?"</p>
+	<p class="example">1/ So you've got the whole house to yourself this weekend?</p>
+	<p class="example">1/ This weekend we're going to see some friends.</p>
+	<p class="example">1/ Her birthday is this coming weekend.</p>
+	<p class="meaning">last weekend, this past weekend</p>
+	<p class="example">1/ "What did you do last weekend?"</p>
+	<p class="example">1/ "Our family went to Berlin last weekend."</p>
+	<p class="example">1/ There was a meeting in Brussels this past weekend.</p>
+	<p class="meaning">next weekend (compare with: this weekend)</p>
+	<p class="example">1/ "I'll probably finish the job next weekend."</p>
+	<p class="example">1/ "I have a plan to visit my grandparents next weekend."</p>
+	<p class="meaning">spend the weekend (doing something)</p>
+	<p class="example">1/ We spent the weekend at the beach.</p>
+	<p class="example">1/ He spent the weekend fishing with his brother.</p>
+	<p class="example">1/ "I spend the weekend on my most rewarding hobby: coding."</p>
+	<p class="example">1/ "Did you spend the weekend finishing up last-minute Christmas errands<br>
+		&nbsp; and holiday shopping, or was it just me? "</p>
+	<p class="meaning">at the weekend (US: on the weekend)</p>
+	<p class="example">1/ What did you do at the weekend?</p>
+	<p class="example">1/ What are you doing at the weekend?</p>
+	<p class="example">1/ "I do my homework at the weekend."</p>
+	<p class="example">1/ The office is closed at the weekend.</p>
+	<p class="example">1/ "My friend and I are going to have a sleepover at the weekend."</p>
+	<p class="example">1/ On the weekend, we like to focus on the kids.</p>
+	<p class="example">1/ I catch up on my TV shows on the weekend.</p>
+	<p class="example">1/ My dad only came home on the weekend so it was just<br>
+		&nbsp; Mom and me during the week.</p>
+	<p class="meaning">on the weekend of ...</p>
+	<p class="example">1/ It happened on the weekend of 24 and 25 April.</p>
+	<p class="example">1/ "In all of my four years on the team, we have always had<br>
+		&bsp; a home game on the weekend of Thanksgiving,"</p>
+	<p class="meaning">at weekends (US: on weekends, on the weekends)</p>
+	<p class="example">1/ They go windsurfing at weekends.</p>
+	<p class="example">1/ "I always go cycling at weekends."</p>
+	<p class="example">1/ "What do you do on the weekends?"</p>
+	<p class="example">1/ "I work on weekends - two weekends in a month.</p>
+	<p class="example">1/ "When I visit friends on weekends, our plan is usually<br>
+		&nbsp; to barhop among neighborhood taverns."</p>
+	<p class="meaning">for the weekend</p>
+	<p class="example">1/ She is away for the weekend.</p>
+	<p class="example">1/ "Do you have a plan for the weekend?"</p>
+	<p class="example">1/ Do you have anything planned for the weekend?</p>
+	<p class="example">1/ "When texting with my friends, they will just ask my plan for the weekend."</p>
+	<p class="meaning">over the weekend, during the weekend</p>
+	<p class="example">1/ Are you doing anything over the weekend?</p>
+	<p class="example">1/ I have a lot of homework to do over the weekend.</p>
+	<p class="example">1/ I promise I'll call you over the weekend.</p>
+	<p class="example">1/ We flew down to Miami over the weekend.</p>
+	<p class="example">1/ We started packing up our apartment over the weekend.</p>
+	<p class="example">1/ "My other son had a sleepover during the weekend, so it was just my son and I."</p>
+	<p class="meaning">see also: in the week, on weekdays</p>
+	
+	
+	<br><hr><br> 	
 	
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -2808,7 +2871,7 @@
 		       "applause", "mind", "priority", "prioritize", "come-to", "contribute",
 		       "laughter", "thankful", "perspective", "common", "rich", "candle",
 		       "impression", "leisure", "charity", "phone-call", "phone-scam", "sway",
-		       "count-on"];
+		       "count-on", "weekend"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -2823,6 +2886,7 @@
 	var ipaPriority = "praI_O:.r@.ti";
 	var ipaPrioritize = "praI_O:.r@.taIz";
 	var ipaContribute = "_k/6n.trI.bju:t";
+	var ipaWeekend = "__wi:k_end";
 
 	for (let j=0; j<shorthands.length; j++){
 		ipaObedient = ipaObedient.replaceAll(shorthands[j], htmlCodes[j]);
@@ -2830,6 +2894,7 @@
 		ipaPriority = ipaPriority.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaPrioritize = ipaPrioritize.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaContribute = ipaContribute.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaWeekend = ipaWeekend.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -2843,6 +2908,7 @@
 	document.getElementById("show_prioritize*").innerHTML = ipaPrioritize;
 	document.getElementById("show_contribute*").innerHTML = ipaContribute;
 	document.getElementById("show_common*").innerHTML = document.getElementById("common").value;
+	document.getElementById("show_weekend*").innerHTML = ipaWeekend;
 	
 </script>
 
