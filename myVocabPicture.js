@@ -31,7 +31,8 @@ var checks = {"zebra_crossing": false,
               "crown-braid": false,
               "curb": false,
               "tally": false,
-              "candle": false};
+              "candle": false,
+              "skyscraper": false};
 
 function showPicture(input){
         //alert(checks[input]);
