@@ -34,7 +34,8 @@ var checks = {"zebra_crossing": false,
               "candle": false,
               "skyscraper": false,
               "mascot": false,
-              "sink": false};
+              "sink": false,
+              "thunderstorm": false};
 
 function showPicture(input){
         //alert(checks[input]);
