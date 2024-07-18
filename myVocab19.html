@@ -1590,8 +1590,11 @@
 	<p class="example">1.27/ "Does anyone have any good tricks to get back to<br>
 		&nbsp; sleep during a thunderstorm?"</p>
 	<p class="meaning">see also: a rain storm, a rain shower, a typhoon</p>
-	<br>
-	<p class="meaning"><b>n(u) thunder /<span class="ipa">'&theta;&#652;n.d&#601;</span>/</b></p>
+		
+	<br><br>
+
+	<p class="general"><b>thunder</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_thunderstorm*"></span>/</p>
 	<p class="example">2.1/ Thunder crashed in the sky.</p>
 	<p class="example">2.2/ "Why does lightning always come before thunder?"</p>
 	<p class="example">2.3/ "Thunder is the sound caused by lightning."</p>
@@ -1629,8 +1632,11 @@
 		&nbsp; Hark don't you, hark don't you?<br>
 		&nbsp; Pitter-patter raindrops, pitter-patter raindrops,<br>
 		&nbsp; I'm wet through, so are you."</p>
-	<br>	
-	<p class="meaning"><b>n(u) lightning /<span class="ipa">'la&#618;t.n&#618;&#331;</span>/</b></p>
+	
+	<br><br>
+		
+	<p class="general"><b>lightning</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_thunderstorm**"></span>/</p>
 	<p class="example">3.1/ The computer failure was due to a glitch caused by lightning.</p>
 	<p class="meaning">be struck by lightning</p>
 	<p class="example">3.2/ That tree was struck by lightning.</p>
@@ -1681,10 +1687,14 @@
 
 	//var ipa = "";
 	var ipaModerate = "_m/6.d@.reIt";
+	var ipaThunderstorm01 = "_T/2n.d@/r";
+	var ipaThunderstorm02 = "_laIt.nIN";
 
 	for (let j=0; j<shorthands.length; j++){
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaModerate = ipaModerate.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaThunderstorm01 = ipaThunderstorm01.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaThunderstorm02 = ipaThunderstorm02.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -1692,6 +1702,8 @@
 	document.getElementById("show_moderate*").innerHTML = ipaModerate;
 	document.getElementById("show_desire*").innerHTML = document.getElementById("desire").value;
 	document.getElementById("show_sink*").innerHTML = document.getElementById("sink").value;
+	document.getElementById("show_thunderstorm*").innerHTML = ipaThunderstorm01;
+	document.getElementById("show_thunderstorm**").innerHTML = ipaThunderstorm02;
 	
 </script>
 
