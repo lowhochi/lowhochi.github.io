@@ -2397,7 +2397,29 @@
 	<p class="example">31/ "Rendering shall only be carried out in suitable weather conditions,<br>
 		&nbsp; unless appropriate precautions are taken."</p> 
 		
-	<br><hr><br> 											
+	<br><hr><br>
+
+	<input id="hurry" type="hidden" value="_h/2.ri"></input>
+	<p class="general"><b></b> &nbsp; v(i,t) &nbsp;
+	/<span class="ipa" id="show_hurry"></span>/ or /<span class="ipa" id="show_hurry*"></span>/</p>
+	<p class="meaning"><b>move or do things more quickly than normal or to make someone do this</b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<br><hr><br> 
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -2416,7 +2438,7 @@
 		       "compete", "competition", "sink", "accompany", "criticize", "complain",
 		       "die-out", "die-down", "thunderstorm", "thunder", "lightning", "ease-up",
 		       "eat-out", "dine-out", "al-fresco", "over-the-top", "ticket", 
-		       "scratch-card", "gimmick", "insight", "take-hold", "scrape"];
+		       "scratch-card", "gimmick", "insight", "take-hold", "scrape", "hurry"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -2425,12 +2447,12 @@
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
-	//var ipa = "";
-	var ipaModerate = "_m/6.d@.reIt";;
+	var ipaModerate = "_m/6.d@.reIt";
+	var ipaHurry = "_h/ur:.i";
 
 	for (let j=0; j<shorthands.length; j++){
-		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaModerate = ipaModerate.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaHurry = ipaHurry.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -2439,6 +2461,7 @@
 	document.getElementById("show_desire*").innerHTML = document.getElementById("desire").value;
 	document.getElementById("show_sink*").innerHTML = document.getElementById("sink").value;
 	document.getElementById("show_thunder*").innerHTML = document.getElementById("thunder").value;
+	document.getElementById("show_hurry*").innerHTML = ipaHurry;
 	
 </script>
 
