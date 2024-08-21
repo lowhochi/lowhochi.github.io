@@ -4,6 +4,7 @@
 	<title>myVocab20</title>
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
 	<script type="text/javascript" src="myVocabGo.js"></script>
+	<script type="text/javascript" src="myVocabPicture.js"></script>
 </head>
 <body>
 	<!--------------------Navigation Bar-------------------->
@@ -25,7 +26,21 @@
 	<h2 id="wordCount"></h2>
 	
 	<!--------------------Vocabulary-------------------->
-	
+		
+	<input id="rubble" type="hidden" value="_r/2b@l"></input>
+	<p class="general"><b>rubble</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_rubble"></span>/ &nbsp; 
+	<button class="mypic" onclick="showPicture('rubble')">PICTURE</button></p>
+	<img class="mypic" id="pic_rubble" src="myPictures/rubble.jpg" style="display:none;">
+	<p class="meaning"><b></b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+		
+	<br><hr><br> 
+		
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -38,7 +53,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = [];
+	const vocabs = ["rubble"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
