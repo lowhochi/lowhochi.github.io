@@ -37,7 +37,8 @@ var checks = {"zebra_crossing": false,
               "sink": false,
               "thunderstorm": false,
               "al-fresco": false,
-              "scratch-card": false};
+              "scratch-card": false,
+              "rubble": false};
 
 function showPicture(input){
         //alert(checks[input]);
