@@ -40,7 +40,8 @@ var checks = {"zebra_crossing": false,
               "scratch-card": false,
               "rubble": false,
               "scenery": false,
-              "stretcher": false};
+              "stretcher": false,
+              "pinafore": false};
 
 function showPicture(input){
         //alert(checks[input]);
