@@ -42,7 +42,8 @@ var checks = {"zebra_crossing": false,
               "scenery": false,
               "stretcher": false,
               "pinafore": false,
-              "apple-cider": false};
+              "apple-cider": false,
+              "watch": false};
 
 function showPicture(input){
         //alert(checks[input]);
