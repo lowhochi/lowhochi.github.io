@@ -43,7 +43,8 @@ var checks = {"zebra_crossing": false,
               "stretcher": false,
               "pinafore": false,
               "apple-cider": false,
-              "watch": false};
+              "watch": false,
+              "limp": false};
 
 function showPicture(input){
         //alert(checks[input]);
