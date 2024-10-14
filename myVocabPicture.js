@@ -44,7 +44,8 @@ var checks = {"zebra_crossing": false,
               "pinafore": false,
               "apple-cider": false,
               "watch": false,
-              "limp": false};
+              "limp": false,
+              "hunch": false};
 
 function showPicture(input){
         //alert(checks[input]);
