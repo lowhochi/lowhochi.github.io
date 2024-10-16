@@ -4,6 +4,7 @@
 	<title>myVocab21</title>
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
 	<script type="text/javascript" src="myVocabGo.js"></script>
+	<script type="text/javascript" src="myVocabPicture.js"></script>
 </head>
 <body>
 	<!--------------------Navigation Bar-------------------->
@@ -25,6 +26,20 @@
 	<h2 id="wordCount"></h2>
 	
 	<!--------------------Vocabulary-------------------->
+
+	<input id="bunk-beds" type="hidden" value="_b/2Nk bedz"></input>
+	<p class="general"><b>bunk beds</b> &nbsp; n(plural) &nbsp;
+	/<span class="ipa" id="show_bunk-beds"></span>/ &nbsp;
+	<button class="mypic" onclick="showPicture('bunk-beds')">PICTURE</button></p>
+=	<img class="mypic" id="pic_bunk-beds" src="myPictures/bunk-beds.jpg" style="display:none;">
+	<p class="meaning"><b>two beds fixed together with one on top of the other</b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	
+	<br><hr><br> 
 	
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -38,7 +53,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = [];
+	const vocabs = ["bunk-beds"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
