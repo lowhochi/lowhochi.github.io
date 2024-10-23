@@ -46,7 +46,9 @@ var checks = {"zebra_crossing": false,
               "watch": false,
               "limp": false,
               "hunch": false,
-              "bunk-beds": false};
+              "bunk-beds": false,
+              "housing_estate": false,
+              "kimono": false};
 
 function showPicture(input){
         //alert(checks[input]);
