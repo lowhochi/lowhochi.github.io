@@ -50,7 +50,8 @@ var checks = {"zebra_crossing": false,
               "housing_estate": false,
               "kimono": false,
               "handkerchief": false,
-              "parade": false};
+              "parade": false,
+              "stroller": false};
 
 function showPicture(input){
         //alert(checks[input]);
