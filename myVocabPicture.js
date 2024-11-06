@@ -52,7 +52,8 @@ var checks = {"zebra_crossing": false,
               "handkerchief": false,
               "parade": false,
               "stroller": false,
-              "pancake": false};
+              "pancake": false,
+              "flip-flops": false};
 
 function showPicture(input){
         //alert(checks[input]);
