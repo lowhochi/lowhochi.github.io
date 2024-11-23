@@ -3351,7 +3351,7 @@
 	<p class="example">1.53/ "After the presentation, he received a slip of feedback from the audience."</p>
 	<p class="example">1.54/ "Choose a piece of feedback that had a significant impact<br>
 		&nbsp; on your professional growth."</p>
-	<p class="meaning">see also: n(c,u) comment, n(u) advice</p>
+	<p class="meaning">see also: n(c,u) comment, n(u) advice, n(c,u) response</p>
 	<br>
 	<p class="meaning"><b>n(u) the unpleasant noise produced by electrical equipment<br>
 		&nbsp; such as an amplifier when some of the power returns to the system</b></p>
@@ -3370,6 +3370,36 @@
 		&nbsp; for the specific enclosure."</p> 
 	
 	<br><hr><br> 
+
+	<input id="encourage" type="hidden" value="In_k/ur:.IdZ"></input>
+	<p class="general"><b>encourage</b> &nbsp; v(t) &nbsp;
+	/<span class="ipa" id="show_encourage"></span>/ or /<span class="ipa" id="show_encourage*"></span>/</p>
+	<p class="meaning"><b>give somebody the courage or confidence to do something</b></p>
+	<p class="meaning">encourage somebody</p>
+	<p class="example">1/ She especially encouraged young scientists.</p>
+	<p class="example">1/ She encouraged many young writers and artists.</p>
+	<p class="example">1/ We were greatly encouraged by the support we received.</p>
+	<p class="example">1/ We were greatly encouraged by the positive response of the public.</p>
+	<p class="example">1/ I want to thank everyone who has encouraged and supported me.</p>
+	<p class="meaning">encourage somebody to do something</p>
+	<p class="example">1/ We were encouraged to learn foreign languages at school.</p>
+	<p class="example">1/ His tutor encouraged him to read widely in philosophy.</p>
+	<p class="example">1/ "What can I do to encourage students to ask questions in class?"</p>
+	<p class="example">1/ Cooder was encouraged to begin playing the guitar by his father.</p>
+	<p class="example">1/ The new teaching methods encourage children to think for themselves.</p>
+	<p class="example">1/ "The kids must be encouraged to speak in English in the school premises<br>
+		&nbsp; so that they can develop confidence and proficiency in it."</p>
+	<p class="example">1/ Instead of simply punishing them, the system encourages offenders<br>
+		&nbsp; to modify their behaviour.</p>
+	<p class="meaning">encourage somebody in something</p>
+	<p class="example">1/ My parents have always encouraged me in my choice of career.</p>
+	<p class="example">1/ They've always encouraged me in everything I've wanted to do.</p>
+	<p class="example">1/ Fleur encouraged Dana in her ambition to become a model.</p>
+	<p class="example">1/ "The Duke is known to have encouraged Hitler in Germany's desired<br>
+		&nbsp; territorial expansion into Central and Eastern Europe."</p>
+	<p class="meaning">see also: inspire, guide, give advice to somebody, raise somebody's morale</p>
+
+	<br><hr><br> 
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -3387,7 +3417,7 @@
 		       "housing_estate", "kimono", "handkerchief", "parade", "excuse", "inherit",
 		       "discuss", "stroll", "stroller", "pancake", "expose", "flip-flops", "contact",
 		       "spare", "liking", "detect", "kickstart", "sunshine", "open-up", "helpful",
-		       "helpless", "tissue", "optimistic", "means", "feedback"];
+		       "helpless", "tissue", "optimistic", "means", "feedback", "encourage"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -3398,10 +3428,12 @@
 
 	//var ipa = "";
 	var ipaExcuse = "Iks_/ukju:s";
+	var ipaEncourage = "In_k/2.rIdZ";
 
 	for (let j=0; j<shorthands.length; j++){
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaExcuse = ipaExcuse.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaEncourage = ipaEncourage.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -3411,6 +3443,7 @@
 	document.getElementById("show_contact*").innerHTML = document.getElementById("contact").value;
 	document.getElementById("show_spare*").innerHTML = document.getElementById("spare").value;
 	document.getElementById("show_spare**").innerHTML = document.getElementById("spare").value;
+	document.getElementById("show_encourage*").innerHTML = ipaEncourage;
 	
 </script>
 
