@@ -3480,6 +3480,16 @@
 		&nbsp; authentic English situations."</p>
 		
 	<br><hr><br> 
+
+	<input id="courage" type="hidden" value="_k/ur:.IdZ"></input>
+	<p class="general"><b>courage</b> &nbsp; &nbsp;
+	/<span class="ipa" id="show_courage"></span>/ or /<span class="ipa" id="show_courage*"></span>/</p>
+	<p class="meaning"><b></b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+		
+	<br><hr><br> 
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -3497,7 +3507,7 @@
 		       "housing_estate", "kimono", "handkerchief", "parade", "excuse", "inherit",
 		       "discuss", "stroll", "stroller", "pancake", "expose", "flip-flops", "contact",
 		       "spare", "liking", "detect", "kickstart", "sunshine", "open-up", "helpful",
-		       "helpless", "tissue", "optimistic", "means", "feedback", "encourage"];
+		       "helpless", "tissue", "optimistic", "means", "feedback", "encourage", "courage"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -3514,6 +3524,7 @@
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaExcuse = ipaExcuse.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaEncourage = ipaEncourage.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaCourage = ipaCourage.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -3524,6 +3535,7 @@
 	document.getElementById("show_spare*").innerHTML = document.getElementById("spare").value;
 	document.getElementById("show_spare**").innerHTML = document.getElementById("spare").value;
 	document.getElementById("show_encourage*").innerHTML = ipaEncourage;
+	document.getElementById("show_courage*").innerHTML = ipaCourage;
 	
 </script>
 
