@@ -54,7 +54,8 @@ var checks = {"zebra_crossing": false,
               "stroller": false,
               "pancake": false,
               "flip-flops": false,
-              "sunshine": false};
+              "sunshine": false,
+              "skyline": false};
 
 function showPicture(input){
         //alert(checks[input]);
