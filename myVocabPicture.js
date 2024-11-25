@@ -55,6 +55,7 @@ var checks = {"zebra_crossing": false,
               "pancake": false,
               "flip-flops": false,
               "sunshine": false,
+              "tissue": false,
               "skyline": false};
 
 function showPicture(input){
