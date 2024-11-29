@@ -57,7 +57,8 @@ var checks = {"zebra_crossing": false,
               "sunshine": false,
               "tissue": false,
               "skyline": false,
-              "airline-meal": false};
+              "airline-meal": false,
+              "atmosphere": false};
 
 function showPicture(input){
         //alert(checks[input]);
