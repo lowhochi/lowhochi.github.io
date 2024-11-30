@@ -3848,7 +3848,14 @@
 	<p class="meaning">see also: vibe/vibes, the mood of somebody/something</p> 
 		
 	<br><hr><br> 
+	
+	<input id="beret" type="hidden" value="_be.reI"></input>
+	<p class="general"><b>beret</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_beret"></span>/ or /<span class="ipa" id="show_beret*"></span>/</p>
+	<p class="meaning"><b></b></p>
+	<p class="example">1/</p>
 		
+	<br><hr><br> 
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -3867,7 +3874,7 @@
 		       "discuss", "stroll", "stroller", "pancake", "expose", "flip-flops", "contact",
 		       "spare", "liking", "detect", "kickstart", "sunshine", "open-up", "helpful",
 		       "helpless", "tissue", "optimistic", "means", "feedback", "encourage", "courage",
-		       "approve", "atmosphere"];
+		       "approve", "atmosphere", "beret"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -3880,12 +3887,14 @@
 	var ipaExcuse = "Iks_/ukju:s";
 	var ipaEncourage = "In_k/2.rIdZ";
 	var ipaCourage = "_k/2.rIdZ";
+	var ipaBeret = "b@_reI";
 
 	for (let j=0; j<shorthands.length; j++){
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaExcuse = ipaExcuse.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaEncourage = ipaEncourage.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaCourage = ipaCourage.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaBeret = ipaBeret.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -3897,6 +3906,7 @@
 	document.getElementById("show_spare**").innerHTML = document.getElementById("spare").value;
 	document.getElementById("show_encourage*").innerHTML = ipaEncourage;
 	document.getElementById("show_courage*").innerHTML = ipaCourage;
+	document.getElementById("show_beret*").innerHTML = ipaBeret;
 	
 </script>
 
