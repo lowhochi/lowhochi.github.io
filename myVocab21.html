@@ -3899,6 +3899,18 @@
 	<p class="example">1/ "Canada delivered a stunning upset to win the men's 4x100m gold<br>
 		&nbsp; at Olympic Games Paris 2024, sending the baton across the line in a time<br>
 		&nbsp; of 37.50 seconds."</p>
+	<p class="meaning">a swimming relay</p>
+	<p class="example">1/ "She helped me feel what it was like to participate in a swimming relay."</p>
+	<p class="example">1/ "Alexa Leary has won the 4x100m medley relay in the final leg for Australia."</p>
+	<p class="meaning">the 4x100m medley relay, the 4x100m freestyle relay</p>
+	<p class="example">1/ "The USA's women's team win gold in the 4x100m medley relay final,<br>
+		&nbsp; beating Australia by two-seconds."</p>
+	<p class="example">1/ "Team USA’s women finished swimming’s final race of the Olympic Games<br>
+		&nbsp; Paris 2024 in style, setting a world record and taking the Olympic title<br>
+		&nbsp; in the 4x100m medley relay on Sunday, 4 August.</p>
+	<p class="example">1/ "Jack Alexy '21 helps USA win gold in the 4x100m freestyle relay."</p>
+	<p class="example">1/ "Former Buckeye swimmer Hunter Armstrong scored his second Olympic<br>
+		&nbsp; gold medal after an impressive swim in the 4x100m freestyle relay final."</p>
 	<p class="meaning">a torch relay</p>
 	<p class="example">1/ "The flame was lit in Olympia and transported to Berlin via a torch relay."</p>
 	<p class="example">1/ "A torch relay will lead to the opening ceremony in London on Wednesday."</p>
@@ -3942,7 +3954,29 @@
 		&nbsp; each covering some 150 miles."</p>
 	<p class="example">2/ "They were held up in France for the lack of the required paperwork<br>
 		&nbsp; and the drove in relays, non-stop to Sicily."</p>
-	
+
+	<br><br>
+
+	<p class="general"><b>relay</b> &nbsp; v(i,t) &nbsp;
+	/<span class="ipa" id="show_relay*"></span>/ or /<span class="ipa" id="show_relay**"></span>/</p>
+	<p class="meaning"><b>receive and send on information, news, etc to somebody</b></p>
+	<p class="meaning">relay something to somebody</p>
+	<p class="example">3/ I relayed the news to the others.</p>
+	<p class="example">3/ Instructions were relayed to him by phone.</p>
+	<p class="example">3/ I was told the news first and then I relayed it to the others.</p>
+	<p class="meaning">relay to somebody</p>
+	<p class="example">3/ I'll relay to the customer and let you know what they say.</p>
+	<p class="example">3/ "WINS also provides small footprint, remote surface stations to gather<br>
+		&nbsp; wellhead data and wirelessly relay to customers in real time, wherever needed."</p>
+	<br>
+	<p class="meaning"><b>v(t) broadcast television or radio signals</b></p>	
+	<p class="example">4/ TV pictures of the war were relayed around the world by satellite.</p>
+	<p class="example">4/ "UBC-TV said they had got the rights to relay the World Cup."</p>
+	<p class="meaning">relay something to somebody</p>
+	<p class="example">4/ The game was relayed by satellite to audiences all over the world.</p>
+	<p class="example">4/ "Bein Sports, which has the rights to broadcast leagues in the Arab world,<br>
+		&nbsp; was in trouble in Saudi Arabia because various Internet pirate broadcasters<br>
+		&nbsp; relayed the Premier League to Saudi Arabia."</p>
 		
 	<br><hr><br> 
 		
@@ -3977,6 +4011,7 @@
 	var ipaEncourage = "In_k/2.rIdZ";
 	var ipaCourage = "_k/2.rIdZ";
 	var ipaBeret = "b@_reI";
+	var ipaRelay = "rI_leI";
 
 	for (let j=0; j<shorthands.length; j++){
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
@@ -3984,6 +4019,7 @@
 		ipaEncourage = ipaEncourage.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaCourage = ipaCourage.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaBeret = ipaBeret.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaRelay = ipaRelay.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -3996,6 +4032,8 @@
 	document.getElementById("show_encourage*").innerHTML = ipaEncourage;
 	document.getElementById("show_courage*").innerHTML = ipaCourage;
 	document.getElementById("show_beret*").innerHTML = ipaBeret;
+	document.getElementById("show_relay*").innerHTML = document.getElementById("relay").value;
+	document.getElementById("show_relay**").innerHTML = ipaRelay;
 	
 </script>
 
