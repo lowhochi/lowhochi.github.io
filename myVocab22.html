@@ -4,6 +4,7 @@
 	<title>myVocab22</title>
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
 	<script type="text/javascript" src="myVocabGo.js"></script>
+	<script type="text/javascript" src="myVocabPicture.js"></script>
 </head>
 <body>
 	<!--------------------Navigation Bar-------------------->
@@ -25,6 +26,20 @@
 	<h2 id="wordCount"></h2>
 	
 	<!--------------------Vocabulary-------------------->
+
+	<input id="platform" type="hidden" value="_pl/aet.fO:m"></input>
+	<p class="general"><b>platform</b> &nbsp; n(c) &nbsp;
+	/<span class="ipa" id="show_platform"></span>/ &nbsp;
+	<button class="mypic" onclick="showPicture('platform')">PICTURE</button></p>
+	<img class="mypic" id="pic_platform" src="myPictures/platform.jpg" style="display:none;">
+	<p class="meaning"><b></b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+
+	<br><hr><br> 
 	
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -38,7 +53,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = [];
+	const vocabs = ["platform"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
