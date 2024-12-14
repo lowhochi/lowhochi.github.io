@@ -60,7 +60,9 @@ var checks = {"zebra_crossing": false,
               "airline-meal": false,
               "atmosphere": false,
               "beret": false,
-              "relay": false};
+              "relay": false,
+              "platform": false,
+              "beanie": false};
 
 function showPicture(input){
         //alert(checks[input]);
