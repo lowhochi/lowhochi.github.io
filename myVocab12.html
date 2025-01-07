@@ -1427,7 +1427,7 @@
 
 	<input id="compensate" type="hidden" value="_k/6m.pen.seIt"></input>
 	<p class="general"><b>compensate</b> &nbsp; v(t) &nbsp;
-	/<span class="ipa" id="show_compensate"></span>/</p>
+	/<span class="ipa" id="show_compensate"></span>/ or /<span class="ipa" id="show_compensate*"></span>/</p>
 	<p class="meaning"><b>pay somebody money because they have suffered some damage, loss or injury</b></p>
 	<p class="meaning">compensate somebody for something</p>	
 	<p class="example">1.1/ We will compensate you for your expenses.</p>
@@ -1772,12 +1772,14 @@
 	var ipaTradeoff = "_treId./6f";
 	var ipaKnockoff = "_n/6k.O:f";
 	var ipaKnockout = "_n/6kaUt";
+	var ipaCompensate = "_k/6m.p@n.seIt";
 
 	for (let j=0; j<shorthands.length; j++){
 		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaTradeoff = ipaTradeoff.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaKnockoff = ipaKnockoff.replaceAll(shorthands[j], htmlCodes[j]);
 		ipaKnockout = ipaKnockout.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaCompensate = ipaCompensate.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -1789,8 +1791,10 @@
 	document.getElementById("show_queue*").innerHTML = document.getElementById("queue").value;
 	document.getElementById("show_knock-off*").innerHTML = ipaKnockoff;
 	document.getElementById("show_knock-out*").innerHTML = ipaKnockout;
+	document.getElementById("show_compensate*").innerHTML = ipaCompensate;
 	document.getElementById("show_crease*").innerHTML = document.getElementById("crease").value;
 	document.getElementById("show_wrinkle*").innerHTML = document.getElementById("wrinkle").value;
+	
 </script>
 
 </html>
