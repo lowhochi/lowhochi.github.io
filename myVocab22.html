@@ -1868,6 +1868,18 @@
 		&nbsp; and what are your favorite songs?"</p>
 		
 	<br><hr><br> 
+
+	<input id="worry" type="hidden" value="_w/2.ri"></input>
+	<p class="general"><b>worry</b> &nbsp; &nbsp;
+	/<span class="ipa" id="show_worry"></span>/ or /<span class="ipa" id="show_worry*"></span>/</p>
+	<p class="meaning"><b></b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	
+	<br><hr><br> 
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -1883,7 +1895,8 @@
 <script>
 	const vocabs = ["platform", "discipline", "describe", "interact", "beanie", "respond", "likely",
 			"feel_the-cold", "expect", "intend", "intended", "at-once", "have-been-to",
-			"flat-cap", "diagnose", "sleep-on", "attend", "attend-to", "pose", "vibe"];
+			"flat-cap", "diagnose", "sleep-on", "attend", "attend-to", "pose", "vibe",
+		        "worry"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -1893,9 +1906,10 @@
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
 	//var ipa = "";
+	var ipaWorry = "_w/3r".i";
 
 	for (let j=0; j<shorthands.length; j++){
-		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaWorry = ipaWorry.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -1903,6 +1917,7 @@
 	document.getElementById("show_likely*").innerHTML = document.getElementById("likely").value;
 	document.getElementById("show_pose*").innerHTML = document.getElementById("pose").value;
 	document.getElementById("show_vibe*").innerHTML = document.getElementById("vibe").value;
+	document.getElementById("show_worry*").innerHTML = ipaWorry;
 	
 </script>
 
