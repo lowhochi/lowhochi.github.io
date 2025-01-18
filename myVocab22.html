@@ -2102,6 +2102,14 @@
 	<p class="meaning">see also: (adj) worrisome</p>
 		
 	<br><hr><br> 
+
+	<input id="worried" type="hidden" value="_w/2.rid"></input>
+	<p class="general"><b>worried</b> &nbsp; &nbsp;
+	/<span class="ipa" id="show_worried"></span>/ or /<span class="ipa" id="show_worried*"></span>/</p>
+	<p class="meaning"></p>
+	<p class="example">1/</p>
+		
+	<br><hr><br> 
 		
 	<!--------------------END-------------------->
 	<!-- DEMO:
@@ -2118,7 +2126,7 @@
 	const vocabs = ["platform", "discipline", "describe", "interact", "beanie", "respond", "likely",
 			"feel_the-cold", "expect", "intend", "intended", "at-once", "have-been-to",
 			"flat-cap", "diagnose", "sleep-on", "attend", "attend-to", "pose", "vibe",
-		        "worry"];
+		        "worry", "worried"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -2129,9 +2137,11 @@
 
 	//var ipa = "";
 	var ipaWorry = "_w/ur:.i";
-
+	var ipaWorried = "_w/ur:.id";
+	
 	for (let j=0; j<shorthands.length; j++){
 		ipaWorry = ipaWorry.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaWorried = ipaWorried.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -2142,6 +2152,7 @@
 	document.getElementById("show_worry*").innerHTML = ipaWorry;
 	document.getElementById("show_worry**").innerHTML = document.getElementById("worry").value;
 	document.getElementById("show_worry***").innerHTML = ipaWorry;
+	document.getElementById("show_worried*").innerHTML = ipaWorried;
 	
 </script>
 
