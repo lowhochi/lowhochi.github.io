@@ -63,7 +63,8 @@ var checks = {"zebra_crossing": false,
               "relay": false,
               "platform": false,
               "beanie": false,
-              "flat-cap": false};
+              "flat-cap": false,
+              "CCTV": false};
 
 function showPicture(input){
         //alert(checks[input]);
