@@ -65,7 +65,8 @@ var checks = {"zebra_crossing": false,
               "beanie": false,
               "flat-cap": false,
               "CCTV": false,
-              "banquet": false};
+              "banquet": false,
+              "minibus": false};
 
 function showPicture(input){
         //alert(checks[input]);
