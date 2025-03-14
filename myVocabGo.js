@@ -3,7 +3,7 @@ const mySet = new Set();
 
 var page = 23;
 var ss = "";
-for (let i=0; i<page+1; i++){
+for (let i=0; i<(page+1); i++){
 	if (i<10){
 		ss = "0" + i.toString();
 	}else{
