@@ -1,28 +1,16 @@
 //input = 00, 01, 02, 03, ... and so on
 const mySet = new Set();
-mySet.add("00");
-mySet.add("01");
-mySet.add("02");
-mySet.add("03");
-mySet.add("04");
-mySet.add("05");
-mySet.add("06");
-mySet.add("07");
-mySet.add("08");
-mySet.add("09");
-mySet.add("10");
-mySet.add("11");
-mySet.add("12");
-mySet.add("13");
-mySet.add("14");
-mySet.add("15");
-mySet.add("16");
-mySet.add("17");
-mySet.add("18");
-mySet.add("19");
-mySet.add("20");
-mySet.add("21");
-mySet.add("22");
+
+var p = 23;
+var ss = "";
+for (let i=0; i<p+1; i++){
+	if (i<10){
+		ss = "0" + p.toString();
+	}else{
+		ss = p.toString();
+	}
+	mySet.add(ss);
+}
 
 function goToPage(s){
         var myLink = "https://lowhochi.github.io/myVocab";
