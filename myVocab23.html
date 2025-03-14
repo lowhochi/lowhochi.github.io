@@ -4,6 +4,7 @@
 	<title>myVocab23</title>
 	<link rel="stylesheet" type="text/css" href="myVocabPS.css">
 	<script type="text/javascript" src="myVocabGo.js"></script>
+	<script type="text/javascript" src="myVocabPicture.js"></script>
 </head>
 <body>
 	<!--------------------Navigation Bar-------------------->
@@ -25,7 +26,17 @@
 	<h2 id="wordCount"></h2>
 	
 	<!--------------------Vocabulary-------------------->
-	
+
+	<input id="tap-water" type="hidden" value="_t/aep __wO:.t@/r"></input>
+	<p class="general"><b>tap water</b> &nbsp; n(u) &nbsp;
+	/<span class="ipa" id="show_tap-water"></span>/ &nbsp;
+	<button class="mypic" onclick="showPicture('tap-water')">PICTURE</button></p>
+	<img class="mypic" id="pic_tap-water" src="myPictures/tap-water.jpg" style="display:none;">
+	<p class="meaning"></p>
+	<p class="example">1/</p>
+		
+	<br><hr><br> 
+		
 	<!--------------------END-------------------->
 	<!-- DEMO:
 	<input id="" type="hidden" value=""></input>
@@ -38,7 +49,7 @@
 	</div>
 </body>
 <script>
-	const vocabs = [];
+	const vocabs = ["tap-water"];
 </script>
 
 <script type="text/javascript" src="myVocabJS.js"></script>
