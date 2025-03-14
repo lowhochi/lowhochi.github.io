@@ -5,9 +5,9 @@ var p = 23;
 var ss = "";
 for (let i=0; i<p+1; i++){
 	if (i<10){
-		ss = "0" + p.toString();
+		ss = "0" + i.toString();
 	}else{
-		ss = p.toString();
+		ss = i.toString();
 	}
 	mySet.add(ss);
 }
