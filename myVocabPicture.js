@@ -70,7 +70,9 @@ var checks = {"zebra_crossing": false,
               "tap-water": false,
               "pantyhose": false,
               "sprawl": false,
-              "stethoscope": false};
+              "stethoscope": false,
+              "autograph": false,
+              "autograph-book": false};
 
 function showPicture(input){
         //alert(checks[input]);
