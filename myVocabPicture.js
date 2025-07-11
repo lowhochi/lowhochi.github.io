@@ -72,7 +72,8 @@ var checks = {"zebra_crossing": false,
               "sprawl": false,
               "stethoscope": false,
               "autograph": false,
-              "autograph-book": false};
+              "autograph-book": false,
+              "dress": false};
 
 function showPicture(input){
         //alert(checks[input]);
