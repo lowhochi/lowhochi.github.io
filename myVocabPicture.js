@@ -77,7 +77,8 @@ var checks = {"zebra_crossing": false,
               "dress-length": false,
               "dress-neckline": false,
               "scone": false,
-              "american-scone": false};
+              "american-scone": false,
+              "traffic-jam": false};
 
 function showPicture(input){
         //alert(checks[input]);
