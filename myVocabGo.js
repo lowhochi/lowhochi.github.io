@@ -1,7 +1,7 @@
 //input = 00, 01, 02, 03, ... and so on
 const mySet = new Set();
 
-var page = 24;
+var page = 25;
 var ss = "";
 for (let i=0; i<page; i++){
 	if (i<10){
