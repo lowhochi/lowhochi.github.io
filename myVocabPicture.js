@@ -79,7 +79,8 @@ var checks = {"zebra_crossing": false,
               "scone": false,
               "american-scone": false,
               "traffic-jam": false,
-              "hot-air-balloon": false};
+              "hot-air-balloon": false,
+              "comet": false};
 
 function showPicture(input){
         //alert(checks[input]);
