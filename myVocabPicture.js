@@ -80,7 +80,8 @@ var checks = {"zebra_crossing": false,
               "american-scone": false,
               "traffic-jam": false,
               "hot-air-balloon": false,
-              "shooting-star": false};
+              "shooting-star": false,
+              "grab-pole": false};
 
 function showPicture(input){
         //alert(checks[input]);
