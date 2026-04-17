@@ -83,7 +83,8 @@ var checks = {"zebra_crossing": false,
               "shooting-star": false,
               "grab-pole": false,
               "flight": false,
-              "stair": false};
+              "stair": false,
+              "jellyfish":false};
 
 function showPicture(input){
         //alert(checks[input]);
