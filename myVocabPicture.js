@@ -86,7 +86,8 @@ var checks = {"zebra_crossing": false,
               "stair": false,
               "jellyfish": false,
               "turnstile": false,
-              "scrambled-eggs": false};
+              "scrambled-eggs": false,
+              "crayon": false};
 
 function showPicture(input){
         //alert(checks[input]);
