@@ -2162,6 +2162,29 @@
 	<p class="example">2.5/ "The idea is to continue cooking the tofu until there is none of this<br>
 		&nbsp; excess water in the pan. Continue to brown and scramble the tofu."</p>
 		
+	<br><hr><br>
+
+	<input id="zest" type="hidden" value="zest"></input>
+	<p class="general"><b>zest</b> &nbsp; n(u, singular) &nbsp;
+	/<span class="ipa" id="show_zest"></span>/</p>
+	<p class="meaning"><b></b></p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+	<p class="example">1/</p>
+		
+	<br><hr><br> 
+
+	<input id="crayon" type="hidden" value="_kreI./6n"></input>
+	<p class="general"><b>crayon</b> &nbsp; n(c,u) &nbsp;
+	/<span class="ipa" id="show_crayon"></span>/ or /<span class="ipa" id="show_crayon*"></span>/ &nbsp;
+	<button class="mypic" onclick="showPicture('crayon')">PICTURE</button></p>
+	<img class="mypic" id="pic_crayon" src="myPictures/crayon.jpg" style="display:none;">
+	<p class="meaning"></p>
+	<p class="example">1/</p>
+		
 	<br><hr><br> 
 		
 	<!--------------------END-------------------->
@@ -2180,7 +2203,8 @@
 				   "pay-off", "lifetime", "weep", "whisper", "overhear", "eavesdrop", "grab-pole", "whim",
 				   "flight", "take-flight", "stair", "predict", "obstacle", "birthday", "jellyfish",
 				   "afford", "put-up-with", "combine", "flashback", "turnstile", "success", "be-open-to",
-				   "showcase", "incorporate", "accomplish", "loophole", "scramble", "scrambled_eggs"];
+				   "showcase", "incorporate", "accomplish", "loophole", "scramble", "scrambled_eggs", "zest",
+				   "crayon"];
 </script>
 "
 <script type="text/javascript" src="myVocabJS.js"></script>
@@ -2189,10 +2213,10 @@
 	var wordCount = vocabs.length;
 	document.getElementById("wordCount").innerHTML = "Word Count : "+wordCount;
 
-	//var ipa = "";
+	var ipaCrayon = "_kreI.@n";
 
 	for (let j=0; j<shorthands.length; j++){
-		//ipa = ipa.replaceAll(shorthands[j], htmlCodes[j]);
+		ipaCrayon = ipaCrayon.replaceAll(shorthands[j], htmlCodes[j]);
 	}
 
 	//display ipa* tags
@@ -2201,6 +2225,7 @@
 	document.getElementById("show_weep*").innerHTML = document.getElementById("weep").value;
 	document.getElementById("show_whisper*").innerHTML = document.getElementById("whisper").value;
 	document.getElementById("show_showcase*").innerHTML = document.getElementById("showcase").value;
+	document.getElementById("show_crayon*").innerHTML = ipaCrayon;
 	
 </script>
 
